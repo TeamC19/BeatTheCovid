@@ -459,7 +459,7 @@ Animator:
   m_GameObject: {fileID: 474686892}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d5669ac3d63489541a19a755552229dc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 47ea11e45271a7b4eb328ebe02c82eff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1149,7 +1149,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7741935, y: 1}
+    m_SensorSize: {x: 1.773585, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
