@@ -39,13 +39,13 @@ public class GameEngine : MonoBehaviour
         }
 
 
-        // Modo combate, por ahora se activa con espacio, pero lo suyo es que se active en momentos concretos
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Modo combate, por ahora se activa con la K, pero lo suyo es que se active en momentos concretos
+        if (Input.GetKeyDown(KeyCode.K))
         {
             if (!fightMode)
             {
                 cinemachine.SetActive(true);
-                cinemachine.transform.position = cinemachine2.transform.position + Vector3.up*1.6f+Vector3.right*1f;
+                cinemachine.transform.position = cinemachine2.transform.position;
                cinemachine2.SetActive(false);
                 print("Modo combate activado");
                 fightMode = true;
