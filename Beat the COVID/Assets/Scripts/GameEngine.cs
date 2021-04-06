@@ -5,6 +5,8 @@ using Cinemachine;
 
 public class GameEngine : MonoBehaviour
 {
+    public static GameEngine instance;
+    public PlayerController player;
     public CameraController cameraController;
     public GameObject cinemachine;
     public GameObject cinemachine2;
@@ -14,9 +16,13 @@ public class GameEngine : MonoBehaviour
     public float val = 0;
     public float speed = 0.1f;
     // Start is called before the first frame update
+    private void Awake()
+    {
+       instance = this;
+
+    }
     void Start()
     {
-        
     }
 
     // Update is called once per frame

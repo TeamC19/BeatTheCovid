@@ -7,61 +7,83 @@ public class PlayerController: MonoBehaviour
     public float speed = 1f;
     private SpriteRenderer _sprite;
     private Animator _anim;
+    public Rigidbody2D _rb2d;
+    public GameObject checkgroundGameObject;
+    public bool grounded;
+    public float startJumpPos;
+    public bool jumped;
+    BoxCollider2D colliderLimites;
+    public float damage;
+    Vector2 direction;
+
+
+    public float jumpForce = 1;
+    public float gravity = -9.8f * 10;
     
     // Start is called before the first frame update
     void Start()
     {
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
+        _rb2d = GetComponent<Rigidbody2D>();
+        checkgroundGameObject = transform.Find("ground check").gameObject;
+        colliderLimites = GetComponent<BoxCollider2D>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        float deltaX;
-        if (Input.GetKey(KeyCode.Space) && transform.position.y == 0) {
-            transform.Translate(Vector3.up * Time.deltaTime * speed);
-            _anim.SetBool("IsJumping",true);
-        }else
+
+        _anim.SetBool("IsJumping", !grounded);
+        colliderLimites.enabled = grounded;
+        if (grounded)
+            _rb2d.velocity = Vector3.zero;
+
+        direction = Vector2.zero;
+        //en el aire
+        if (!grounded)
+        {
+            _rb2d.AddForce(Vector2.down * gravity);
+            Vector3 position = checkgroundGameObject.transform.position;
+            checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
+            print(transform.position.y - startJumpPos);
+        }
+        //saltar
+        if (Input.GetKey(KeyCode.Space) && grounded)
+            {
+            startJumpPos = transform.position.y;
+            _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumped = true;
+            grounded = false;
+            
+        }
+        //movimiento
         if (Input.GetKey(KeyCode.W) )
         {
-                deltaX = 1f;
-                transform.Translate(Vector3.up * Time.deltaTime * speed);
-                _anim.SetFloat("speed", Mathf.Abs(deltaX));
+            direction.y = 1;
         }
         else 
         if (Input.GetKey(KeyCode.S))
         {
-            deltaX = 1f;
-
-            transform.Translate(Vector3.down * Time.deltaTime * speed);
-            _anim.SetFloat("speed", Mathf.Abs(deltaX));
-        }else
+            direction.y = -1;
+        }
 
         if (Input.GetKey(KeyCode.D))
         {
-            deltaX = 1f;
+            direction.x = 1;
             _sprite.flipX = false;
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
-            _anim.SetFloat("speed", Mathf.Abs(deltaX));
-        }else
+        }
+        else
 
         if (Input.GetKey(KeyCode.A))
         {
-            deltaX = 1f;
+            direction.x = -1;
             _sprite.flipX = true;
-            transform.Translate(Vector3.left * Time.deltaTime * speed);
-            _anim.SetFloat("speed", Mathf.Abs(deltaX));
-        }else
-        {
-            deltaX = 0f;
-            _anim.SetFloat("speed", Mathf.Abs(deltaX));
         }
-       
-            
-        
-       
+         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
 
-    
+
 }
