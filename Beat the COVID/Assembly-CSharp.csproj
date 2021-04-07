@@ -72,7 +72,7 @@
     <Compile Include="Assets\Scripts\LockYaxisCinemachine.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PropController.cs" />
-    <Compile Include="Assets\damageTrigger.cs" />
+    <Compile Include="Assets\Scripts\damageTrigger.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

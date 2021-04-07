@@ -17,7 +17,7 @@ public class PlayerController: MonoBehaviour
     Vector2 direction;
 
 
-    public float jumpForce = 1;
+    public float jumpForce = 6.5f;
     public float gravity = -9.8f * 10;
     
     // Start is called before the first frame update
@@ -41,13 +41,18 @@ public class PlayerController: MonoBehaviour
             _rb2d.velocity = Vector3.zero;
 
         direction = Vector2.zero;
-        //en el aire
-        if (!grounded)
+
+        // puñetazo
+        if (Input.GetMouseButtonDown(0)) {
+            _anim.SetTrigger("IsPunching");
+
+        }
+            //en el aire
+            if (!grounded)
         {
             _rb2d.AddForce(Vector2.down * gravity);
             Vector3 position = checkgroundGameObject.transform.position;
             checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
-            print(transform.position.y - startJumpPos);
         }
         //saltar
         if (Input.GetKey(KeyCode.Space) && grounded)

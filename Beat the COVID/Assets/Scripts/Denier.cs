@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Denier : EnemyController
 {
-    // Start is called before the first frame update
+    enum States {patrol, pursuit}
+
+    States state = States.patrol;
+    float searchRange = 1f;
+    float stoppingDistance = 0.3f;
+
+
+    Transform player;
+    Vector3 target;
+
     void Start()
     {
-        
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
+        base.Start();
+       
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        base.Update();
+    }
+
+    void SetTarget() {
+        if (state != States.patrol) {
+            return;
+            
+        }
     }
 }
