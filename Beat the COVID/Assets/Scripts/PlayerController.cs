@@ -90,6 +90,10 @@ public class PlayerController: MonoBehaviour
             direction.x = 0; 
             direction.y = 0; 
         }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
+        {  
+            direction.y = 0; 
+        }
         //movimiento
         else if (Input.GetKey(KeyCode.W))
         {
