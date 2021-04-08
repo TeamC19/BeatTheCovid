@@ -678,7 +678,7 @@ Animator:
   m_GameObject: {fileID: 474686892}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 47ea11e45271a7b4eb328ebe02c82eff, type: 2}
+  m_Controller: {fileID: 9100000, guid: cd5f56d47cc53b64c9c26bbafdee3b23, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -726,13 +726,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1597188336547182666, guid: 764f0978f3eb2614caf036a63c28d52e,
+  m_Sprite: {fileID: -5719833439412085699, guid: 1f7f6a9f032c42b44a56911fa2d5540a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.0952382, y: 2.857143}
+  m_Size: {x: 1.9090909, y: 2.7727273}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -767,8 +767,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  _rb2d: {fileID: 0}
-  checkgroundGameObject: {fileID: 0}
+  _rb2d: {fileID: 474686898}
+  checkgroundGameObject: {fileID: 1776477157}
   grounded: 0
   startJumpPos: 0
   jumped: 0
@@ -792,8 +792,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.0952382, y: 2.857143}
-    newSize: {x: 2.0952382, y: 2.857143}
+    oldSize: {x: 1.7727273, y: 2.7727273}
+    newSize: {x: 1.9090909, y: 2.7727273}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1570,7 +1570,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.779661, y: 1}
+    m_SensorSize: {x: 1.7807692, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
