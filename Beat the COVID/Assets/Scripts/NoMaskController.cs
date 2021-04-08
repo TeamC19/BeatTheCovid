@@ -21,25 +21,8 @@ public class NoMaskController : EnemyController
         }
 
         //movimiento
-        else if (Input.GetKey(KeyCode.W))
-        {
-            direction.y = 1;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            direction.y = -1;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            direction.x = 1;
-            _sprite.flipX = false;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            direction.x = -1;
-            _sprite.flipX = true;
-        }
-         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        
+        _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
 }
