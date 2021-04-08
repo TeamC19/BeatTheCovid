@@ -41,28 +41,47 @@ public class PlayerController: MonoBehaviour
         colliderLimites.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
-
         direction = Vector2.zero;
 
         // puñetazo
-        if (Input.GetKey(KeyCode.J)) {
+        if (Input.GetKey(KeyCode.J)) 
+        {
             _anim.SetTrigger("IsPunching");
         }
-            //en el aire
-            if (!grounded)
+
+        // patada
+        if (Input.GetKey(KeyCode.K)) 
+        {
+            _anim.SetTrigger("IsKicking");
+        }
+
+        // block
+        if (Input.GetKey(KeyCode.L)) 
+        {
+            _anim.SetTrigger("IsBlocking");
+        }
+
+        // lanzar
+        if (Input.GetKey(KeyCode.I)) 
+        {
+            _anim.SetTrigger("IsThrowing");
+        }
+
+        //en el aire
+        if (!grounded) 
         {
             _rb2d.AddForce(Vector2.down * gravity);
             Vector3 position = checkgroundGameObject.transform.position;
             checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
         }
         //saltar
-        if (Input.GetKey(KeyCode.Space) && grounded)
-            {
+        if (Input.GetKeyDown(KeyCode.Space) && grounded) 
+        {
+            _anim.SetBool("IsJumping", grounded);
             startJumpPos = transform.position.y;
             _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumped = true;
             grounded = false;
-            
         }
         //movimiento
         if (Input.GetKey(KeyCode.W))
