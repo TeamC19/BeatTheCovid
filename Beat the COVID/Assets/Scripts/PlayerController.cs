@@ -36,8 +36,6 @@ public class PlayerController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        _anim.SetBool("IsJumping", !grounded);
         colliderLimites.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
