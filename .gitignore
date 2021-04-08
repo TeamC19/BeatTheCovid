@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/Beat the COVID/[Ll]ibrary/
+Beat the COVID/[Ll]ibrary/
 /Beat the COVID/[Tt]emp/
 /Beat the COVID/[Oo]bj/
 /Beat the COVID/[Bb]uild/
