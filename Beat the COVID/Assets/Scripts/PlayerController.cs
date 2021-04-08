@@ -43,7 +43,7 @@ public class PlayerController: MonoBehaviour
         direction = Vector2.zero;
 
         // puñetazo
-        if (Input.GetMouseButtonDown(0)) {
+        if (Input.GetKey(KeyCode.J)) {
             _anim.SetTrigger("IsPunching");
 
         }
@@ -64,7 +64,7 @@ public class PlayerController: MonoBehaviour
             
         }
         //movimiento
-        if (Input.GetKey(KeyCode.W) )
+        if (Input.GetKey(KeyCode.W))
         {
             direction.y = 1;
         }
