@@ -7,6 +7,8 @@ public class PlayerController: MonoBehaviour
     public float speed = 1f;
     private SpriteRenderer _sprite;
     private Animator _anim;
+
+    // _rb2d hace referencia al rigidbody del personaje(en los pies)
     public Rigidbody2D _rb2d;
     public GameObject checkgroundGameObject;
     public bool grounded;
@@ -45,7 +47,6 @@ public class PlayerController: MonoBehaviour
         // puñetazo
         if (Input.GetKey(KeyCode.J)) {
             _anim.SetTrigger("IsPunching");
-
         }
             //en el aire
             if (!grounded)
