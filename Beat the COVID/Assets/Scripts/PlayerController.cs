@@ -44,13 +44,13 @@ public class PlayerController: MonoBehaviour
         direction = Vector2.zero;
 
         // puñetazo
-        if (Input.GetKey(KeyCode.J)) 
+        if (Input.GetKeyDown(KeyCode.J)) 
         {
             _anim.SetTrigger("IsPunching");
         }
 
         // patada
-        if (Input.GetKey(KeyCode.K)) 
+        if (Input.GetKeyDown(KeyCode.K)) 
         {
             _anim.SetTrigger("IsKicking");
         }
@@ -62,7 +62,7 @@ public class PlayerController: MonoBehaviour
         }
 
         // lanzar
-        if (Input.GetKey(KeyCode.I)) 
+        if (Input.GetKeyDown(KeyCode.I)) 
         {
             _anim.SetTrigger("IsThrowing");
         }
