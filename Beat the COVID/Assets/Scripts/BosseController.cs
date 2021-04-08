@@ -22,7 +22,7 @@ public class BosseController : MonoBehaviour
     {
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
-        _enemy = GameObject.Find("EnemyNega");
+        _enemy = GameObject.Find("EnemyDenier");
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
@@ -53,7 +53,7 @@ public class BosseController : MonoBehaviour
             else if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) < 5) { direction.x = -1; }//closer than 5 units, tries to get to 5
             else { direction.x = 0; }
         }
-        /*
+        
         //movement on the Y axis
         if ((_player.transform.position.y - _boss_pos.position.y) <= 0) //boss 
         {
@@ -69,7 +69,7 @@ public class BosseController : MonoBehaviour
             else if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) < 1) { direction.y = -1; }//closer than 1 units, tries to get to 1
             else { direction.y = 0; }
         }
-        */
+        
 
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
