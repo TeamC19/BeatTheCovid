@@ -4,19 +4,32 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    protected float speed = 1f;
+    protected SpriteRenderer _sprite;
+    protected Animator _anim;
+
+    // _rb2d hace referencia al rigidbody del personaje(en los pies)
+    protected Rigidbody2D _rb2d;
+    protected GameObject checkgroundGameObject;
+    protected bool grounded;
+    protected BoxCollider2D colliderLimites;
+    protected float damage;
+    protected Vector2 direction;
+
     //variables para todos los enemigos
     float hp;
-    float maxHp;
+    float maxHp = 3;
+    
     // Start is called before the first frame update
-    public void Start()
+    void Start()
     {
         hp = maxHp;
-    }
+        _sprite = GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
+        _rb2d = GetComponent<Rigidbody2D>();
+        checkgroundGameObject = transform.Find("ground check").gameObject;
+        colliderLimites = GetComponent<BoxCollider2D>();
 
-    // Update is called once per frame
-    public void Update()
-    {
-        
     }
     public void GetDamage(float dmg) 
     {
