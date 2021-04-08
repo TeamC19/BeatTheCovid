@@ -84,7 +84,8 @@ public class PlayerController: MonoBehaviour
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
-           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")) 
+           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")
+           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
         { 
             direction.x = 0; 
             direction.y = 0; 

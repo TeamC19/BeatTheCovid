@@ -1,0 +1,5780 @@
+fileFormatVersion: 2
+guid: 914c6335157c3164ebf6d94176a1eeac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8912754901463219915
+    second: enemy_nomask_idle0
+  - first:
+      213: 998394708199837917
+    second: enemy_nomask_1
+  - first:
+      213: -6628068436618857185
+    second: enemy_nomask_2
+  - first:
+      213: 8654477709125884929
+    second: enemy_nomask_idle3
+  - first:
+      213: -1656514138780718318
+    second: enemy_nomask_4
+  - first:
+      213: -8284654055256137302
+    second: enemy_nomask_5
+  - first:
+      213: 8407683112732545230
+    second: enemy_nomask_6
+  - first:
+      213: -6707113614531039486
+    second: enemy_nomask_7
+  - first:
+      213: -1252009565321764872
+    second: enemy_nomask_8
+  - first:
+      213: -6722679629673266994
+    second: enemy_nomask_9
+  - first:
+      213: -7092358715983260807
+    second: enemy_nomask_10
+  - first:
+      213: -3465049755571967746
+    second: enemy_nomask_11
+  - first:
+      213: 433025313492994965
+    second: enemy_nomask_walk0
+  - first:
+      213: -295662486751605421
+    second: enemy_nomask_13
+  - first:
+      213: -5032145014019857532
+    second: enemy_nomask_walk1
+  - first:
+      213: -2580477551715084084
+    second: enemy_nomask_walk2
+  - first:
+      213: -8957665553292373252
+    second: enemy_nomask_16
+  - first:
+      213: -9215489152584438877
+    second: enemy_nomask_walk3
+  - first:
+      213: -8211183166285989073
+    second: enemy_nomask_18
+  - first:
+      213: -6444981546162363870
+    second: enemy_nomask_19
+  - first:
+      213: -668036837872423288
+    second: enemy_nomask_20
+  - first:
+      213: 7161268612285617966
+    second: enemy_nomask_21
+  - first:
+      213: 8907272369695388071
+    second: enemy_nomask_22
+  - first:
+      213: -4614188366564014128
+    second: enemy_nomask_23
+  - first:
+      213: -8063513990829249860
+    second: enemy_nomask_24
+  - first:
+      213: 2582215327139618820
+    second: enemy_nomask_25
+  - first:
+      213: 6757377590477842057
+    second: enemy_nomask_26
+  - first:
+      213: 49450615400793040
+    second: enemy_nomask_27
+  - first:
+      213: -9149602593692829839
+    second: enemy_nomask_28
+  - first:
+      213: 3923199887976737181
+    second: enemy_nomask_29
+  - first:
+      213: -7217738545961881047
+    second: enemy_nomask_30
+  - first:
+      213: 8015859027638899231
+    second: enemy_nomask_31
+  - first:
+      213: 5854032588918346618
+    second: enemy_nomask_32
+  - first:
+      213: 6404283218240954509
+    second: enemy_nomask_33
+  - first:
+      213: -7344415618707126768
+    second: enemy_nomask_34
+  - first:
+      213: 725156784987621098
+    second: enemy_nomask_35
+  - first:
+      213: 3248187022820912041
+    second: enemy_nomask_36
+  - first:
+      213: -7490113666916255003
+    second: enemy_nomask_37
+  - first:
+      213: -4145144984875158555
+    second: enemy_nomask_38
+  - first:
+      213: 5200189283615491080
+    second: enemy_nomask_39
+  - first:
+      213: 3159304759613295901
+    second: enemy_nomask_40
+  - first:
+      213: 718009281531757602
+    second: enemy_nomask_41
+  - first:
+      213: -7841982036636020906
+    second: enemy_nomask_42
+  - first:
+      213: -4933215451105662406
+    second: enemy_nomask_43
+  - first:
+      213: 6982167348618625832
+    second: enemy_nomask_44
+  - first:
+      213: 7471295956213084854
+    second: enemy_nomask_45
+  - first:
+      213: 960387097494681039
+    second: enemy_nomask_46
+  - first:
+      213: -3369719870600502297
+    second: enemy_nomask_47
+  - first:
+      213: 4181281620890725675
+    second: enemy_nomask_48
+  - first:
+      213: 3865297484958940013
+    second: enemy_nomask_49
+  - first:
+      213: 4715737291691968181
+    second: enemy_nomask_50
+  - first:
+      213: -3866044100344070694
+    second: enemy_nomask_51
+  - first:
+      213: -7653524652359136004
+    second: enemy_nomask_52
+  - first:
+      213: -2027879021924219000
+    second: enemy_nomask_53
+  - first:
+      213: -5347702795632811111
+    second: enemy_nomask_547
+  - first:
+      213: -6433855669018397634
+    second: enemy_nomask_55
+  - first:
+      213: -8571656924010683386
+    second: enemy_nomask_56
+  - first:
+      213: -6992212208666652751
+    second: enemy_nomask_57
+  - first:
+      213: -7088538867363559793
+    second: enemy_nomask_58
+  - first:
+      213: 4005236135534443018
+    second: enemy_nomask_59
+  - first:
+      213: 5283640315279677918
+    second: enemy_nomask_60
+  - first:
+      213: -182430541226298420
+    second: enemy_nomask_61
+  - first:
+      213: -4016688297159362668
+    second: enemy_nomask_62
+  - first:
+      213: 3538692928686244970
+    second: enemy_nomask_63
+  - first:
+      213: -1880430521051011869
+    second: enemy_nomask_punch0
+  - first:
+      213: 4385772265227422240
+    second: enemy_nomask_punch1
+  - first:
+      213: 3645483783325197703
+    second: enemy_nomask_66
+  - first:
+      213: -674601215872534841
+    second: enemy_nomask_67
+  - first:
+      213: -6310008766771550947
+    second: enemy_nomask_68
+  - first:
+      213: -3546423612753025586
+    second: enemy_nomask_69
+  - first:
+      213: -8732899619426866379
+    second: enemy_nomask_70
+  - first:
+      213: -745606586904894825
+    second: enemy_nomask_71
+  - first:
+      213: -5642200956120669522
+    second: enemy_nomask_72
+  - first:
+      213: -7347576554869285449
+    second: enemy_nomask_73
+  - first:
+      213: -8680475426801125435
+    second: enemy_nomask_74
+  - first:
+      213: 1226821803453179403
+    second: enemy_nomask_75
+  - first:
+      213: -1842384950959611237
+    second: enemy_nomask_76
+  - first:
+      213: 4546790385534149994
+    second: enemy_nomask_77
+  - first:
+      213: 3097205827001088078
+    second: enemy_nomask_78
+  - first:
+      213: 1415240481792185191
+    second: enemy_nomask_79
+  - first:
+      213: 4765060036782194089
+    second: enemy_nomask_80
+  - first:
+      213: 6298893208139647432
+    second: enemy_nomask_81
+  - first:
+      213: 688165922128557777
+    second: enemy_nomask_82
+  - first:
+      213: 4561473645885029860
+    second: enemy_nomask_83
+  - first:
+      213: -5027583070732046126
+    second: enemy_nomask_84
+  - first:
+      213: -906512924668740319
+    second: enemy_nomask_85
+  - first:
+      213: 5831587928833828702
+    second: enemy_nomask_86
+  - first:
+      213: 8033959852125082103
+    second: enemy_nomask_87
+  - first:
+      213: -6041357066458302790
+    second: enemy_nomask_88
+  - first:
+      213: 4561356690000178208
+    second: enemy_nomask_89
+  - first:
+      213: 74129333275623441
+    second: enemy_nomask_90
+  - first:
+      213: 2847119813511735986
+    second: enemy_nomask_91
+  - first:
+      213: -4112263391508533672
+    second: enemy_nomask_92
+  - first:
+      213: -704176249875227608
+    second: enemy_nomask_93
+  - first:
+      213: 5737628679477300165
+    second: enemy_nomask_94
+  - first:
+      213: 7504524617359681495
+    second: enemy_nomask_95
+  - first:
+      213: 5889228422865380183
+    second: enemy_nomask_96
+  - first:
+      213: -5781913855778228931
+    second: enemy_nomask_97
+  - first:
+      213: 1255781286325364048
+    second: enemy_nomask_98
+  - first:
+      213: -6145897858462427332
+    second: enemy_nomask_99
+  - first:
+      213: -6949193926636647636
+    second: enemy_nomask_100
+  - first:
+      213: -6389996084228167276
+    second: enemy_nomask_101
+  - first:
+      213: -8277978065646346559
+    second: enemy_nomask_102
+  - first:
+      213: -5534896942020079822
+    second: enemy_nomask_103
+  - first:
+      213: 1156126774963709170
+    second: enemy_nomask_104
+  - first:
+      213: 8685228393068681912
+    second: enemy_nomask_105
+  - first:
+      213: 4135764143953780961
+    second: enemy_nomask_106
+  - first:
+      213: 3625419615676033860
+    second: enemy_nomask_107
+  - first:
+      213: -1068656522694428256
+    second: enemy_nomask_108
+  - first:
+      213: -3932708601333112429
+    second: enemy_nomask_109
+  - first:
+      213: -5744094544026433685
+    second: enemy_nomask_110
+  - first:
+      213: -2723395899332671068
+    second: enemy_nomask_111
+  - first:
+      213: -3585995367418597678
+    second: enemy_nomask_112
+  - first:
+      213: -8033726897854432086
+    second: enemy_nomask_113
+  - first:
+      213: 5498088314613993961
+    second: enemy_nomask_114
+  - first:
+      213: -2486858471305730938
+    second: enemy_nomask_115
+  - first:
+      213: -801497359274087169
+    second: enemy_nomask_116
+  - first:
+      213: 8654825217227752129
+    second: enemy_nomask_117
+  - first:
+      213: -60293282172998006
+    second: enemy_nomask_118
+  - first:
+      213: 3348968539693082311
+    second: enemy_nomask_119
+  - first:
+      213: -4740389794471279303
+    second: enemy_nomask_120
+  - first:
+      213: -4061810877298184994
+    second: enemy_nomask_121
+  - first:
+      213: -8302829652563608253
+    second: enemy_nomask_122
+  - first:
+      213: -3556011193485107990
+    second: enemy_nomask_123
+  - first:
+      213: 8182485683941150192
+    second: enemy_nomask_124
+  - first:
+      213: 2281850995563681406
+    second: enemy_nomask_125
+  - first:
+      213: 2554417260436984014
+    second: enemy_nomask_126
+  - first:
+      213: -5595492328262726580
+    second: enemy_nomask_127
+  - first:
+      213: 6164673499635646797
+    second: enemy_nomask_128
+  - first:
+      213: -352064090442099548
+    second: enemy_nomask_129
+  - first:
+      213: -8618260429098507654
+    second: enemy_nomask_130
+  - first:
+      213: 2239741131260967942
+    second: enemy_nomask_131
+  - first:
+      213: 1999548640101902721
+    second: enemy_nomask_132
+  - first:
+      213: 8830212656415678760
+    second: enemy_nomask_133
+  - first:
+      213: 2359647007673854155
+    second: enemy_nomask_134
+  - first:
+      213: 4184181559091604032
+    second: enemy_nomask_135
+  - first:
+      213: -6477439688228192535
+    second: enemy_nomask_136
+  - first:
+      213: 5054457873450028493
+    second: enemy_nomask_137
+  - first:
+      213: -7040739922744257147
+    second: enemy_nomask_138
+  - first:
+      213: -4819225404482985780
+    second: enemy_nomask_139
+  - first:
+      213: 386674195386848915
+    second: enemy_nomask_140
+  - first:
+      213: -3745181148897405864
+    second: enemy_nomask_141
+  - first:
+      213: -2376106505280008715
+    second: enemy_nomask_142
+  - first:
+      213: 7404692571091786331
+    second: enemy_nomask_143
+  - first:
+      213: 299251357158252383
+    second: enemy_nomask_144
+  - first:
+      213: 1070675192173401299
+    second: enemy_nomask_145
+  - first:
+      213: -2417740999190656338
+    second: enemy_nomask_146
+  - first:
+      213: 4209648915676192469
+    second: enemy_nomask_147
+  - first:
+      213: 5650542568146999927
+    second: enemy_nomask_148
+  - first:
+      213: -5342710507222339367
+    second: enemy_nomask_149
+  - first:
+      213: 5240043852935495982
+    second: enemy_nomask_150
+  - first:
+      213: -1709853738555646280
+    second: enemy_nomask_151
+  - first:
+      213: 5819350209640858
+    second: enemy_nomask_152
+  - first:
+      213: -7663083642333756332
+    second: enemy_nomask_153
+  - first:
+      213: -272745079369113978
+    second: enemy_nomask_154
+  - first:
+      213: -7989113096873734731
+    second: enemy_nomask_155
+  - first:
+      213: -8658345918688376631
+    second: enemy_nomask_156
+  - first:
+      213: -5455779492693980248
+    second: enemy_nomask_157
+  - first:
+      213: 5715747325815916005
+    second: enemy_nomask_158
+  - first:
+      213: -3109540258951325308
+    second: enemy_nomask_159
+  - first:
+      213: -5454257600791913538
+    second: enemy_nomask_160
+  - first:
+      213: 7734988780831348955
+    second: enemy_nomask_161
+  - first:
+      213: -183842310516850153
+    second: enemy_nomask_162
+  - first:
+      213: -6844997656488987937
+    second: enemy_nomask_163
+  - first:
+      213: 8317470656312775096
+    second: enemy_nomask_164
+  - first:
+      213: -3802924787372903710
+    second: enemy_nomask_165
+  - first:
+      213: -4332988785210318167
+    second: enemy_nomask_166
+  - first:
+      213: 8237947828128314257
+    second: enemy_nomask_167
+  - first:
+      213: 4625400803407065091
+    second: enemy_nomask_168
+  - first:
+      213: 4010614028280289001
+    second: enemy_nomask_169
+  - first:
+      213: 3322893593956218426
+    second: enemy_nomask_170
+  - first:
+      213: -2561886630466582539
+    second: enemy_nomask_171
+  - first:
+      213: 3850882324382494177
+    second: enemy_nomask_172
+  - first:
+      213: 8292238743250233926
+    second: enemy_nomask_173
+  - first:
+      213: 7138829315175527441
+    second: enemy_nomask_174
+  - first:
+      213: -1490920372358286376
+    second: enemy_nomask_175
+  - first:
+      213: 9028294850250025023
+    second: enemy_nomask_176
+  - first:
+      213: -8093383921272961042
+    second: enemy_nomask_177
+  - first:
+      213: -5279855216338097794
+    second: enemy_nomask_178
+  - first:
+      213: -3749014967470440833
+    second: enemy_nomask_179
+  - first:
+      213: 8833456650456565219
+    second: enemy_nomask_180
+  - first:
+      213: 5309807168292977718
+    second: enemy_nomask_181
+  - first:
+      213: 6262489438037202600
+    second: enemy_nomask_hit
+  - first:
+      213: 5447981117270015077
+    second: enemy_nomask_183
+  - first:
+      213: 5495527540045433160
+    second: enemy_nomask_184
+  - first:
+      213: -215057324501274972
+    second: enemy_nomask_185
+  - first:
+      213: 6284890938995817035
+    second: enemy_nomask_186
+  - first:
+      213: -1956783149617491577
+    second: enemy_nomask_187
+  - first:
+      213: -1802628179582129522
+    second: enemy_nomask_188
+  - first:
+      213: -2419576499197333588
+    second: enemy_nomask_189
+  - first:
+      213: 5410115014219656967
+    second: enemy_nomask_190
+  - first:
+      213: 6346236102761915538
+    second: enemy_nomask_191
+  - first:
+      213: -3576441636165525426
+    second: enemy_nomask_192
+  - first:
+      213: -3260707090640155860
+    second: enemy_nomask_193
+  - first:
+      213: 631402870874207412
+    second: enemy_nomask_194
+  - first:
+      213: -292840396191356022
+    second: enemy_nomask_195
+  - first:
+      213: 8997039137383418585
+    second: enemy_nomask_196
+  - first:
+      213: -3404916825130682464
+    second: enemy_nomask_197
+  - first:
+      213: -2611490181262560760
+    second: enemy_nomask_198
+  - first:
+      213: 4068451146077360302
+    second: enemy_nomask_199
+  - first:
+      213: 2986097988775660126
+    second: enemy_nomask_200
+  - first:
+      213: 9108855880295371099
+    second: enemy_nomask_201
+  - first:
+      213: 9197423895415595693
+    second: enemy_nomask_202
+  - first:
+      213: 9029530347130048792
+    second: enemy_nomask_203
+  - first:
+      213: 9071911099047247064
+    second: enemy_nomask_204
+  - first:
+      213: 7899058834764153359
+    second: enemy_nomask_205
+  - first:
+      213: 2727121975966388017
+    second: enemy_nomask_206
+  - first:
+      213: -6774508208175868096
+    second: enemy_nomask_207
+  - first:
+      213: -2481705160916075398
+    second: enemy_nomask_208
+  - first:
+      213: -5066839026882619343
+    second: enemy_nomask_209
+  - first:
+      213: 6233794759998013240
+    second: enemy_nomask_210
+  - first:
+      213: 8907875950120756855
+    second: enemy_nomask_211
+  - first:
+      213: 817677069398177327
+    second: enemy_nomask_212
+  - first:
+      213: -5126991294380213635
+    second: enemy_nomask_213
+  - first:
+      213: 1912223551532920547
+    second: enemy_nomask_214
+  - first:
+      213: -2411346603326938845
+    second: enemy_nomask_215
+  - first:
+      213: -7320550554193112475
+    second: enemy_nomask_216
+  - first:
+      213: 8895207035937194361
+    second: enemy_nomask_217
+  - first:
+      213: 5569414211976089439
+    second: enemy_nomask_218
+  - first:
+      213: 8044998505086891097
+    second: enemy_nomask_219
+  - first:
+      213: -6561376629896960936
+    second: enemy_nomask_220
+  - first:
+      213: -4396881696944983252
+    second: enemy_nomask_221
+  - first:
+      213: 8730800277772039909
+    second: enemy_nomask_222
+  - first:
+      213: 4753982004761075446
+    second: enemy_nomask_223
+  - first:
+      213: 1577562469101078738
+    second: enemy_nomask_224
+  - first:
+      213: 5116704664799899184
+    second: enemy_nomask_225
+  - first:
+      213: 7062595386597172341
+    second: enemy_nomask_226
+  - first:
+      213: -9138284052616323101
+    second: enemy_nomask_227
+  - first:
+      213: 8457928642204638338
+    second: enemy_nomask_228
+  - first:
+      213: -4917388219128256037
+    second: enemy_nomask_229
+  - first:
+      213: -911868614297263790
+    second: enemy_nomask_230
+  - first:
+      213: 4198951463482990918
+    second: enemy_nomask_231
+  - first:
+      213: -4742051517301684419
+    second: enemy_nomask_232
+  - first:
+      213: 3585132433886890730
+    second: enemy_nomask_233
+  - first:
+      213: 1393260423852590508
+    second: enemy_nomask_234
+  - first:
+      213: 8824277706060805270
+    second: enemy_nomask_235
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 22
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enemy_nomask_idle0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1737
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531c92093a88f4480800000000000000
+      internalID: -8912754901463219915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1737
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd091e782b20bdd00800000000000000
+      internalID: 998394708199837917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1737
+        width: 46
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15ba58bfde5404a0800000000000000
+      internalID: -6628068436618857185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_idle3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1737
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c1cf08f91ea1870800000000000000
+      internalID: 8654477709125884929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_4
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1737
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b2098da21e209e0800000000000000
+      internalID: -1656514138780718318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1737
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1657dd70ff60d80800000000000000
+      internalID: -8284654055256137302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1737
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec05976ce371ea470800000000000000
+      internalID: 8407683112732545230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1737
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fe0b114bb8be2a0800000000000000
+      internalID: -6707113614531039486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1737
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffda9b0fe7ff9ee0800000000000000
+      internalID: -1252009565321764872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1737
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0029ebe7e34b2a0800000000000000
+      internalID: -6722679629673266994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1737
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9731c222351e29d90800000000000000
+      internalID: -7092358715983260807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1737
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8241e1b9ba9efc0800000000000000
+      internalID: -3465049755571967746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_walk0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1669
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b80857a3a620600800000000000000
+      internalID: 433025313492994965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1670
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d03c7e88895ebf0800000000000000
+      internalID: -295662486751605421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_walk1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1670
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483e71d65ca3a2ab0800000000000000
+      internalID: -5032145014019857532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_walk2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1671
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc81723b65d403cd0800000000000000
+      internalID: -2580477551715084084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_16
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1669
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2514793aaffa380800000000000000
+      internalID: -8957665553292373252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_walk3
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1669
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab2db401710c1080800000000000000
+      internalID: -9215489152584438877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_18
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1669
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b3bdb3a640c0e80800000000000000
+      internalID: -8211183166285989073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1670
+        width: 39
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2226b054e63de86a0800000000000000
+      internalID: -6444981546162363870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1670
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e2dbd0908aab6f0800000000000000
+      internalID: -668036837872423288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_21
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1671
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2750706cdfe16360800000000000000
+      internalID: 7161268612285617966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_22
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1669
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a17859070dfc9b70800000000000000
+      internalID: 8907272369695388071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_23
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1669
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7463ca02c17ffb0800000000000000
+      internalID: -4614188366564014128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_24
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1669
+        width: 46
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaea376fb4a81090800000000000000
+      internalID: -8063513990829249860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_25
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1670
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400e9bba82fd5d320800000000000000
+      internalID: 2582215327139618820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_26
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1670
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986ed9dcd1707cd50800000000000000
+      internalID: 6757377590477842057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_27
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1671
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d383ec921fafa000800000000000000
+      internalID: 49450615400793040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_28
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1669
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17732feeae4160180800000000000000
+      internalID: -9149602593692829839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_29
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1669
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99a4b91381027630800000000000000
+      internalID: 3923199887976737181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_30
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1604
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9223c4e980175db90800000000000000
+      internalID: -7217738545961881047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1602
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f125608d05d0e3f60800000000000000
+      internalID: 8015859027638899231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_32
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1599
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73d906af93bd3150800000000000000
+      internalID: 5854032588918346618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_33
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1599
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d806f38d7a590e850800000000000000
+      internalID: 6404283218240954509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_34
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1604
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016812c38e4631a90800000000000000
+      internalID: -7344415618707126768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1602
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6c6aff046401a00800000000000000
+      internalID: 725156784987621098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_36
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1601
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab264b33e0e31d20800000000000000
+      internalID: 3248187022820912041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_37
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1601
+        width: 41
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea7824ed45cd0890800000000000000
+      internalID: -7490113666916255003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_38
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1604
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e33602299c7976c0800000000000000
+      internalID: -4145144984875158555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_39
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1602
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804c1b60a98ca2840800000000000000
+      internalID: 5200189283615491080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_40
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1599
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d83fda0fa18db20800000000000000
+      internalID: 3159304759613295901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_41
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1599
+        width: 49
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224422b23a1e6f900800000000000000
+      internalID: 718009281531757602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_42
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1604
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fc053e2eeab2390800000000000000
+      internalID: -7841982036636020906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_43
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1602
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ae06c3fa2b98bb0800000000000000
+      internalID: -4933215451105662406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_44
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 1601
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8238eb0e534a5e060800000000000000
+      internalID: 6982167348618625832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_45
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1601
+        width: 49
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2b4e966106fa760800000000000000
+      internalID: 7471295956213084854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_46
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1604
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5f9011afaf35d00800000000000000
+      internalID: 960387097494681039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_47
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1602
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3284891a95c31d0800000000000000
+      internalID: -3369719870600502297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_48
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 1599
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2daf071b75e60a30800000000000000
+      internalID: 4181281620890725675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_49
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1599
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b3036559b44a530800000000000000
+      internalID: 3865297484958940013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_50
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1604
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6cc5de41aa17140800000000000000
+      internalID: 4715737291691968181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_51
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 1602
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add3ff8bf5d095ac0800000000000000
+      internalID: -3866044100344070694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_52
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1601
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc4078f0e739c590800000000000000
+      internalID: -7653524652359136004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_53
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1601
+        width: 47
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8878db216c68bd3e0800000000000000
+      internalID: -2027879021924219000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_547
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1515
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99361f504a429c5b0800000000000000
+      internalID: -5347702795632811111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_55
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1530
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3476086b5a56b6a0800000000000000
+      internalID: -6433855669018397634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_56
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1530
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60463d3317b5b0980800000000000000
+      internalID: -8571656924010683386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_57
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1530
+        width: 54
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf4644ea0ca6fe90800000000000000
+      internalID: -6992212208666652751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_58
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1528
+        width: 53
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86ce32f47370ad90800000000000000
+      internalID: -7088538867363559793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_59
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1528
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ab61c6b05759730800000000000000
+      internalID: 4005236135534443018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_60
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1525
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed99d217fd2435940800000000000000
+      internalID: 5283640315279677918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_61
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1525
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3360aa360e77df0800000000000000
+      internalID: -182430541226298420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_62
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1525
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497f85a664bd148c0800000000000000
+      internalID: -4016688297159362668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_63
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1515
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64c7874876fb1130800000000000000
+      internalID: 3538692928686244970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_punch0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1451
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4a3ff676e57e5e0800000000000000
+      internalID: -1880430521051011869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_punch1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1451
+        width: 68
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a04ae63a46ddc30800000000000000
+      internalID: 4385772265227422240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_66
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1451
+        width: 65
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785ab83bf2c579230800000000000000
+      internalID: 3645483783325197703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_67
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1451
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6fed2b4c553a6f0800000000000000
+      internalID: -674601215872534841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_68
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1451
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d152bfe55785e68a0800000000000000
+      internalID: -6310008766771550947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_69
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1451
+        width: 67
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec56cc2938298cec0800000000000000
+      internalID: -3546423612753025586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_70
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1451
+        width: 64
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53beae4a0128ec680800000000000000
+      internalID: -8732899619426866379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_71
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1451
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a75572c217a5f0800000000000000
+      internalID: -745606586904894825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_72
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1384
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2ee03cf10e2b1b0800000000000000
+      internalID: -5642200956120669522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_73
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1384
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd170f6d0a280a90800000000000000
+      internalID: -7347576554869285449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_74
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1384
+        width: 72
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7f2082791c88780800000000000000
+      internalID: -8680475426801125435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_75
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1384
+        width: 71
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06e7852eeb860110800000000000000
+      internalID: 1226821803453179403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_76
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1384
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92e68206a88e66e0800000000000000
+      internalID: -1842384950959611237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_77
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1384
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65ace504c1791f30800000000000000
+      internalID: 4546790385534149994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_78
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1384
+        width: 46
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e487baa3a4c7bfa20800000000000000
+      internalID: 3097205827001088078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_79
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1310
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763d9fc48b1f3a310800000000000000
+      internalID: 1415240481792185191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_80
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1313
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adffc96bd4e02240800000000000000
+      internalID: 4765060036782194089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_81
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1318
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9c845fff92a6750800000000000000
+      internalID: 6298893208139647432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_82
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1318
+        width: 65
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d67007924bdc8900800000000000000
+      internalID: 688165922128557777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_83
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1315
+        width: 41
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed784bfc1c9d4f30800000000000000
+      internalID: 4561473645885029860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_84
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1312
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0bf3e95df6a3ab0800000000000000
+      internalID: -5027583070732046126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_85
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1310
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12db1d44c4b6b63f0800000000000000
+      internalID: -906512924668740319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_86
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1251
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57a89ef256fde050800000000000000
+      internalID: 5831587928833828702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1247
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f15aa57beb5e7f60800000000000000
+      internalID: 8033959852125082103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_88
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1245
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6f47ca1c9c82ca0800000000000000
+      internalID: -6041357066458302790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_89
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1245
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cef411eb13d4f30800000000000000
+      internalID: 4561356690000178208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_90
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1176
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11084516c3c570100800000000000000
+      internalID: 74129333275623441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_91
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1182
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bae75db260038720800000000000000
+      internalID: 2847119813511735986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_92
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1187
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e6a4eab3e4ee6c0800000000000000
+      internalID: -4112263391508533672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_93
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1184
+        width: 63
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c9bee7e634a36f0800000000000000
+      internalID: -704176249875227608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1184
+        width: 57
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb865d72e620af40800000000000000
+      internalID: 5737628679477300165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_95
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1097
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7e5e9f06d652860800000000000000
+      internalID: 7504524617359681495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_96
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1097
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75366025c0ebab150800000000000000
+      internalID: 5889228422865380183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_97
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1097
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35fd686bf382cfa0800000000000000
+      internalID: -5781913855778228931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_98
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1097
+        width: 36
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055a10f2d6e6d6110800000000000000
+      internalID: 1255781286325364048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_99
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1097
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c375388c57265baa0800000000000000
+      internalID: -6145897858462427332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_100
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1097
+        width: 35
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b458f21f08f8f90800000000000000
+      internalID: -6949193926636647636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_101
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1097
+        width: 35
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4996173ca6c2257a0800000000000000
+      internalID: -6389996084228167276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_102
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 1097
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce9ca2dec6be1d80800000000000000
+      internalID: -8277978065646346559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_103
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1029
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f4f7e6e881033b0800000000000000
+      internalID: -5534896942020079822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_104
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1029
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4a7092d236b0010800000000000000
+      internalID: 1156126774963709170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_105
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1029
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8badef90531288870800000000000000
+      internalID: 8685228393068681912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_106
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1029
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0a923a39f256930800000000000000
+      internalID: 4135764143953780961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_107
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1029
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b6a12aee3105230800000000000000
+      internalID: 3625419615676033860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_108
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 961
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9f4e9fd8e5b21f0800000000000000
+      internalID: -1068656522694428256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_109
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 961
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391aa6c0d563c69c0800000000000000
+      internalID: -3932708601333112429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_110
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 961
+        width: 42
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b678b0b1270e840b0800000000000000
+      internalID: -5744094544026433685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_111
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 961
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a94585dbdd843ad0800000000000000
+      internalID: -2723395899332671068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_112
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 961
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de61d6763cfb3ec0800000000000000
+      internalID: -3585995367418597678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_113
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 961
+        width: 40
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacb2ee63f7728090800000000000000
+      internalID: -8033726897854432086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_114
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 961
+        width: 70
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e11b4821322d4c40800000000000000
+      internalID: 5498088314613993961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_115
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 961
+        width: 64
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684a6237567ec7dd0800000000000000
+      internalID: -2486858471305730938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_116
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 893
+        width: 51
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffced04f56280e4f0800000000000000
+      internalID: -801497359274087169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_117
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 893
+        width: 45
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c204f90ead1c1870800000000000000
+      internalID: 8654825217227752129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_118
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 893
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e6cbd449bc92ff0800000000000000
+      internalID: -60293282172998006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_119
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 893
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c66d5ca42de97e20800000000000000
+      internalID: 3348968539693082311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_120
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 893
+        width: 40
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93507abf890c63eb0800000000000000
+      internalID: -4740389794471279303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_121
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 828
+        width: 47
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edce2d9078c81a7c0800000000000000
+      internalID: -4061810877298184994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_122
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 828
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dbd58db6c66cc80800000000000000
+      internalID: -8302829652563608253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_123
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 828
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecd10bf8a286aec0800000000000000
+      internalID: -3556011193485107990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_124
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 828
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd080b70670e8170800000000000000
+      internalID: 8182485683941150192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_125
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 828
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76d1f40463caaf10800000000000000
+      internalID: 2281850995563681406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_126
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 828
+        width: 45
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec01978e6fc137320800000000000000
+      internalID: 2554417260436984014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_127
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 828
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c0a76af51d852b0800000000000000
+      internalID: -5595492328262726580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_128
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 828
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d410c06d2e15d8550800000000000000
+      internalID: 6164673499635646797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_129
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 828
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4170733973d1bf0800000000000000
+      internalID: -352064090442099548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_130
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 828
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7227cd1dc9c56880800000000000000
+      internalID: -8618260429098507654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_131
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 828
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c34a531b8251f10800000000000000
+      internalID: 2239741131260967942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_132
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 828
+        width: 41
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189a364e4e2dfbb10800000000000000
+      internalID: 1999548640101902721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_133
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 754
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821a0d460a73b8a70800000000000000
+      internalID: 8830212656415678760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_134
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 754
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8a6b793762fb020800000000000000
+      internalID: 2359647007673854155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_135
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 756
+        width: 59
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a256195f2311a30800000000000000
+      internalID: 4184181559091604032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_136
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 756
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee34292ce28b16a0800000000000000
+      internalID: -6477439688228192535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_137
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 756
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd4a2ff7aa052640800000000000000
+      internalID: 5054457873450028493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_138
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 754
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585daecf7544a4e90800000000000000
+      internalID: -7040739922744257147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_139
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 754
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e049270cae1db0800000000000000
+      internalID: -4819225404482985780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 754
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396d7dbc12ebd5500800000000000000
+      internalID: 386674195386848915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_141
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 766
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8541b708691760cc0800000000000000
+      internalID: -3745181148897405864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_142
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 766
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd4a4cf8bf560fd0800000000000000
+      internalID: -2376106505280008715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_143
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 764
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a56e269a0c2c660800000000000000
+      internalID: 7404692571091786331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_144
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 755
+        width: 36
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f98f91687272400800000000000000
+      internalID: 299251357158252383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_145
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 754
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d491532a6dcbde00800000000000000
+      internalID: 1070675192173401299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_146
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 689
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaac758fe55727ed0800000000000000
+      internalID: -2417740999190656338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_147
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 689
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dedcf7926dab6a30800000000000000
+      internalID: 4209648915676192469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_148
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 689
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a10a22782ca6e40800000000000000
+      internalID: 5650542568146999927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_149
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 622
+        width: 50
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0f34fb911ead5b0800000000000000
+      internalID: -5342710507222339367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_150
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 622
+        width: 49
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2180bd0f1068b840800000000000000
+      internalID: 5240043852935495982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_151
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 622
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be548f75116548e0800000000000000
+      internalID: -1709853738555646280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_152
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 622
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99b11e0baca41000800000000000000
+      internalID: 5819350209640858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_153
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 622
+        width: 55
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454079e270247a590800000000000000
+      internalID: -7663083642333756332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_154
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 622
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ed7fd9bc3073cf0800000000000000
+      internalID: -272745079369113978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_155
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 622
+        width: 46
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd8b6e67f7f02190800000000000000
+      internalID: -7989113096873734731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_156
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 533
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c84026c24067d780800000000000000
+      internalID: -8658345918688376631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_157
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 545
+        width: 58
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab4d15157d2944b0800000000000000
+      internalID: -5455779492693980248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_158
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 554
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e58525d8e9625f40800000000000000
+      internalID: 5715747325815916005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_159
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 570
+        width: 67
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4891e6a0c91b8d4d0800000000000000
+      internalID: -3109540258951325308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_160
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 569
+        width: 66
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbd2572c959e44b0800000000000000
+      internalID: -5454257600791913538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_161
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 561
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8951f7053385b60800000000000000
+      internalID: 7734988780831348955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_162
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 536
+        width: 45
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712c4f2846cd27df0800000000000000
+      internalID: -183842310516850153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_163
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 538
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b794d5eea101a0800000000000000
+      internalID: -6844997656488987937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_164
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 542
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b1124b7e779d6370800000000000000
+      internalID: 8317470656312775096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_165
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 535
+        width: 66
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e23c1dfd0c493bc0800000000000000
+      internalID: -3802924787372903710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_166
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 540
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2a9c138a12ed3c0800000000000000
+      internalID: -4332988785210318167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_167
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 536
+        width: 62
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193f9c537e1135270800000000000000
+      internalID: 8237947828128314257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_168
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 535
+        width: 69
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30072e63689b03040800000000000000
+      internalID: 4625400803407065091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_169
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 536
+        width: 70
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e658d6a53098a730800000000000000
+      internalID: 4010614028280289001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_170
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 467
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a367e264e1a4d1e20800000000000000
+      internalID: 3322893593956218426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_171
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 467
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7873cdea9527cd0800000000000000
+      internalID: -2561886630466582539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_172
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 467
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed26a83215117530800000000000000
+      internalID: 3850882324382494177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_173
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 467
+        width: 57
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a692ce333f31370800000000000000
+      internalID: 8292238743250233926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_174
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 467
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114be236077321360800000000000000
+      internalID: 7138829315175527441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_175
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 467
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3f03112df2f4be0800000000000000
+      internalID: -1490920372358286376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_176
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 467
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3824a41552fa4d70800000000000000
+      internalID: 9028294850250025023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_177
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 467
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7caa544368eaf80800000000000000
+      internalID: -8093383921272961042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_178
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 425
+        width: 71
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79aca497af2ab6b0800000000000000
+      internalID: -5279855216338097794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_179
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 426
+        width: 71
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e3d4e00c2d8fbc0800000000000000
+      internalID: -3749014967470440833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_180
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 426
+        width: 71
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5864d950eb69a70800000000000000
+      internalID: 8833456650456565219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_181
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 426
+        width: 70
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cfcebac7930b940800000000000000
+      internalID: 5309807168292977718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_hit
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 355
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6d7dbb6f4d8e650800000000000000
+      internalID: 6262489438037202600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_183
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 352
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c3ae526fd1b9b40800000000000000
+      internalID: 5447981117270015077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_184
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 352
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849c8cd5e29044c40800000000000000
+      internalID: 5495527540045433160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_185
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 353
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae61c6b086f30df0800000000000000
+      internalID: -215057324501274972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_186
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 356
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4abaee920b683750800000000000000
+      internalID: 6284890938995817035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_187
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 352
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7815498c71c18d4e0800000000000000
+      internalID: -1956783149617491577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_188
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 352
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ae5eda837cbf6e0800000000000000
+      internalID: -1802628179582129522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_189
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 360
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafa5725effeb6ed0800000000000000
+      internalID: -2419576499197333588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_190
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 358
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70fe19001f6941b40800000000000000
+      internalID: 5410115014219656967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_191
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 354
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29422e59c1c521850800000000000000
+      internalID: 6346236102761915538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_192
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 371
+        width: 69
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40ef6cd74ded5ec0800000000000000
+      internalID: -3576441636165525426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_193
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 316
+        width: 69
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bcbc15d24afb2d0800000000000000
+      internalID: -3260707090640155860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_194
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 315
+        width: 69
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b47e94d09133c800800000000000000
+      internalID: 631402870874207412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_195
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 313
+        width: 69
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b2121163f9febf0800000000000000
+      internalID: -292840396191356022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_196
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 289
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da86065d67ebdc70800000000000000
+      internalID: 8997039137383418585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_197
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 289
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b554003e4fb0d0800000000000000
+      internalID: -3404916825130682464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_198
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 279
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802bc63348f12cbd0800000000000000
+      internalID: -2611490181262560760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_199
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 293
+        width: 67
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0d8f303ca067830800000000000000
+      internalID: 4068451146077360302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_200
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 316
+        width: 69
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a4b7dbc40c07920800000000000000
+      internalID: 2986097988775660126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_201
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 315
+        width: 69
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51db3f8928296e70800000000000000
+      internalID: 9108855880295371099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_202
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 313
+        width: 69
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2afe68d40d3af70800000000000000
+      internalID: 9197423895415595693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_203
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 289
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811db4d92065f4d70800000000000000
+      internalID: 9029530347130048792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_204
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 289
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc72ac5417e5ed70800000000000000
+      internalID: 9071911099047247064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_205
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 279
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f024702c8281f9d60800000000000000
+      internalID: 7899058834764153359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_206
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 212
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f43acfcfea8d520800000000000000
+      internalID: 2727121975966388017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_207
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 212
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04795b37dac1cf1a0800000000000000
+      internalID: -6774508208175868096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_208
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 212
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7cf7560e463f8dd0800000000000000
+      internalID: -2481705160916075398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_209
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 212
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138539410c8fea9b0800000000000000
+      internalID: -5066839026882619343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_210
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 212
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f7f506e43e28650800000000000000
+      internalID: 6233794759998013240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_211
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 212
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776613e0bf12f9b70800000000000000
+      internalID: 8907875950120756855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_212
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 212
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26f57e56f8f85b00800000000000000
+      internalID: 817677069398177327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_213
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 212
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a72fbe49449d8b0800000000000000
+      internalID: -5126991294380213635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_214
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 212
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee61405035998a10800000000000000
+      internalID: 1912223551532920547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_215
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 212
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3216a564a0d298ed0800000000000000
+      internalID: -2411346603326938845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_216
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 212
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562d7019e0e286a90800000000000000
+      internalID: -7320550554193112475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_217
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 212
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971879c9baf127b70800000000000000
+      internalID: 8895207035937194361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_218
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 212
+        width: 42
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fc8dfb7b88a4d40800000000000000
+      internalID: 5569414211976089439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_219
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 212
+        width: 41
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954b042248395af60800000000000000
+      internalID: 8044998505086891097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_220
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 212
+        width: 44
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854217108be41f4a0800000000000000
+      internalID: -6561376629896960936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_221
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 212
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c237d2e64632bf2c0800000000000000
+      internalID: -4396881696944983252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_222
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 143
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6fb7948980a2970800000000000000
+      internalID: 8730800277772039909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_223
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 70
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe1266127989f140800000000000000
+      internalID: 4753982004761075446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_224
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 69
+        width: 72
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d802c515b0a4e510800000000000000
+      internalID: 1577562469101078738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_225
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 68
+        width: 36
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e6bfd78cf220740800000000000000
+      internalID: 5116704664799899184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_226
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 89
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574ef6ab511630260800000000000000
+      internalID: 7062595386597172341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_227
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 67
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efdf23221b4e2180800000000000000
+      internalID: -9138284052616323101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_228
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 90
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c953eb949906570800000000000000
+      internalID: 8457928642204638338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_229
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 20
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd96b28d77de1cbb0800000000000000
+      internalID: -4917388219128256037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_230
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 20
+        width: 74
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251ebfa93546853f0800000000000000
+      internalID: -911868614297263790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_231
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641a20aeb1ca54a30800000000000000
+      internalID: 4198951463482990918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_232
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1
+        width: 59
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3781acf449d03eb0800000000000000
+      internalID: -4742051517301684419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_233
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 3
+        width: 53
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea4f8a24f2f0c130800000000000000
+      internalID: 3585132433886890730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_234
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 4
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5085349fad55310800000000000000
+      internalID: 1393260423852590508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy_nomask_235
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 14
+        width: 69
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694372512d1267a70800000000000000
+      internalID: 8824277706060805270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
