@@ -81,25 +81,29 @@ public class PlayerController: MonoBehaviour
             jumped = true;
             grounded = false;
         }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")
+           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")
+           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
+           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
         //movimiento
-        if (Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W))
         {
             direction.y = 1;
         }
-        else 
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             direction.y = -1;
         }
-
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             direction.x = 1;
             _sprite.flipX = false;
         }
-        else
-
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             direction.x = -1;
             _sprite.flipX = true;
