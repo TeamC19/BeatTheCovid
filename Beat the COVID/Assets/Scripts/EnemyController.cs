@@ -11,7 +11,6 @@ public class EnemyController : MonoBehaviour
     // _rb2d hace referencia al rigidbody del personaje(en los pies)
     protected Rigidbody2D _rb2d;
     protected GameObject checkgroundGameObject;
-    protected bool grounded;
     protected BoxCollider2D colliderLimites;
     protected float damage;
     protected Vector2 direction;

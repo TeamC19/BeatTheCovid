@@ -101,6 +101,7 @@ public class PlayerController: MonoBehaviour
             jumped = true;
             grounded = false;
         }
+        //no se puede mover si está haciendo otra acción
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
@@ -110,6 +111,7 @@ public class PlayerController: MonoBehaviour
             direction.x = 0; 
             direction.y = 0; 
         }
+        //no se puede mover en el eje Y si está saltando
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
         {  
             direction.y = 0; 
