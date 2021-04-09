@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class NoMaskController : EnemyController
 {   
-    [SerializeField] float searchRange = 1;
-    [SerializeField] float stoppingDistance = 0.3f;
-     Vector2 direction_patrol;
+    [SerializeField] float searchRange = 3;
+    [SerializeField] float stoppingDistance = 1;
+    [SerializeField] float waitTime;
+    [SerializeField] float startWaitTime;
+    Vector2 direction_patrol;
     GameObject _player;
     Transform _enemy_pos;
+    
     //BoxCollider2D collider;
 
     new void Start() 
     {
         patrol = true;
         pursuit = false;
+        waitTime = 20;
+        startWaitTime = waitTime;
         direction = Vector2.zero;
         direction_patrol = Vector2.zero;
         _player = GameObject.Find("Player");
@@ -35,12 +40,15 @@ public class NoMaskController : EnemyController
 
         // Movement depending on State
         // Patrol state
-        /*
         if(patrol) 
         {
-           // Patrol movement
-            //direction.x = (int)Random.Range(-1, 1.2f);
-            //direction.y = (int)Random.Range(-1, 1.2f);
+            waitTime--;
+            // Patrol movement
+            if(waitTime == 0) {
+                waitTime = startWaitTime;
+                direction.x = (int)Random.Range(-2, 2.1f);
+                direction.y = (int)Random.Range(-1, 1.2f);
+            }
             if(direction_patrol.x < 0) {_sprite.flipX = true;}
              //movimiento
             _anim.SetFloat("speed", Mathf.Abs(direction_patrol.magnitude));
@@ -52,7 +60,7 @@ public class NoMaskController : EnemyController
                 pursuit = true;
                 return;
             }
-        }*/
+        }
         // Pursuit state
         else if(true) 
         {
@@ -60,13 +68,13 @@ public class NoMaskController : EnemyController
             if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
             {
                 _sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > 1) { direction.x = -1; } //farther than 6 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -1; } //farther than 6 units, closes in on player
                 else { _anim.SetTrigger("PlayerNear"); }
             }
             else //player is to the left of player
             {
                 _sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > 1) { direction.x = 1; } //farther than 6 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = 1; } //farther than 6 units, closes in on player
                 else { _anim.SetTrigger("PlayerNear"); }
             }
             
@@ -74,36 +82,27 @@ public class NoMaskController : EnemyController
             if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
             {
                 //_sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > 1) { direction.y = -1; } //farther than 2 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -1; } //farther than 2 units, closes in on player
                 else { direction.y = 0; }
             }
             else //
             {
                 //_sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > 1) { direction.y = 1; } //farther than 2 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = 1; } //farther than 2 units, closes in on player
                 else { direction.y = 0; }
             }
             
             // If player leaves range, change state to Patrol
-            /*
             if((_player.transform.position.x -_enemy_pos.position.x) > searchRange * 1.2f)
             {
                 pursuit = false;
                 patrol = true;
                 return;
-            }*/
+            }
         }
 
         //movimiento
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
-
-    private void Animation()
-    {
-        _anim.SetTrigger("PlayerNear");
-    }
-
-
-
 }
