@@ -18,6 +18,11 @@ public class PlayerController: MonoBehaviour
     public float damage;
     Vector2 direction;
 
+    // health 
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+
 
     public float jumpForce = 6.5f;
     public float gravity = -9.8f * 10;
@@ -31,6 +36,15 @@ public class PlayerController: MonoBehaviour
         checkgroundGameObject = transform.Find("ground check").gameObject;
         colliderLimites = GetComponent<BoxCollider2D>();
 
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
+
+    void TakeDamage(int dmg)
+    {
+        currentHealth -= dmg;
+        healthBar.SetHealth(currentHealth);
+        
     }
 
     // Update is called once per frame
@@ -40,6 +54,12 @@ public class PlayerController: MonoBehaviour
         if (grounded)
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
+
+        //prueba recibir daño 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TakeDamage(20);
+        }
 
         // puñetazo
         if (Input.GetKeyDown(KeyCode.J)) 

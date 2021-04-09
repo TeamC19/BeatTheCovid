@@ -26,7 +26,8 @@ public class EnemyController : MonoBehaviour
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
-        checkgroundGameObject = transform.Find("ground check").gameObject;
+        // comentado de momento por que da problemas (Null Reference)
+        //checkgroundGameObject = transform.Find("ground check").gameObject;
         colliderLimites = GetComponent<BoxCollider2D>();
 
     }
