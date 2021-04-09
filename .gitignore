@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-
+/Beat the COVID/[Ll]ibrary/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -64,3 +64,4 @@ crashlytics-build.properties
 /Beat the COVID/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /Beat the COVID/[Aa]ssets/[Ss]treamingAssets/aa/*
 Beat the COVID/Temp/UnityLockfile
+
