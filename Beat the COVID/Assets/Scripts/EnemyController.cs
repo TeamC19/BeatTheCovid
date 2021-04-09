@@ -17,11 +17,11 @@ public class EnemyController : MonoBehaviour
     protected Vector2 direction;
 
     //variables para todos los enemigos
-    float hp;
-    float maxHp = 3;
+    protected float hp;
+    protected float maxHp = 3;
     
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         hp = maxHp;
         _sprite = GetComponent<SpriteRenderer>();
@@ -29,6 +29,11 @@ public class EnemyController : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         checkgroundGameObject = transform.Find("ground check").gameObject;
         colliderLimites = GetComponent<BoxCollider2D>();
+
+    }
+
+    protected void Update() 
+    {
 
     }
     public void GetDamage(float dmg) 
