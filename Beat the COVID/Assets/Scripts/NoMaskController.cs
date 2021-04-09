@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NoMaskController : EnemyController
 {   
-    [SerializeField] float searchRange = 3;
+    [SerializeField] float searchRange = 5;
     [SerializeField] float stoppingDistance = 1;
     [SerializeField] float waitTime;
     [SerializeField] float startWaitTime;
@@ -47,7 +47,7 @@ public class NoMaskController : EnemyController
             if(waitTime == 0) {
                 waitTime = startWaitTime;
                 direction.x = (int)Random.Range(-2, 2.1f);
-                direction.y = (int)Random.Range(-1, 1.2f);
+                direction.y = (int)Random.Range(-1, 1.1f);
             }
             if(direction_patrol.x < 0) {_sprite.flipX = true;}
              //movimiento
