@@ -3,15 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NoMaskController : EnemyController
-{
-    //Dos estados: estado de patrulla y estado de persecución para ataque
-    
-    enum States { patrol, pursuit }
-    [SerializeField] States state =  States.patrol;
+{   
     [SerializeField] float searchRange = 1;
     [SerializeField] float stoppingDistance = 0.3f;
+     Vector2 direction_patrol;
     GameObject _player;
     Transform _enemy_pos;
+    //BoxCollider2D collider;
+
+    new void Start() 
+    {
+        patrol = true;
+        pursuit = false;
+        direction = Vector2.zero;
+        direction_patrol = Vector2.zero;
+        _player = GameObject.Find("Player");
+        _sprite = GetComponent<SpriteRenderer>();
+        _anim = GetComponent<Animator>();
+        _rb2d = GetComponent<Rigidbody2D>();
+        //collider = GetComponent<BoxCollider2D>();
+        _enemy_pos = GetComponent<Transform>();
+    }
 
     new void Update()
     {
@@ -23,65 +35,75 @@ public class NoMaskController : EnemyController
 
         // Movement depending on State
         // Patrol state
-        if(state ==  States.patrol) 
+        /*
+        if(patrol) 
         {
-            // Patrol movement
-            direction.x = Random.Range(-1, 1);
-            direction.y = Random.Range(-1, 1);
-            if(direction.x < 0) {_sprite.flipX = true;}
-
+           // Patrol movement
+            //direction.x = (int)Random.Range(-1, 1.2f);
+            //direction.y = (int)Random.Range(-1, 1.2f);
+            if(direction_patrol.x < 0) {_sprite.flipX = true;}
+             //movimiento
+            _anim.SetFloat("speed", Mathf.Abs(direction_patrol.magnitude));
+            transform.Translate(Vector2.one *direction_patrol  * Time.deltaTime * speed);
             // If player is detected, change state to Pursuit
             if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
             {
-                state = States.pursuit;
+                patrol = false;
+                pursuit = true;
                 return;
             }
-        }
+        }*/
         // Pursuit state
-        if(state ==  States.pursuit) 
+        else if(true) 
         {
             // Pursuit movement
-            // movement on the X axis, enemy tries to get closer to player
-            if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
+            if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
             {
                 _sprite.flipX = true;
-                direction.x = Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) + 1; 
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > 1) { direction.x = -1; } //farther than 6 units, closes in on player
+                else { _anim.SetTrigger("PlayerNear"); }
             }
-            else
+            else //player is to the left of player
             {
                 _sprite.flipX = false;
-                direction.x = Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) - 1; 
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > 1) { direction.x = 1; } //farther than 6 units, closes in on player
+                else { _anim.SetTrigger("PlayerNear"); }
             }
-            // movement on the Y axis, enemy tries to get closer to player
-            if((_player.transform.position.y -_enemy_pos.position.y) <= searchRange)
+            
+            //movement on the Y axis
+            if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
             {
-                direction.y = Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) + 1; 
+                //_sprite.flipX = true;
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > 1) { direction.y = -1; } //farther than 2 units, closes in on player
+                else { direction.y = 0; }
             }
-            else
+            else //
             {
-                direction.y = Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) - 1; 
+                //_sprite.flipX = false;
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > 1) { direction.y = 1; } //farther than 2 units, closes in on player
+                else { direction.y = 0; }
             }
-            // puñetazo
-            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) == 1
-                && Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) == 1) 
-            {
-                _anim.SetTrigger("PlayerNear");
-            }
+            
             // If player leaves range, change state to Patrol
+            /*
             if((_player.transform.position.x -_enemy_pos.position.x) > searchRange * 1.2f)
             {
-                state = States.patrol;
+                pursuit = false;
+                patrol = true;
                 return;
-            }
+            }*/
         }
-
-        //siempre va a poder colisionar porque no salta
-        colliderLimites.enabled = true;
-        _rb2d.velocity = Vector3.zero;
-        direction = Vector2.zero;
 
         //movimiento
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
+
+    private void Animation()
+    {
+        _anim.SetTrigger("PlayerNear");
+    }
+
+
+
 }

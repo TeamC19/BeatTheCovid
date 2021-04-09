@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    protected float speed = 1f;
+    protected float speed = 3f;
     protected SpriteRenderer _sprite;
     protected Animator _anim;
 
@@ -18,6 +18,9 @@ public class EnemyController : MonoBehaviour
     //variables para todos los enemigos
     protected float hp;
     protected float maxHp = 3;
+
+    //estados de enemigos
+    protected bool patrol, pursuit;
     
     // Start is called before the first frame update
     protected void Start()
