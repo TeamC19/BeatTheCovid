@@ -71,7 +71,7 @@ public class NoMaskController : EnemyController
             }
         }
         // Pursuit state
-        else if(true) 
+        else if(pursuit) 
         {
             // Pursuit movement
             if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
