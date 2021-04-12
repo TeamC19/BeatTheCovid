@@ -116,7 +116,8 @@ public class PlayerController: MonoBehaviour
             direction.y = 0; 
         }
         // Movement
-        else if (Input.GetKey(KeyCode.W))
+        else 
+        if (Input.GetKey(KeyCode.W))
         {
             direction.y = 1;
         }
@@ -124,7 +125,7 @@ public class PlayerController: MonoBehaviour
         {
             direction.y = -1;
         }
-        else if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             direction.x = 1;
             _sprite.flipX = false;
