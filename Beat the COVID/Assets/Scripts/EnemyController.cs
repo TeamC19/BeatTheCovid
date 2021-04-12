@@ -4,45 +4,55 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    protected float speed = 3f;
+    // For all enemies
     protected SpriteRenderer _sprite;
     protected Animator _anim;
-
-    // _rb2d hace referencia al rigidbody del personaje(en los pies)
+    protected BoxCollider2D colliderLimits;
+    protected Vector2 direction;
+    // _rb2d references the Character's Rigidbody(placed on feet)
     protected Rigidbody2D _rb2d;
     protected GameObject checkgroundGameObject;
-    protected BoxCollider2D colliderLimites;
-    protected float damage;
-    protected Vector2 direction;
-
-    //variables para todos los enemigos
-    protected float hp;
-    protected float maxHp = 3;
-
-    //estados de enemigos
+    // Health variables
+    [SerializeField] int maxHealth = 3;
+    protected int currentHealth;
+    // Enemy States
     protected bool patrol, pursuit;
-    
     // Start is called before the first frame update
-    protected void Start()
+    protected virtual void Start()
     {
-        hp = maxHp;
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
-        // comentado de momento por que da problemas (Null Reference)
+        colliderLimits = GetComponent<BoxCollider2D>();
+        // Enemy health
+        currentHealth = maxHealth;
+        // Commented for now because it generates problems (Null Reference)
         //checkgroundGameObject = transform.Find("ground check").gameObject;
-        colliderLimites = GetComponent<BoxCollider2D>();
-
     }
 
-    protected void Update() 
+    // Method that will be called by PlayerController - needs to be Public
+    public virtual void TakeDamage(int damage) 
     {
+        // Subtract health
+        currentHealth -= damage;
 
+        // Play hit animation
+
+        // Call death function
+        if(currentHealth <= 0)
+        {
+            Death();
+        }
     }
-    public void GetDamage(float dmg) 
+
+    // Method to kill enemy
+    protected virtual void Death()
     {
-        hp -= dmg;
-        if (hp <= 0)
-            hp = 0;
+        Debug.Log("Enemy died");
+        // OPTIONAL FOR NOW
+        // Play death animation
+
+        //Disable the enemy
+
     }
 }

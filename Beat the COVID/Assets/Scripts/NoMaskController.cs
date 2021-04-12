@@ -4,35 +4,42 @@ using UnityEngine;
 
 public class NoMaskController : EnemyController
 {   
+    Vector2 direction_patrol;
+    // This is to know the Player object to figure out it's position
+    GameObject _player;
+    // This is to know the enemy's current position
+    Transform _enemy_pos;
+    // This is to track the player's distance and enemy's searching area
     [SerializeField] float searchRange = 5;
     [SerializeField] float stoppingDistance = 1;
+    // This is to wait a certain amount of time to change directions while patroling
     [SerializeField] float waitTime;
     [SerializeField] float startWaitTime;
-    //[SerializeField] Transform punch;
-    //[SerializeField] float punchRadius = 0.5f;
-    Vector2 direction_patrol;
-    GameObject _player;
-    Transform _enemy_pos;
-    
-    //BoxCollider2D collider;
+    //Enemy's speed
+    [SerializeField]  float speed = 3f;
 
-    new void Start() 
-    {
-        patrol = true;
-        pursuit = false;
-        waitTime = 20;
-        startWaitTime = waitTime;
-        direction = Vector2.zero;
-        direction_patrol = Vector2.zero;
+    protected override void Start() 
+    {   
+        // Call EnemyController Start() method
+        base.Start();
+        // Start everything else from this Class
         _player = GameObject.Find("Player");
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
-        //collider = GetComponent<BoxCollider2D>();
         _enemy_pos = GetComponent<Transform>();
+        // Starting states
+        patrol = true;
+        pursuit = false;
+        // Starting time it waits for changing direction in Patrol
+        waitTime = 20;
+        startWaitTime = waitTime;
+        direction = Vector2.zero;
+        direction_patrol = Vector2.zero;
+        
     }
 
-    new void Update()
+    protected void Update()
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")
             || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
@@ -52,7 +59,7 @@ public class NoMaskController : EnemyController
                 direction.y = (int)Random.Range(-1, 1.1f);
             }
             if(direction_patrol.x < 0) {_sprite.flipX = true;}
-             //movimiento
+             // Movement
             _anim.SetFloat("speed", Mathf.Abs(direction_patrol.magnitude));
             transform.Translate(Vector2.one *direction_patrol  * Time.deltaTime * speed);
             // If player is detected, change state to Pursuit

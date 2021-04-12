@@ -20,6 +20,8 @@ public class PlayerController: MonoBehaviour
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [SerializeField] Transform attackPoint;
     [SerializeField] float attackRange = 0.5f;
+    [SerializeField] int punchDamage = 1;
+    [SerializeField] int kickDamage = 2;
     [SerializeField] LayerMask enemyLayer;
      
     // Jumping variables
@@ -138,9 +140,9 @@ public class PlayerController: MonoBehaviour
     }
 
     // Method to take damage and deplete health bar
-    void TakeDamage(int dmg)
+    void TakeDamage(int damage)
     {
-        currentHealth -= dmg;
+        currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 
@@ -160,7 +162,7 @@ public class PlayerController: MonoBehaviour
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("We hit this enemy " + enemy.name);
+            enemy.GetComponent<EnemyController>().TakeDamage(punchDamage);
         }
     }
 
@@ -176,7 +178,12 @@ public class PlayerController: MonoBehaviour
             direction.y = 0; 
         }
         // Detect enemies in range of attack
+         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,enemyLayer);
         // Damage enemies
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            enemy.GetComponent<EnemyController>().TakeDamage(kickDamage);
+        }
     }
 
     // Use Gizmos to know where things are to make adjustments
