@@ -403,7 +403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &329544251
 GameObject:
@@ -796,8 +796,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -760864285
-  m_SortingLayer: 2
+  m_SortingLayerID: -124348017
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 741161473352772498, guid: d3dced0db8eba354db4dde956c2c3e1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -936,8 +936,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -760864285
-  m_SortingLayer: 2
+  m_SortingLayerID: -2122325587
+  m_SortingLayer: 4
   m_SortingOrder: 171
   m_Sprite: {fileID: -5719833439412085699, guid: 1f7f6a9f032c42b44a56911fa2d5540a,
     type: 3}
@@ -965,7 +965,7 @@ Transform:
   - {fileID: 1776477158}
   - {fileID: 1044460850}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &474686896
 MonoBehaviour:
@@ -979,18 +979,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c05a243dc0a4f547a865f6c0ef2100c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   _rb2d: {fileID: 474686898}
   checkgroundGameObject: {fileID: 1776477157}
+  speed: 5
+  healthBar: {fileID: 1143896521}
+  maxHealth: 100
+  currentHealth: 0
+  damage: 0
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  jumpForce: 10
+  gravity: 9.8
   grounded: 0
   startJumpPos: 0
   jumped: 0
-  damage: 0
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 1143896521}
-  jumpForce: 10
-  gravity: 9.8
 --- !u!61 &474686897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1142,7 +1147,7 @@ RectTransform:
   m_Children:
   - {fileID: 1143896520}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1298,7 +1303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.13541, y: 0.5822699, z: -10}
+  m_LocalPosition: {x: 33.76342, y: 0.58237004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1521,7 +1526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &569330128
 MonoBehaviour:
@@ -1996,7 +2001,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8340611, y: 1}
+    m_SensorSize: {x: 2.159664, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2151,7 +2156,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1001379184
 GameObject:
@@ -2317,8 +2322,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -760864285
-  m_SortingLayer: 2
+  m_SortingLayerID: -124348017
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7161911691342900463, guid: dca21dbd0ae2bfd4fa09386aeed04f30,
     type: 3}
@@ -3230,7 +3235,7 @@ Transform:
   m_Children:
   - {fileID: 414963124}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1679850839
 Animator:
@@ -3382,8 +3387,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -760864285
-  m_SortingLayer: 2
+  m_SortingLayerID: -124348017
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -8912754901463219915, guid: 914c6335157c3164ebf6d94176a1eeac,
     type: 3}
@@ -3771,7 +3776,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080159893
 GameObject:

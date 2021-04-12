@@ -8,6 +8,8 @@ public class NoMaskController : EnemyController
     [SerializeField] float stoppingDistance = 1;
     [SerializeField] float waitTime;
     [SerializeField] float startWaitTime;
+    //[SerializeField] Transform punch;
+    //[SerializeField] float punchRadius = 0.5f;
     Vector2 direction_patrol;
     GameObject _player;
     Transform _enemy_pos;
@@ -33,7 +35,7 @@ public class NoMaskController : EnemyController
     new void Update()
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")
-                || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
         { 
             direction.x = 0; direction.y = 0; 
         }

@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class PlayerController: MonoBehaviour
 {
-    public float speed = 1f;
-    private SpriteRenderer _sprite;
-    private Animator _anim;
-
-    // _rb2d hace referencia al rigidbody del personaje(en los pies)
+    SpriteRenderer _sprite;
+    Animator _anim;
+    BoxCollider2D colliderLimites;
+    Vector2 direction;
+    // _rb2d references the Character's Rigidbody(placed on feet)
     public Rigidbody2D _rb2d;
     public GameObject checkgroundGameObject;
+    public float speed = 1f;
+    // Health variables
+    public HealthBar healthBar;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public int damage; 
+    // Attack variables(I put only one attack point - could be one for kick and one for punch)
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayer;
+     
+    // Jumping variables
+    public float jumpForce = 6.5f;
+    public float gravity = -9.8f * 10;
     public bool grounded;
     public float startJumpPos;
     public bool jumped;
-    BoxCollider2D colliderLimites;
-    public float damage;
-    Vector2 direction;
-
-    // health 
-    public int maxHealth = 100;
-    public int currentHealth;
-    public HealthBar healthBar;
-
-
-    public float jumpForce = 6.5f;
-    public float gravity = -9.8f * 10;
     
     // Start is called before the first frame update
     void Start()
@@ -40,13 +42,6 @@ public class PlayerController: MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    void TakeDamage(int dmg)
-    {
-        currentHealth -= dmg;
-        healthBar.SetHealth(currentHealth);
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -55,44 +50,44 @@ public class PlayerController: MonoBehaviour
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
 
-        //prueba recibir daño 
+        // Take damage trial
         if (Input.GetKeyDown(KeyCode.P))
         {
             TakeDamage(20);
         }
 
-        // puñetazo
+        // GoTo Punch() method for all Punch funtionality
         if (Input.GetKeyDown(KeyCode.J)) 
         {
-            _anim.SetTrigger("IsPunching");
+            Punch();
         }
 
-        // patada
+        // GoTo Kick() method for all Kick funtionality
         if (Input.GetKeyDown(KeyCode.K)) 
         {
-            _anim.SetTrigger("IsKicking");
+            Kick();
         }
 
-        // block
+        // Block animation
         if (Input.GetKey(KeyCode.L)) 
         {
             _anim.SetTrigger("IsBlocking");
         }
 
-        // lanzar
+        // Throw animation
         if (Input.GetKeyDown(KeyCode.I)) 
         {
             _anim.SetTrigger("IsThrowing");
         }
 
-        //en el aire
+        // Check if grounded to be able to jump
         if (!grounded) 
         {
             _rb2d.AddForce(Vector2.down * gravity);
             Vector3 position = checkgroundGameObject.transform.position;
             checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
         }
-        //saltar
+        // Jump animation and physics
         if (Input.GetKeyDown(KeyCode.Space) && grounded) 
         {
             _anim.SetBool("IsJumping", grounded);
@@ -101,7 +96,8 @@ public class PlayerController: MonoBehaviour
             jumped = true;
             grounded = false;
         }
-        //no se puede mover si está haciendo otra acción
+        // Player cannot move when performing other actions
+        /*
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
@@ -111,12 +107,13 @@ public class PlayerController: MonoBehaviour
             direction.x = 0; 
             direction.y = 0; 
         }
-        //no se puede mover en el eje Y si está saltando
+        */
+        // Player cannot move on Y axis while jumping
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
         {  
             direction.y = 0; 
         }
-        //movimiento
+        // Movement
         else if (Input.GetKey(KeyCode.W))
         {
             direction.y = 1;
@@ -135,9 +132,46 @@ public class PlayerController: MonoBehaviour
             direction.x = -1;
             _sprite.flipX = true;
         }
+        // Player movement animation
          _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
 
+    // Method to take damage and deplete health bar
+    void TakeDamage(int dmg)
+    {
+        currentHealth -= dmg;
+        healthBar.SetHealth(currentHealth);
+    }
+
+    // Method to punch enemy
+    void Punch()
+    {
+        // Play attack animation
+        _anim.SetTrigger("IsPunching");
+        // Player cannot move while attacking
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+        // Detect enemies in range of attack
+        // Damage enemies
+    }
+
+    // Method to kick enemy
+    void Kick()
+    {
+        // Play attack animation
+        _anim.SetTrigger("IsKicking");
+        // Player cannot move while attacking
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick ")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+        // Detect enemies in range of attack
+        // Damage enemies
+    }
     
 }
