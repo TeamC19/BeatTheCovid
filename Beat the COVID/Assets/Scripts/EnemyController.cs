@@ -52,7 +52,14 @@ public class EnemyController : MonoBehaviour
         // OPTIONAL FOR NOW
         // Play death animation
 
+        //Disable collider from dead enemy
+        //GetComponent<Collider2D>().enabled = false; 
+
         //Disable the enemy
+        //this.enabled = false;
+
+        // Destroy dead enemy
+        Destroy(this.gameObject);
 
     }
 }

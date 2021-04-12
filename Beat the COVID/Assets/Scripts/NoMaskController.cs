@@ -11,7 +11,7 @@ public class NoMaskController : EnemyController
     Transform _enemy_pos;
     // This is to track the player's distance and enemy's searching area
     [SerializeField] float searchRange = 5;
-    [SerializeField] float stoppingDistance = 1;
+    [SerializeField] float stoppingDistance = 3;
     // This is to wait a certain amount of time to change directions while patroling
     [SerializeField] float waitTime;
     [SerializeField] float startWaitTime;
@@ -77,27 +77,27 @@ public class NoMaskController : EnemyController
             if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
             {
                 _sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -1; } //farther than 6 units, closes in on player
-                else { _anim.SetTrigger("PlayerNear"); }
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } //farther than 6 units, closes in on player
+                else { _anim.SetTrigger("playerNear"); }
             }
             else //player is to the left of player
             {
                 _sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = 1; } //farther than 6 units, closes in on player
-                else { _anim.SetTrigger("PlayerNear"); }
+                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } //farther than 6 units, closes in on player
+                else { _anim.SetTrigger("playerNear"); }
             }
             
             //movement on the Y axis
             if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
             {
                 //_sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -1; } //farther than 2 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } //farther than 2 units, closes in on player
                 else { direction.y = 0; }
             }
             else //
             {
                 //_sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = 1; } //farther than 2 units, closes in on player
+                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } //farther than 2 units, closes in on player
                 else { direction.y = 0; }
             }
             
@@ -114,4 +114,26 @@ public class NoMaskController : EnemyController
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
+
+    // Method that will be called by PlayerController - needs to be Public
+    public override void TakeDamage(int damage) 
+    {
+        // Inherit from parent TakeDamage()
+        base.TakeDamage(damage);
+
+        // Play hit animation
+        _anim.SetTrigger("nomaskHurt");
+    }
+
+    // Method to kill enemy
+    protected override void Death()
+    {
+        // Play death animation
+        // _anim.SetBool("nomaskDead");
+
+        // Inherit from parent Death()
+        base.Death();
+
+    }
+
 }
