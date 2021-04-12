@@ -22,7 +22,7 @@ public class BosseController : MonoBehaviour
     {
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
-        _enemy = GameObject.Find("EnemyDenier");
+        _enemy = GameObject.Find("EnemyNomask");
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
