@@ -10,7 +10,7 @@ public class BosseController : MonoBehaviour
     private Animator _anim;
     public Rigidbody2D _rb2d;
     public GameObject checkgroundGameObject;
-    BoxCollider2D collider;
+    //BoxCollider2D collider;
     Vector2 direction;
     public GameObject _player;
     public GameObject _enemy;
@@ -22,11 +22,11 @@ public class BosseController : MonoBehaviour
     {
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
-        _enemy = GameObject.Find("EnemyDenier");
+        _enemy = GameObject.Find("EnemyNomask");
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        //collider = GetComponent<BoxCollider2D>();
         _boss_pos = GetComponent<Transform>();
 
         InvokeRepeating("SummonEnemy", 7.0f, 7.0f);
