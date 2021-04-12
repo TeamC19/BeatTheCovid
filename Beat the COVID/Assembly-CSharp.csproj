@@ -69,7 +69,9 @@
     <Compile Include="Assets\Scripts\Denier.cs" />
     <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\GameEngine.cs" />
+    <Compile Include="Assets\Scripts\GelHidroalcoholico.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\InjectionController.cs" />
     <Compile Include="Assets\Scripts\LockYaxisCinemachine.cs" />
     <Compile Include="Assets\Scripts\NoMaskController.cs" />
     <Compile Include="Assets\Scripts\OrderInLayer.cs" />
