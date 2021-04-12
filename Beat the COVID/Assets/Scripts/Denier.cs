@@ -14,16 +14,11 @@ public class Denier : EnemyController
     Transform player;
     Vector3 target;
 
-    void Start()
+    protected override void Start()
     {
         //player = GameObject.FindGameObjectWithTag("Player").transform;
         base.Start();
        
-    }
-
-    void Update()
-    {
-        base.Update();
     }
 
     void SetTarget() {

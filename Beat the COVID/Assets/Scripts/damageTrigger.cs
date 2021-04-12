@@ -20,7 +20,7 @@ public class damageTrigger : MonoBehaviour
         EnemyController enemy = coll.GetComponent<EnemyController>();
         if (enemy != null) 
         {
-            enemy.GetDamage(GameEngine.instance.player.damage);
+            enemy.TakeDamage(GameEngine.instance.player.damage);
         }
     }
 }
