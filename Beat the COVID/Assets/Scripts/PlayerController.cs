@@ -6,27 +6,27 @@ public class PlayerController: MonoBehaviour
 {
     SpriteRenderer _sprite;
     Animator _anim;
-    BoxCollider2D colliderLimites;
+    BoxCollider2D colliderLimits;
     Vector2 direction;
     // _rb2d references the Character's Rigidbody(placed on feet)
-    public Rigidbody2D _rb2d;
-    public GameObject checkgroundGameObject;
-    public float speed = 1f;
+    Rigidbody2D _rb2d;
+    GameObject checkgroundGameObject;
+    [SerializeField] float speed = 1f;
     // Health variables
-    public HealthBar healthBar;
-    public int maxHealth = 100;
-    public int currentHealth;
-    public int damage; 
+    [SerializeField] HealthBar healthBar;
+    [SerializeField] int maxHealth = 100;
+    [SerializeField] int currentHealth;
+    public int damage; // Damage is public because it is used by DamageTrigger Script
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayer;
+    [SerializeField] Transform attackPoint;
+    [SerializeField] float attackRange = 0.5f;
+    [SerializeField] LayerMask enemyLayer;
      
     // Jumping variables
-    public float jumpForce = 6.5f;
-    public float gravity = -9.8f * 10;
-    public bool grounded;
-    public float startJumpPos;
+    [SerializeField] float jumpForce = 6.5f;
+    [SerializeField] float gravity = -9.8f * 10;
+    [SerializeField] float startJumpPos;
+    public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
     public bool jumped;
     
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class PlayerController: MonoBehaviour
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
         checkgroundGameObject = transform.Find("ground check").gameObject;
-        colliderLimites = GetComponent<BoxCollider2D>();
+        colliderLimits = GetComponent<BoxCollider2D>();
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
@@ -45,7 +45,7 @@ public class PlayerController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        colliderLimites.enabled = grounded;
+        colliderLimits.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
@@ -149,8 +149,28 @@ public class PlayerController: MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsPunching");
-        // Player cannot move while attacking
+        // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+        // Detect enemies in range of attack
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,enemyLayer);
+        // Damage enemies
+        foreach(Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("We hit this enemy " + enemy.name);
+        }
+    }
+
+    // Method to kick enemy
+    void Kick()
+    {
+        // Play attack animation
+        _anim.SetTrigger("IsKicking");
+        // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick ")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
@@ -159,19 +179,15 @@ public class PlayerController: MonoBehaviour
         // Damage enemies
     }
 
-    // Method to kick enemy
-    void Kick()
-    {
-        // Play attack animation
-        _anim.SetTrigger("IsKicking");
-        // Player cannot move while attacking
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick ")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
-        }
-        // Detect enemies in range of attack
-        // Damage enemies
+    // Use Gizmos to know where things are to make adjustments
+    void onDrawGizmosSelected()
+    {   
+        // If no Gizmo assigned, exit
+        if(attackPoint == null) return;
+        // Player attack Gizmo
+        Gizmos.color = Color.white;
+        Vector3 atkPoint = attackPoint.position;
+        Gizmos.DrawWireSphere(atkPoint, attackRange);
     }
     
 }
