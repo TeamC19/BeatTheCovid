@@ -41,7 +41,7 @@ public class PlayerController: MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         checkgroundGameObject = transform.Find("ground check").gameObject;
         colliderLimits = GetComponent<BoxCollider2D>();
-
+        // Player Health
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
@@ -54,12 +54,7 @@ public class PlayerController: MonoBehaviour
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
 
-        // Take damage trial
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TakeDamage(20);
-        }
-
+        // Make attacks limited to 2 per second aprox.
         if(Time.time >= nextAttackTime)
         {
             // GoTo Punch() method for all Punch funtionality
@@ -80,13 +75,13 @@ public class PlayerController: MonoBehaviour
         // Block animation
         if (Input.GetKey(KeyCode.L)) 
         {
-            _anim.SetTrigger("IsBlocking");
+            Block();
         }
 
         // Throw animation
         if (Input.GetKeyDown(KeyCode.I)) 
         {
-            _anim.SetTrigger("IsThrowing");
+            Throw();
         }
 
         // Check if grounded to be able to jump
@@ -105,21 +100,13 @@ public class PlayerController: MonoBehaviour
             jumped = true;
             grounded = false;
         }
-        // Player cannot move when performing other actions
-        
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
-           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")
-           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
-        }
         
         // Player cannot move on Y axis while jumping
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
         {  
             direction.y = 0; 
         }
+
         // Movement
         else 
         if (Input.GetKey(KeyCode.W))
@@ -140,16 +127,10 @@ public class PlayerController: MonoBehaviour
             direction.x = -1;
             _sprite.flipX = true;
         }
+
         // Player movement animation
          _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
-    }
-
-    // Method to take damage and deplete health bar
-    void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
     }
 
     // Method to punch enemy
@@ -177,19 +158,87 @@ public class PlayerController: MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsKicking");
+
         // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick ")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
         }
+
         // Detect enemies in range of attack
          Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,enemyLayer);
+        
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<EnemyController>().TakeDamage(kickDamage);
         }
+    }
+
+    void Throw()
+    {
+        // Play throw animation
+        _anim.SetTrigger("IsThrowing");
+
+        // Player cannot move while throwing (NOT WORKING AS INTENDED)-----------
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+    }
+
+    void Block()
+    {
+        // Play block animation
+        _anim.SetTrigger("IsBlocking");
+
+        // Player cannot move while blocking (NOT WORKING AS INTENDED)-----------
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+
+        // Not take damage if blocking
+
+    }
+
+    // Method for player taking damage (animations and health depletion)
+    public void PlayerTakeDamage(int damage) 
+    {
+        // Subtract health
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+        // Play hit animation
+        _anim.SetTrigger("IsHit");
+
+        // Player cannot move while getting damaged (NOT WORKING AS INTENDED)-----------
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+
+        // Call death function
+        if(currentHealth <= 0)
+        {
+            PlayerDeath();
+        }
+    }
+
+    // Method to kill enemy
+    void PlayerDeath()
+    {
+        Debug.Log("Player died");
+        // OPTIONAL FOR NOW
+        // Play death animation 
+
+        // Destroy dead enemy
+        Destroy(this.gameObject);
+
     }
 
     // Use Gizmos to know where things are to make adjustments

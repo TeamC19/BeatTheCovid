@@ -36,7 +36,7 @@ public class EnemyController : MonoBehaviour
         // Subtract health
         currentHealth -= damage;
 
-        // Play hit animation
+        // Play hit animation in Child
 
         // Call death function
         if(currentHealth <= 0)
@@ -50,13 +50,7 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("Enemy died");
         // OPTIONAL FOR NOW
-        // Play death animation
-
-        //Disable collider from dead enemy
-        //GetComponent<Collider2D>().enabled = false; 
-
-        //Disable the enemy
-        //this.enabled = false;
+        // Play death animation in Child
 
         // Destroy dead enemy
         Destroy(this.gameObject);
