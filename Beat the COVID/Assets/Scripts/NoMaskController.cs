@@ -17,6 +17,13 @@ public class NoMaskController : EnemyController
     [SerializeField] float startWaitTime;
     //Enemy's speed
     [SerializeField]  float speed = 3f;
+    // Attack variables(I put only one attack point - could be one for kick and one for punch)
+    [SerializeField] Transform attackPoint;
+    [SerializeField] LayerMask playerLayer;
+    [SerializeField] float attackRange = 0.5f;
+    [SerializeField] int attackDamage = 1;
+    [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks
+    float nextAttackTime = 0f;
 
     protected override void Start() 
     {   
@@ -128,20 +135,22 @@ public class NoMaskController : EnemyController
     }
 
     // NoMask Attack player
-    protected override void Attack()
+    void Attack()
     {
         // Play enemy attack animation
          _anim.SetTrigger("playerNear");
 
         // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
         }
 
-        // Call Parent method to make damage
-        base.Attack();
+        // Detect player in range of attack
+        Collider2D player = Physics2D.OverlapCircle(attackPoint.position, attackRange, playerLayer);
+        // Damage player
+        player.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
     }
 
     // Method that will be called by PlayerController - needs to be Public
@@ -150,7 +159,7 @@ public class NoMaskController : EnemyController
         // Inherit from parent TakeDamage()
         base.TakeDamage(damage);
 
-        // Play hit animation
+        // Play hit animation (NOT DOING ANIMATION ANYMORE)
         _anim.SetTrigger("nomaskHurt");
     }
 

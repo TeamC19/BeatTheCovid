@@ -144,7 +144,7 @@ public class PlayerController: MonoBehaviour
             direction.y = 0; 
         }
         // Detect enemies in range of attack
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,enemyLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
@@ -209,7 +209,8 @@ public class PlayerController: MonoBehaviour
     {
         // Subtract health
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        Debug.Log("Player health: " + currentHealth);
+        //healthBar.SetHealth(currentHealth);
 
         // Play hit animation
         _anim.SetTrigger("IsHit");
