@@ -106,17 +106,15 @@ public class PlayerController: MonoBehaviour
             grounded = false;
         }
         // Player cannot move when performing other actions
-        /*
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")
-           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")
-           || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
+        
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_throw")
            || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
         }
-        */
+        
         // Player cannot move on Y axis while jumping
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
         {  
