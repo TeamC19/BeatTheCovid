@@ -192,13 +192,13 @@ AnimatorController:
   m_Name: Enemy_NoMask
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: EnemyHurt
+  - m_Name: enemyHurt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: PlayerNear
+  - m_Name: playerNear
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -232,7 +232,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: PlayerNear
+    m_ConditionEvent: playerNear
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4584966252149980156}
@@ -257,7 +257,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: EnemyHurt
+    m_ConditionEvent: enemyHurt
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5379203005523206288}
