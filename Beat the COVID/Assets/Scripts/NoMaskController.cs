@@ -51,68 +51,97 @@ public class NoMaskController : EnemyController
         // Patrol state
         if(patrol) 
         {
-            waitTime--;
-            // Patrol movement
-            if(waitTime == 0) {
-                waitTime = startWaitTime;
-                direction.x = (int)Random.Range(-2, 2.1f);
-                direction.y = (int)Random.Range(-1, 1.1f);
-            }
-            if(direction_patrol.x < 0) {_sprite.flipX = true;}
-             // Movement
-            _anim.SetFloat("speed", Mathf.Abs(direction_patrol.magnitude));
-            transform.Translate(Vector2.one *direction_patrol  * Time.deltaTime * speed);
-            // If player is detected, change state to Pursuit
-            if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
-            {
-                patrol = false;
-                pursuit = true;
-                return;
-            }
+            Patrol();
         }
         // Pursuit state
         else if(pursuit) 
         {
-            // Pursuit movement
-            if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
-            {
-                _sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } //farther than 6 units, closes in on player
-                else { _anim.SetTrigger("playerNear"); }
-            }
-            else //player is to the left of player
-            {
-                _sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } //farther than 6 units, closes in on player
-                else { _anim.SetTrigger("playerNear"); }
-            }
-            
-            //movement on the Y axis
-            if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
-            {
-                //_sprite.flipX = true;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } //farther than 2 units, closes in on player
-                else { direction.y = 0; }
-            }
-            else //
-            {
-                //_sprite.flipX = false;
-                if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } //farther than 2 units, closes in on player
-                else { direction.y = 0; }
-            }
-            
-            // If player leaves range, change state to Patrol
-            if((_player.transform.position.x -_enemy_pos.position.x) > searchRange * 1.2f)
-            {
-                pursuit = false;
-                patrol = true;
-                return;
-            }
+            Pursuit();
         }
 
-        //movimiento
+        // Movement
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
+    }
+
+    // Enemy patrol movement
+    protected virtual void Patrol()
+    {
+        waitTime--;
+        // Patrol movement
+        if(waitTime == 0) {
+            waitTime = startWaitTime;
+            direction.x = (int)Random.Range(-2, 2.1f);
+            direction.y = (int)Random.Range(-1, 1.1f);
+        }
+        if(direction_patrol.x < 0) {_sprite.flipX = true;}
+        // Movement
+        _anim.SetFloat("speed", Mathf.Abs(direction_patrol.magnitude));
+        transform.Translate(Vector2.one *direction_patrol  * Time.deltaTime * speed);
+        // If player is detected, change state to Pursuit
+        if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
+        {
+            patrol = false;
+            pursuit = true;
+            return;
+        }
+    }
+
+    // Enemy pursuit movement
+    protected virtual void Pursuit()
+    {
+        // Pursuit movement
+        if ((_player.transform.position.x - _enemy_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
+        {
+            _sprite.flipX = true;
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } //farther than 6 units, closes in on player
+            else { Attack(); }
+        }
+        else //player is to the left of player
+        {
+            _sprite.flipX = false;
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } //farther than 6 units, closes in on player
+            else { Attack(); }
+        }
+
+        //movement on the Y axis
+        if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
+        {
+            //_sprite.flipX = true;
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } //farther than 2 units, closes in on player
+            else { direction.y = 0; }
+        }
+        else //
+        {
+            //_sprite.flipX = false;
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } //farther than 2 units, closes in on player
+            else { direction.y = 0; }
+        }
+
+        // If player leaves range, change state to Patrol
+        if ((_player.transform.position.x - _enemy_pos.position.x) > searchRange * 1.2f)
+        {
+            pursuit = false;
+            patrol = true;
+            return;
+        }
+    }
+
+    // NoMask Attack player
+    protected override void Attack()
+    {
+        // Play enemy attack animation
+         _anim.SetTrigger("playerNear");
+
+        // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+
+        // Call Parent method to make damage
+        base.Attack();
     }
 
     // Method that will be called by PlayerController - needs to be Public

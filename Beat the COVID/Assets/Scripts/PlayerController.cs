@@ -16,7 +16,6 @@ public class PlayerController: MonoBehaviour
     [SerializeField] HealthBar healthBar;
     [SerializeField] int maxHealth = 100;
     [SerializeField] int currentHealth;
-    public int damage; // Damage is public because it is used by DamageTrigger Script
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask enemyLayer;
@@ -72,13 +71,13 @@ public class PlayerController: MonoBehaviour
             }
         }
 
-        // Block animation
+        // GoTo Block() method for all Block funtionality
         if (Input.GetKey(KeyCode.L)) 
         {
             Block();
         }
 
-        // Throw animation
+        // GoTo Throw() method for all Throw funtionality
         if (Input.GetKeyDown(KeyCode.I)) 
         {
             Throw();
