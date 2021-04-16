@@ -10,11 +10,14 @@ public class BosseController : MonoBehaviour
     private Animator _anim;
     public Rigidbody2D _rb2d;
     public GameObject checkgroundGameObject;
-    BoxCollider2D collider;
+    //BoxCollider2D collider;
     Vector2 direction;
     public GameObject _player;
-    public GameObject _enemy;
+    public GameObject _enemy; //remember to set it in the gameobject
     public Transform _boss_pos;
+
+    public GameObject _heart;//remember to set it in the gameobject
+    public GameObject _note;//remember to set it in the gameobject
 
     private int _hp;
     // Start is called before the first frame update
@@ -22,14 +25,15 @@ public class BosseController : MonoBehaviour
     {
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
-        _enemy = GameObject.Find("EnemyDenier");
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        //collider = GetComponent<BoxCollider2D>();
         _boss_pos = GetComponent<Transform>();
 
         InvokeRepeating("SummonEnemy", 7.0f, 7.0f);
+        InvokeRepeating("SummonHeart", 10.0f, 10.0f);
+        InvokeRepeating("SummonNote", 4.0f, 4.0f);
     }
 
     // Update is called once per frame
@@ -81,8 +85,17 @@ public class BosseController : MonoBehaviour
         _anim.SetTrigger("summon");
         Invoke("Summoned", 0.5f);
     }
-    
+    void SummonHeart()
+    {
+        _anim.SetTrigger("summon");
+        Invoke("SummonedHeart", 0.5f);
+    }
+    void SummonNote()
+    {
+        _anim.SetTrigger("summon");
+        Invoke("SummonedNote", 0.5f);
+    }
     void Summoned() { Instantiate(_enemy, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }//Summons Enemy with delay, according to animation
-
-    
+    void SummonedHeart() { Instantiate(_heart, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
+    void SummonedNote() { Instantiate(_note, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
 }

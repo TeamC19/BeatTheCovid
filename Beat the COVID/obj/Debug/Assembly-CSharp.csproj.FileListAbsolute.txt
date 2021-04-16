@@ -1,2 +1,0 @@
-C:\Users\Nieves\Documents\GitHub\BeatTheCovid\Beat the COVID\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-C:\Users\Nieves\Documents\GitHub\BeatTheCovid\Beat the COVID\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -46,7 +46,7 @@ public class GameEngine : MonoBehaviour
 
 
         // Modo combate, por ahora se activa con la K, pero lo suyo es que se active en momentos concretos
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && false)
         {
             if (!fightMode)
             {
