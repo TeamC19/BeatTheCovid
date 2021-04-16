@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 7456478471440684761}
   - component: {fileID: 7456478471440684762}
   - component: {fileID: 2073808073}
+  - component: {fileID: 2073808077}
   m_Layer: 10
   m_Name: Vaccine
   m_TagString: Untagged
@@ -132,6 +133,10 @@ MonoBehaviour:
   y: 0
   LaunchOffset: {x: 0.89, y: 0.51, z: 0}
   despawnTime: 20
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  attackRange: 2.55
   smoke: {fileID: 21300000, guid: 4e52d8aa58b844e45ab926cf68ca8d6c, type: 3}
 --- !u!61 &7456478471440684762
 BoxCollider2D:
@@ -180,3 +185,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &2073808077
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456478471440684760}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.16951394, y: -0.037032604}
+  serializedVersion: 2
+  m_Radius: 2.5581434
