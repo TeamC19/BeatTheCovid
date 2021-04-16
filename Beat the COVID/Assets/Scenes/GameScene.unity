@@ -1045,6 +1045,9 @@ MonoBehaviour:
   startJumpPos: 0
   grounded: 0
   jumped: 0
+  injectionNumber: 5
+  injectionPrefab: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
+    type: 3}
 --- !u!61 &474686897
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1355,7 +1358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.113594, y: 0.5822699, z: -10}
+  m_LocalPosition: {x: 29.219044, y: 0.58208, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2147,7 +2150,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8296943, y: 1}
+    m_SensorSize: {x: 1.2507837, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4086,7 +4089,7 @@ GameObject:
   m_Layer: 0
   m_Name: attackPoint
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4674,15 +4677,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7456478470135708764, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
         type: 3}
       propertyPath: m_Name
       value: Vaccine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7456478471440684762, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7456478471440684763, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
         type: 3}

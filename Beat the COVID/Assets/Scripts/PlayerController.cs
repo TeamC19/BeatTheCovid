@@ -9,14 +9,17 @@ public class PlayerController: MonoBehaviour
     BoxCollider2D colliderLimits;
     Vector2 direction;
     // _rb2d references the Character's Rigidbody(placed on feet)
+    [Header("Rigidbody references")]
     Rigidbody2D _rb2d;
     GameObject checkgroundGameObject;
     [SerializeField] float speed = 1f;
     // Health variables
+    [Header("Health variables")]
     [SerializeField] HealthBar healthBar;
     [SerializeField] int maxHealth = 100;
     [SerializeField] int currentHealth;
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
+    [Header("Attack variables")]
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask enemyLayer;
     [SerializeField] float attackRange = 0.5f;
@@ -24,13 +27,19 @@ public class PlayerController: MonoBehaviour
     [SerializeField] int kickDamage = 2;
     [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks
     float nextAttackTime = 0f;
-     
+
     // Jumping variables
+    [Header("Jumping variables")]
     [SerializeField] float jumpForce = 7.5f;
     [SerializeField] float gravity = -9.8f * 10;
     [SerializeField] float startJumpPos;
     public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
     public bool jumped;
+
+    // Inventory variables
+    [Header("Inventory variables")]
+    [SerializeField] int injectionNumber;
+    [SerializeField] GameObject injectionPrefab;
     
     // Start is called before the first frame update
     void Start()
@@ -120,13 +129,14 @@ public class PlayerController: MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             direction.x = 1;
-            _sprite.flipX = false;
+            transform.localScale = Vector3.right + Vector3.up + Vector3.forward;
         }
         else if (Input.GetKey(KeyCode.A))
         {
             direction.x = -1;
-            _sprite.flipX = true;
+            transform.localScale = Vector3.left + Vector3.up + Vector3.forward;
         }
+        
 
         // Player movement animation
          _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
@@ -187,6 +197,14 @@ public class PlayerController: MonoBehaviour
             direction.x = 0; 
             direction.y = 0; 
         }
+
+        if (injectionNumber > 0)
+        {
+            GameObject vaccine = Instantiate(injectionPrefab, attackPoint.position, transform.rotation);
+            vaccine.GetComponent<InjectionController>().thrown = true;
+            vaccine.GetComponent<Rigidbody2D>().gravityScale = 1;
+        }
+
     }
 
     void Block()
