@@ -26,7 +26,7 @@ public class PlayerController: MonoBehaviour
     float nextAttackTime = 0f;
      
     // Jumping variables
-    [SerializeField] float jumpForce = 6.5f;
+    [SerializeField] float jumpForce = 7.5f;
     [SerializeField] float gravity = -9.8f * 10;
     [SerializeField] float startJumpPos;
     public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
@@ -48,13 +48,14 @@ public class PlayerController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         colliderLimits.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
-
+        _anim.SetBool("IsJumping", !grounded);
         // Make attacks limited to 2 per second aprox.
-        if(Time.time >= nextAttackTime)
+        if (Time.time >= nextAttackTime)
         {
             // GoTo Punch() method for all Punch funtionality
             if (Input.GetKeyDown(KeyCode.J)) 
