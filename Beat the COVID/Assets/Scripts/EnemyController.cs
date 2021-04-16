@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    // For all enemies
+    // Common
     protected SpriteRenderer _sprite;
     protected Animator _anim;
     protected BoxCollider2D colliderLimits;
@@ -12,11 +12,22 @@ public class EnemyController : MonoBehaviour
     // _rb2d references the Character's Rigidbody(placed on feet)
     protected Rigidbody2D _rb2d;
     protected GameObject checkgroundGameObject;
+    // For all enemies
+    // This is to know the Player object to figure out it's position
+    protected GameObject _player;
+    // This is to know the enemy's current position
+    protected Transform _enemy_pos;
+    // This is to track the player's distance and enemy's searching area
+    protected float searchRange = 5;
+    protected float stoppingDistance = 3;
+    //Enemy's speed
+    protected  float speed = 3f;
+    
     // Health variables
-    [SerializeField] int maxHealth = 3;
+    protected int maxHealth = 3;
     protected int currentHealth;
     // Enemy States
-    protected bool patrol, pursuit;
+    protected bool wait, pursuit;
     
 
     // Start is called before the first frame update
@@ -28,8 +39,101 @@ public class EnemyController : MonoBehaviour
         colliderLimits = GetComponent<BoxCollider2D>();
         // Enemy health
         currentHealth = maxHealth;
+        // Starting states
+        wait = true;
+        pursuit = false;
+        //
+        _player = GameObject.Find("Player");
+        _enemy_pos = GetComponent<Transform>();
         // Commented for now because it generates problems (Null Reference)
         //checkgroundGameObject = transform.Find("ground check").gameObject;
+    }
+
+    protected virtual void Update()
+    {
+        // Behavior depending on State
+        // Wait state
+        if(wait) 
+        {
+            EnemyWait();
+        }
+        // Pursuit state
+        else if(pursuit) 
+        {
+            EnemyPursuit();
+        }
+        // Movement
+        _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
+    }
+
+    // Enemy Wait 
+    protected virtual void EnemyWait()
+    {
+        // Play wait animation in Child
+        // If player is detected, change state to Pursuit
+        if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
+        {
+            wait = false;
+            pursuit = true;
+            return;
+        }
+    }
+
+    protected virtual void EnemyPursuit()
+    {
+        // Pursuit movement
+        // X axis
+        // Enemy is to the right of (or same position as) the player
+        if ((_player.transform.position.x - _enemy_pos.position.x) <= 0)
+        {
+            _sprite.flipX = true;
+            // Go towards player
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } 
+            // If near enough, attack
+            // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
+            else { Attack(); direction.x = 0; direction.y = 0; }
+        }
+        // Enemy is to the left of player
+        else 
+        {
+            _sprite.flipX = false;
+            // Go towards player
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } //farther than 6 units, closes in on player
+            // If near enough, attack
+            // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
+            else { Attack(); direction.x = 0; direction.y = 0; }
+        }
+
+        // Y axis
+        // Enemy is above (or same position as) the player
+        if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
+        {
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } //farther than 2 units, closes in on player
+            else { direction.y = 0; }
+        }
+        // Enemy is below the player
+        else 
+        {
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } //farther than 2 units, closes in on player
+            else { direction.y = 0; }
+        }
+
+        // If player leaves range, change state to Wait
+        if ((_player.transform.position.x - _enemy_pos.position.x) > searchRange * 1.2f)
+        {
+            pursuit = false;
+            wait = true;
+            return;
+        }
+    }
+
+    protected virtual void Attack()
+    {
+        // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
+        direction.x = 0; 
+        direction.y = 0;
+        // Play attack animation in Child
     }
 
     // Method that will be called by PlayerController - needs to be Public
