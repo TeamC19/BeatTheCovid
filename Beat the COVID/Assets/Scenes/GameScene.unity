@@ -716,7 +716,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -124348017
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 741161473352772498, guid: d3dced0db8eba354db4dde956c2c3e1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -757,7 +757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9a4b13904262b469d596ec4dc4b6c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
 --- !u!50 &422180735
 Rigidbody2D:
   serializedVersion: 4
@@ -1358,7 +1357,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.219044, y: 0.58208, z: -10}
+  m_LocalPosition: {x: 29.077982, y: 0.58207, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1556,7 +1555,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -760864285
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9dcb336d8da5fb14fa8cac05e8490cd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2150,7 +2149,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2507837, y: 1}
+    m_SensorSize: {x: 1.2225705, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2428,7 +2427,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -124348017
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7161911691342900463, guid: dca21dbd0ae2bfd4fa09386aeed04f30,
     type: 3}
@@ -3849,7 +3848,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -124348017
-  m_SortingLayer: 3
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -8912754901463219915, guid: 914c6335157c3164ebf6d94176a1eeac,
     type: 3}
@@ -3890,12 +3889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  searchRange: 3
-  stoppingDistance: 1.5
-  waitTime: 0
-  startWaitTime: 0
-  speed: 2
   attackPoint: {fileID: 2100369860}
   playerLayer:
     serializedVersion: 2
@@ -4677,15 +4670,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7456478470135708764, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
         type: 3}
       propertyPath: m_Name
       value: Vaccine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456478471440684761, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
+        type: 3}
+      propertyPath: LaunchOffset.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456478471440684761, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
+        type: 3}
+      propertyPath: LaunchOffset.y
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7456478471440684763, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
         type: 3}

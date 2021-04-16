@@ -203,6 +203,7 @@ public class PlayerController: MonoBehaviour
             GameObject vaccine = Instantiate(injectionPrefab, attackPoint.position, transform.rotation);
             vaccine.GetComponent<InjectionController>().thrown = true;
             vaccine.GetComponent<Rigidbody2D>().gravityScale = 1;
+            vaccine.transform.localScale = transform.localScale;
         }
 
     }
