@@ -129,8 +129,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   thrown: 0
-  LaunchOffset: {x: 1, y: 1, z: 0}
+  y: 0
+  LaunchOffset: {x: 0.89, y: 0.51, z: 0}
   despawnTime: 20
+  smoke: {fileID: 21300000, guid: 4e52d8aa58b844e45ab926cf68ca8d6c, type: 3}
 --- !u!61 &7456478471440684762
 BoxCollider2D:
   m_ObjectHideFlags: 0

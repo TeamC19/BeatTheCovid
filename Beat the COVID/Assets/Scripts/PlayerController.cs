@@ -54,6 +54,7 @@ public class PlayerController: MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
@@ -201,7 +202,9 @@ public class PlayerController: MonoBehaviour
         if (injectionNumber > 0)
         {
             GameObject vaccine = Instantiate(injectionPrefab, attackPoint.position, transform.rotation);
-            vaccine.GetComponent<InjectionController>().thrown = true;
+            InjectionController injectionController = vaccine.GetComponent<InjectionController>();
+            injectionController.thrown = true;
+            injectionController.y = transform.position.y -0.91f;
             vaccine.GetComponent<Rigidbody2D>().gravityScale = 1;
             vaccine.transform.localScale = transform.localScale;
         }
