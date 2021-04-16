@@ -54,7 +54,7 @@ public class NoMaskController : EnemyController
         // Detect player in range of attack
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
         // Damage player
-        _player.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+        _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
     }
 
     // Method that will be called by PlayerController - needs to be Public
