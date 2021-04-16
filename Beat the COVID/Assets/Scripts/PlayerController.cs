@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController: MonoBehaviour
 {
+
     SpriteRenderer _sprite;
     Animator _anim;
     BoxCollider2D colliderLimits;
@@ -58,7 +59,10 @@ public class PlayerController: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (PauseMenu.GameIsPaused) 
+        {
+            return;
+        }
         colliderLimits.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
