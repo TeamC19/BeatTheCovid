@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5948397692262840644}
   - component: {fileID: 7564012331711883078}
   - component: {fileID: 840104760643968751}
+  - component: {fileID: -2426558594706471250}
   m_Layer: 9
   m_Name: HealingSmall
-  m_TagString: Untagged
+  m_TagString: CanBePickedUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,3 +109,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.445, y: 0.685}
   m_EdgeRadius: 0
+--- !u!114 &-2426558594706471250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374197307479562053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c7cd8af57f6d254bb92fa105e407975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: fb610e7c7a1efdd4cb21828a952ee603, type: 2}

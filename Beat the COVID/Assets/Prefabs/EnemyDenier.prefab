@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 2846897383541476224}
   m_Layer: 10
   m_Name: EnemyDenier
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

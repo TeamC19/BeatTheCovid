@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1779703069689036915}
   m_Layer: 9
   m_Name: HealingBig
-  m_TagString: Untagged
+  m_TagString: CanBePickedUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,4 +121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7cd8af57f6d254bb92fa105e407975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: dfb29e070f20c8c41889f2cdc030638e, type: 2}

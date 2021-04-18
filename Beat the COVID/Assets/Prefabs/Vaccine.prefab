@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7456478471440684762}
   - component: {fileID: 2073808073}
   - component: {fileID: 1979610327801943003}
+  - component: {fileID: 845382213112017555}
   m_Layer: 9
   m_Name: Vaccine
-  m_TagString: Untagged
+  m_TagString: CanBePickedUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &845382213112017555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456478471440684760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c7cd8af57f6d254bb92fa105e407975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 6a74cbd4aef937944b5ae0f2c1b36a31, type: 2}
