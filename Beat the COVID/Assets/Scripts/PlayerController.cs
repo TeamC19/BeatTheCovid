@@ -256,8 +256,13 @@ public class PlayerController: MonoBehaviour
         }
     }
 
-    // Method to kill enemy
-    void PlayerDeath()
+    public void Heal (int healpoints)
+    {
+        currentHealth += healpoints;
+    }
+
+        // Method to kill enemy
+        void PlayerDeath()
     {
         Debug.Log("Player died");
         // OPTIONAL FOR NOW
