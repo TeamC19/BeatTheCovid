@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9eede35a17e4941851287c50601f68, type: 3}
   m_Name: MediumHeal
   m_EditorClassIdentifier: 
-  objectName: 
-  sprite: {fileID: 0}
-  quantity: 0
+  objectName: MediumHeal
+  sprite: {fileID: 21300000, guid: 8c50137336498d84d9546aef1e5a514f, type: 3}
+  quantity: 1
   stackable: 0
-  itemType: 0
+  itemType: 1

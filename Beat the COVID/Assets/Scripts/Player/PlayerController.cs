@@ -278,8 +278,39 @@ public class PlayerController: MonoBehaviour
     {
         if(other.CompareTag("CanBePickedUp"))
         {
-            other.gameObject.SetActive(false);
+            // What type of item is this
+            Item item = other.gameObject.GetComponent<Consumable>().item;
+            if(item != null) 
+            {
+                // Show what type of item this is
+                Debug.Log("Item: " + item.objectName);
+                switch(item.itemType) 
+                {
+                    case Item.ItemType.BIG_HEAL:
+                        AdjustHitPoints(item.quantity);
+                        break;
+                    case Item.ItemType.MEDIUM_HEAL:
+                        AdjustHitPoints(item.quantity);
+                        break;
+                    case Item.ItemType.SMALL_HEAL:
+                        AdjustHitPoints(item.quantity);
+                        break;
+                    case Item.ItemType.INJECTION:
+                        break;
+                }
+                
+                // Deactivate item from scene (item consumed)
+                other.gameObject.SetActive(false);
+            }
+            
         }
+    }
+
+    // Healing player
+    public void AdjustHitPoints(int amount)
+    {
+        currentHealth += amount;
+        Debug.Log("Health: " + currentHealth);
     }
 
     // Use Gizmos to know where things are to make adjustments
