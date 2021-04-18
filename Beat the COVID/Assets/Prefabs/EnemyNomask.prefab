@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8950945464445806223}
   - component: {fileID: 8950945464445806224}
   - component: {fileID: 8950945464445806227}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: EnemyNomask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -124348017
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8912754901463219915, guid: 914c6335157c3164ebf6d94176a1eeac,
     type: 3}
@@ -117,12 +117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  searchRange: 3
-  stoppingDistance: 1.5
-  waitTime: 0
-  startWaitTime: 0
-  speed: 2
   attackPoint: {fileID: 8950945464666798629}
   playerLayer:
     serializedVersion: 2
@@ -165,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8950945464666798629}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: enemyAttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

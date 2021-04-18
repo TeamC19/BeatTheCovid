@@ -8,7 +8,7 @@ public enum Type
     Medium,
     Small
 }
-public class HealingItems : MonoBehaviour
+public class Items : MonoBehaviour
 {
     // Different healing items
     [SerializeField] int healBig = 75;

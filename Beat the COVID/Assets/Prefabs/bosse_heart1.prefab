@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4726032305879062507}
   - component: {fileID: 4726032305879062503}
   - component: {fileID: 4726032305879062506}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bosse_heart1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -124348017
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9110822693059959261, guid: dbb89ce61a32099428b6ffd47d14814c,
     type: 3}
@@ -185,7 +185,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -760864285
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Time: 1
   m_Parameters:

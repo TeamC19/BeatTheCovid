@@ -261,16 +261,25 @@ public class PlayerController: MonoBehaviour
         currentHealth += healpoints;
     }
 
-        // Method to kill enemy
+        // Method to kill player
         void PlayerDeath()
     {
         Debug.Log("Player died");
         // OPTIONAL FOR NOW
         // Play death animation 
 
-        // Destroy dead enemy
+        // Destroy dead player
         Destroy(this.gameObject);
 
+    }
+
+    // When player runs into healing item or injection, despawn item
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("CanBePickedUp"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 
     // Use Gizmos to know where things are to make adjustments
