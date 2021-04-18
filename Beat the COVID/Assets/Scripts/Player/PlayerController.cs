@@ -15,10 +15,14 @@ public class PlayerController: MonoBehaviour
     GameObject checkgroundGameObject;
     [SerializeField] float speed = 1f;
     // Health variables
+    
     [Header("Health variables")]
+    public HitPoints hitPoints;
+    /*
     [SerializeField] HealthBar healthBar;
     [SerializeField] int maxHealth = 100;
     [SerializeField] int currentHealth;
+    */
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [Header("Attack variables")]
     [SerializeField] Transform attackPoint;
@@ -51,8 +55,11 @@ public class PlayerController: MonoBehaviour
         checkgroundGameObject = transform.Find("ground check").gameObject;
         colliderLimits = GetComponent<BoxCollider2D>();
         // Player Health
+        hitPoints.currentHealth = hitPoints.startHealth;
+        /*
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        */
     }
 
     
@@ -235,8 +242,8 @@ public class PlayerController: MonoBehaviour
     public void PlayerTakeDamage(int damage) 
     {
         // Subtract health
-        currentHealth -= damage;
-        Debug.Log("Player health: " + currentHealth);
+        hitPoints.currentHealth -= damage;
+        Debug.Log("Player health: " + hitPoints.currentHealth);
         //healthBar.SetHealth(currentHealth);
 
         // Play hit animation
@@ -250,15 +257,10 @@ public class PlayerController: MonoBehaviour
         }
 
         // Call death function
-        if(currentHealth <= 0)
+        if(hitPoints.currentHealth <= 0)
         {
             PlayerDeath();
         }
-    }
-
-    public void Heal (int healpoints)
-    {
-        currentHealth += healpoints;
     }
 
         // Method to kill player
@@ -284,23 +286,43 @@ public class PlayerController: MonoBehaviour
             {
                 // Show what type of item this is
                 Debug.Log("Item: " + item.objectName);
+
+                // Need to know if this type of item should disappear
+                bool shouldDisappear = false;
+
                 switch(item.itemType) 
                 {
                     case Item.ItemType.BIG_HEAL:
+                        if(hitPoints.currentHealth < hitPoints.maxHealth) 
+                            {
+                                Debug.Log("You healed with BIG HEAL!");
+                                shouldDisappear = true;
+                            }
                         AdjustHitPoints(item.quantity);
                         break;
                     case Item.ItemType.MEDIUM_HEAL:
+                        if(hitPoints.currentHealth < hitPoints.maxHealth) 
+                                {
+                                    Debug.Log("You healed with MEDIUM HEAL!");
+                                    shouldDisappear = true;
+                                }
                         AdjustHitPoints(item.quantity);
                         break;
                     case Item.ItemType.SMALL_HEAL:
+                        if(hitPoints.currentHealth < hitPoints.maxHealth) 
+                            {
+                                Debug.Log("You healed with SMALL HEAL!");
+                                shouldDisappear = true;
+                            }
                         AdjustHitPoints(item.quantity);
                         break;
                     case Item.ItemType.INJECTION:
+                        shouldDisappear = true;
                         break;
                 }
                 
-                // Deactivate item from scene (item consumed)
-                other.gameObject.SetActive(false);
+                // If item should be consumed: Deactivate item from scene (item consumed)
+                if(shouldDisappear) { other.gameObject.SetActive(false); }
             }
             
         }
@@ -309,8 +331,8 @@ public class PlayerController: MonoBehaviour
     // Healing player
     public void AdjustHitPoints(int amount)
     {
-        currentHealth += amount;
-        Debug.Log("Health: " + currentHealth);
+        hitPoints.currentHealth += amount;
+        Debug.Log("Health: " + hitPoints.currentHealth);
     }
 
     // Use Gizmos to know where things are to make adjustments
