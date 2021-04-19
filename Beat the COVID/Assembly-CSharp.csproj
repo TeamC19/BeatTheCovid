@@ -51,10 +51,10 @@
      <Compile Include="Assets\Scripts\Objects\Consumable Items\InjectionController.cs" />
      <Compile Include="Assets\Scripts\Objects\Consumable Items\Scriptable Objects\Item.cs" />
      <Compile Include="Assets\Scripts\Objects\PropController.cs" />
-     <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Player\Scriptable Objects\HitPoints.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
-     <Compile Include="Assets\Scripts\UI\Scriptable Objects\HitPoints.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

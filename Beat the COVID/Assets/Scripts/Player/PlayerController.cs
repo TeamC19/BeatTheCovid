@@ -18,11 +18,7 @@ public class PlayerController: MonoBehaviour
     
     [Header("Health variables")]
     public HitPoints hitPoints;
-    /*
     [SerializeField] HealthBar healthBar;
-    [SerializeField] int maxHealth = 100;
-    [SerializeField] int currentHealth;
-    */
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [Header("Attack variables")]
     [SerializeField] Transform attackPoint;
@@ -56,25 +52,26 @@ public class PlayerController: MonoBehaviour
         colliderLimits = GetComponent<BoxCollider2D>();
         // Player Health
         hitPoints.currentHealth = hitPoints.startHealth;
-        /*
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-        */
+        healthBar.SetMaxHealth(hitPoints.maxHealth, hitPoints.startHealth);
     }
 
     
     // Update is called once per frame
     void Update()
     {
+        // Cannot do anything if game is Paused
         if (PauseMenu.GameIsPaused) 
         {
             return;
         }
+
+        //
         colliderLimits.enabled = grounded;
         if (grounded)
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
         _anim.SetBool("IsJumping", !grounded);
+
         // Make attacks limited to 2 per second aprox.
         if (Time.time >= nextAttackTime)
         {
@@ -112,6 +109,7 @@ public class PlayerController: MonoBehaviour
             Vector3 position = checkgroundGameObject.transform.position;
             checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
         }
+
         // Jump animation and physics
         if (Input.GetKeyDown(KeyCode.Space) && grounded) 
         {
@@ -129,8 +127,7 @@ public class PlayerController: MonoBehaviour
         }
 
         // Movement
-        else 
-        if (Input.GetKey(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W))
         {
             direction.y = 1;
         }
@@ -149,7 +146,6 @@ public class PlayerController: MonoBehaviour
             transform.localScale = Vector3.left + Vector3.up + Vector3.forward;
         }
         
-
         // Player movement animation
          _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
@@ -166,7 +162,7 @@ public class PlayerController: MonoBehaviour
             direction.x = 0; 
             direction.y = 0; 
         }
-        // Detect enemies in range of attack
+        // Detect enemies in range of attack ------------------------------------(THIS MUST CHANGE FROM LAYER TO TAG)
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
@@ -188,7 +184,7 @@ public class PlayerController: MonoBehaviour
             direction.y = 0; 
         }
 
-        // Detect enemies in range of attack
+        // Detect enemies in range of attack ------------------------------------(THIS MUST CHANGE FROM LAYER TO TAG)
          Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange,enemyLayer);
         
         // Damage enemies
@@ -244,7 +240,7 @@ public class PlayerController: MonoBehaviour
         // Subtract health
         hitPoints.currentHealth -= damage;
         Debug.Log("Player health: " + hitPoints.currentHealth);
-        //healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(hitPoints.currentHealth);
 
         // Play hit animation
         _anim.SetTrigger("IsHit");
@@ -263,8 +259,8 @@ public class PlayerController: MonoBehaviour
         }
     }
 
-        // Method to kill player
-        void PlayerDeath()
+    // Method to kill player
+    void PlayerDeath()
     {
         Debug.Log("Player died");
         // OPTIONAL FOR NOW
@@ -303,9 +299,9 @@ public class PlayerController: MonoBehaviour
                         break;
                     case Item.ItemType.MEDIUM_HEAL:
                         if(hitPoints.currentHealth < hitPoints.maxHealth) 
-                                {
-                                    Debug.Log("You healed with MEDIUM HEAL!");
-                                    shouldDisappear = true;
+                            {
+                                Debug.Log("You healed with MEDIUM HEAL!");
+                                shouldDisappear = true;
                                 AdjustHitPoints(item.quantity);
                             }
                         else { Debug.Log("Greedy. No heal for u");}
@@ -343,6 +339,7 @@ public class PlayerController: MonoBehaviour
         {
             hitPoints.currentHealth += amount;
         }
+        healthBar.SetHealth(hitPoints.currentHealth);
         Debug.Log("Health: " + hitPoints.currentHealth);
     }
 
