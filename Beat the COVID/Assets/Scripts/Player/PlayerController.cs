@@ -297,24 +297,27 @@ public class PlayerController: MonoBehaviour
                             {
                                 Debug.Log("You healed with BIG HEAL!");
                                 shouldDisappear = true;
+                                AdjustHitPoints(item.quantity);
                             }
-                        AdjustHitPoints(item.quantity);
+                        else { Debug.Log("Greedy. No heal for u");}
                         break;
                     case Item.ItemType.MEDIUM_HEAL:
                         if(hitPoints.currentHealth < hitPoints.maxHealth) 
                                 {
                                     Debug.Log("You healed with MEDIUM HEAL!");
                                     shouldDisappear = true;
-                                }
-                        AdjustHitPoints(item.quantity);
+                                AdjustHitPoints(item.quantity);
+                            }
+                        else { Debug.Log("Greedy. No heal for u");}
                         break;
                     case Item.ItemType.SMALL_HEAL:
                         if(hitPoints.currentHealth < hitPoints.maxHealth) 
                             {
                                 Debug.Log("You healed with SMALL HEAL!");
                                 shouldDisappear = true;
+                                AdjustHitPoints(item.quantity);
                             }
-                        AdjustHitPoints(item.quantity);
+                        else { Debug.Log("Greedy. No heal for u");}
                         break;
                     case Item.ItemType.INJECTION:
                         shouldDisappear = true;
@@ -331,7 +334,15 @@ public class PlayerController: MonoBehaviour
     // Healing player
     public void AdjustHitPoints(int amount)
     {
-        hitPoints.currentHealth += amount;
+        // Make sure player cannot over heal in amount
+        if((hitPoints.currentHealth + amount) > hitPoints.maxHealth)
+        {
+            hitPoints.currentHealth = hitPoints.maxHealth;
+        }
+        else 
+        {
+            hitPoints.currentHealth += amount;
+        }
         Debug.Log("Health: " + hitPoints.currentHealth);
     }
 
