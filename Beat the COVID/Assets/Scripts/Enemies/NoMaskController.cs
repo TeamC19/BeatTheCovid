@@ -7,6 +7,8 @@ public class NoMaskController : EnemyController
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask playerLayer;
+    // Attack variables
+    [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
     [SerializeField] int attackDamage = 1;
     [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks

@@ -156,14 +156,17 @@ public class PlayerController: MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsPunching");
+
         // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
         }
+
         // Detect enemies in range of attack ------------------------------------(THIS MUST CHANGE FROM LAYER TO TAG)
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
@@ -235,7 +238,7 @@ public class PlayerController: MonoBehaviour
     }
 
     // Method for player taking damage (animations and health depletion)
-    public void PlayerTakeDamage(int damage) 
+    public void PlayerTakeDamage(int damage, float interval) 
     {
         // Subtract health
         hitPoints.currentHealth -= damage;
@@ -255,6 +258,7 @@ public class PlayerController: MonoBehaviour
         // Call death function
         if(hitPoints.currentHealth <= 0)
         {
+            hitPoints.currentHealth = 0;
             PlayerDeath();
         }
     }
@@ -269,6 +273,12 @@ public class PlayerController: MonoBehaviour
         // Destroy dead player
         Destroy(this.gameObject);
 
+    }
+
+    // Method to respawn character when killed (UNUSED FOR NOW)
+    void RespawnCharacter()
+    {
+        hitPoints.currentHealth = hitPoints.startHealth;
     }
 
     // When player runs into healing item or injection, despawn item

@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     protected BoxCollider2D colliderLimits;
     protected Vector2 direction;
     // _rb2d references the Character's Rigidbody(placed on feet)
+    [Header("Rigidbody references")]
     protected Rigidbody2D _rb2d;
     protected GameObject checkgroundGameObject;
     // For all enemies
@@ -24,9 +25,10 @@ public class EnemyController : MonoBehaviour
     protected  float speed = 3f;
     
     // Health variables
-    protected int maxHealth = 3;
-    protected int currentHealth;
+    [Header("Health variables")]
+    public HitPoints hitPoints;
     // Enemy States
+    [Header("Enemy states")]
     protected bool wait, pursuit;
     
 
@@ -38,7 +40,7 @@ public class EnemyController : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         colliderLimits = GetComponent<BoxCollider2D>();
         // Enemy health
-        currentHealth = maxHealth;
+        hitPoints.currentHealth = hitPoints.startHealth;
         // Starting states
         wait = true;
         pursuit = false;
@@ -91,31 +93,30 @@ public class EnemyController : MonoBehaviour
             // Go towards player
             if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } 
             // If near enough, attack
-            // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
-            else { Attack(); direction.x = 0; direction.y = 0; }
+            else { Attack(); }
         }
+
         // Enemy is to the left of player
         else 
         {
             _sprite.flipX = false;
             // Go towards player
-            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } //farther than 6 units, closes in on player
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } 
             // If near enough, attack
-            // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
-            else { Attack(); direction.x = 0; direction.y = 0; }
+            else { Attack(); }
         }
 
         // Y axis
         // Enemy is above (or same position as) the player
         if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
         {
-            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } //farther than 2 units, closes in on player
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } 
             else { direction.y = 0; }
         }
         // Enemy is below the player
         else 
         {
-            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } //farther than 2 units, closes in on player
+            if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = stoppingDistance; } 
             else { direction.y = 0; }
         }
 
@@ -140,12 +141,12 @@ public class EnemyController : MonoBehaviour
     public virtual void TakeDamage(int damage) 
     {
         // Subtract health
-        currentHealth -= damage;
+        hitPoints.currentHealth -= damage;
 
         // Play hit animation in Child
 
         // Call death function
-        if(currentHealth <= 0)
+        if(hitPoints.currentHealth <= 0)
         {
             Death();
         }

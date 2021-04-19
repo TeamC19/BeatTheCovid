@@ -17,11 +17,7 @@ public class HealthBar : MonoBehaviour
         // Starting health value in Health Bar
         slider.value = start;
         // Set the gradient to the green part(full health)
-        //fill.color = gradient.Evaluate(1f);
-
-        // -------- ESTO LUEGO SERÁ SOLO VERDE (se borra esto y se descomenta la línea anterior)------------------- 
-        // Set gradient value according to slider's value
-        fill.color = gradient.Evaluate(slider.normalizedValue);
+        fill.color = gradient.Evaluate(1f);
     }
 
     // Every time we heal or get hurt we must call this function to adjust the slider
