@@ -138,32 +138,17 @@ public class EnemyController : MonoBehaviour
     }
 
     // Method that will be called by PlayerController - needs to be Public
-    public virtual IEnumerator TakeDamage(int damage, float interval)
+    public virtual void TakeDamage(int damage)
     {
-        while(true)
+        // Subtract health
+        hitPoints.currentHealth -= damage;
+
+        // Play hit animation in Child
+
+        // Call death function
+        if(hitPoints.currentHealth <= 0)
         {
-            // Subtract health
-            hitPoints.currentHealth -= damage;
-
-            // Play hit animation in Child
-
-            // Call death function
-            if(hitPoints.currentHealth <= 0)
-            {
-                EnemyDeath();
-                break;
-            }
-
-            if(interval > 0.0f)
-            {
-                // This is to calculate next item on list
-                yield return new WaitForSeconds(interval);
-            }
-
-            else
-            {
-                break;
-            }
+            EnemyDeath();
         }
     }
 
