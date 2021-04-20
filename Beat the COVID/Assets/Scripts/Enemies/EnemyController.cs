@@ -19,8 +19,8 @@ public class EnemyController : MonoBehaviour
     // This is to know the enemy's current position
     protected Transform _enemy_pos;
     // This is to track the player's distance and enemy's searching area
-    protected float searchRange = 5;
-    protected float stoppingDistance = 3;
+    protected float searchRange = 3;
+    protected float stoppingDistance = 1;
     //Enemy's speed
     protected  float speed = 3f;
     
@@ -90,25 +90,33 @@ public class EnemyController : MonoBehaviour
         if ((_player.transform.position.x - _enemy_pos.position.x) <= 0)
         {
             _sprite.flipX = true;
-            // Go towards player
-            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = -stoppingDistance; } 
             // If near enough, attack
-            else { Attack(); }
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) <= stoppingDistance
+                && Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) <= stoppingDistance) { Attack(); } 
+            // Go towards player  
+            else 
+            { 
+                direction.x = -stoppingDistance;
+            }
         }
 
         // Enemy is to the left of player
         else 
         {
             _sprite.flipX = false;
-            // Go towards player
-            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) > stoppingDistance) { direction.x = stoppingDistance; } 
             // If near enough, attack
-            else { Attack(); }
+            if (Mathf.Abs(_player.transform.position.x - _enemy_pos.position.x) < stoppingDistance
+                && Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) < stoppingDistance) { Attack(); } 
+            // Go towards player
+            else 
+            { 
+                direction.x = stoppingDistance;
+            }
         }
 
         // Y axis
         // Enemy is above (or same position as) the player
-        if ((_player.transform.position.y - _enemy_pos.position.y) <= 0) //boss 
+        if ((_player.transform.position.y - _enemy_pos.position.y) <= 0)
         {
             if (Mathf.Abs(_player.transform.position.y - _enemy_pos.position.y) > stoppingDistance) { direction.y = -stoppingDistance; } 
             else { direction.y = 0; }
