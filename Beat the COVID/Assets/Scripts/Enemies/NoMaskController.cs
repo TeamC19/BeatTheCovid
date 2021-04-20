@@ -42,7 +42,8 @@ public class NoMaskController : EnemyController
     // Enemy pursuit movement
     protected override void EnemyPursuit()
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
@@ -57,7 +58,8 @@ public class NoMaskController : EnemyController
     // NoMask Attack player
     protected override void Attack()
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
@@ -82,14 +84,14 @@ public class NoMaskController : EnemyController
         base.TakeDamage(damage);
 
         // Play hit animation (NOT DOING ANIMATION ANYMORE)
-        _anim.SetTrigger("nomaskHurt");
+        _anim.SetTrigger("enemyHurt");
     }
 
     // Method to kill enemy
     protected override void EnemyDeath()
     {
         // Play death animation
-        // _anim.SetBool("nomaskDead");
+        // _anim.SetBool("enemyHurt");
 
         // Inherit from parent Death()
         base.EnemyDeath();
