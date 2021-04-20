@@ -42,21 +42,37 @@ public class NoMaskController : EnemyController
     // Enemy pursuit movement
     protected override void EnemyPursuit()
     {
-        // Call EnemyController EnemyPursuit() method
-        base.EnemyPursuit();
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+        else
+        {
+            // Call EnemyController EnemyPursuit() method
+            base.EnemyPursuit();
+        }
     }
 
     // NoMask Attack player
     protected override void Attack()
     {
-        // Call EnemyController Attack() method
-        base.Attack();
-        // Play enemy attack animation
-        _anim.SetTrigger("playerNear");
-        // Detect player in range of attack
-        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-        // Damage player
-        //_player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")) 
+        { 
+            direction.x = 0; 
+            direction.y = 0; 
+        }
+        else 
+        {
+            // Call EnemyController Attack() method
+            base.Attack();
+            // Play enemy attack animation
+            _anim.SetTrigger("playerNear");
+            // Detect player in range of attack
+            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+            // Damage player
+            _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+        }
     }
 
     // Method that will be called by PlayerController - needs to be Public

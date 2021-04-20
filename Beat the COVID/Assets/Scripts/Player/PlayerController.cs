@@ -238,7 +238,7 @@ public class PlayerController: MonoBehaviour
     }
 
     // Method for player taking damage (animations and health depletion)
-    public void PlayerTakeDamage(int damage, float interval) 
+    public void PlayerTakeDamage(int damage) 
     {
         // Subtract health
         hitPoints.currentHealth -= damage;
