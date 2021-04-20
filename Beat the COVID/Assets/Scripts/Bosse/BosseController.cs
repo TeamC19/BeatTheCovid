@@ -5,21 +5,11 @@ using UnityEngine;
 public class BosseController : EnemyController
 {
     public bool summoning = false;
-    public float speed = 1f;
-    private SpriteRenderer _sprite;
-    private Animator _anim;
-    public Rigidbody2D _rb2d;
-    public GameObject checkgroundGameObject;
-    //BoxCollider2D collider;
-    Vector2 direction;
-    public GameObject _player;
     public GameObject _enemy; //remember to set it in the gameobject
     public Transform _boss_pos;
 
     public GameObject _heart;//remember to set it in the gameobject
     public GameObject _note;//remember to set it in the gameobject
-
-    public HitPoints hitPoints;
 
     private int _hp;
     // Start is called before the first frame update

@@ -40,8 +40,8 @@ public class ExploderController : EnemyController
     protected override void EnemyPursuit()
     
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_hurt")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
@@ -58,8 +58,8 @@ public class ExploderController : EnemyController
     // Spitter Attack player
     protected override void Attack()
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_hurt")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
@@ -69,34 +69,10 @@ public class ExploderController : EnemyController
             // Call EnemyController Attack() method
             base.Attack();
             // Play enemy attack animation
-            _anim.SetTrigger("playerNear");
-            // Detect player in range of attack
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(_enemy_pos.position, attackRange, playerLayer);
-            // Damage player
-            _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+            _anim.SetBool("touched", true);
+            //EXPLOSION GOES HERE
+            //DESTROY BALL AFTER EXPLODING
+            Destroy(this);
         }
-    }
-
-    // Method that will be called by PlayerController - needs to be Public
-    public override void TakeDamage(int damage)
-    {
-        // Inherit from parent TakeDamage()
-        base.TakeDamage(damage);
-
-        // Play hit animation
-        _anim.SetTrigger("enemyHurt");
-    }
-
-    // Method to kill enemy
-    protected override void EnemyDeath()
-    {
-        // Play death animation
-        _anim.SetBool("dead", true);
-
-        // Inherit from parent EnemyDeath()
-        base.EnemyDeath();
-
-        // Destroy dead enemy after playing animation---------(DOES NOT DESTROY)
-        Destroy(this, 1f);
     }
 }
