@@ -164,3 +164,4 @@ MonoBehaviour:
   _boss_pos: {fileID: 0}
   _heart: {fileID: 4726032305879062500, guid: 4b6e3d87e3388024d932d72043c02953, type: 3}
   _note: {fileID: 3494854142190148232, guid: 90e4e32fafecdf44c83bd2a95f9186ed, type: 3}
+  hitPoints: {fileID: 11400000, guid: def3e33d344f1d345ba50da33fcec35d, type: 2}
