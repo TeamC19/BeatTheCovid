@@ -4073,6 +4073,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -12
       objectReference: {fileID: 0}
+    - target: {fileID: 8950945464445806224, guid: 9d0279dd6f0e805478f497fedbee8465,
+        type: 3}
+      propertyPath: attackRange
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8950945464445806225, guid: 9d0279dd6f0e805478f497fedbee8465,
         type: 3}
       propertyPath: m_LocalPosition.x
