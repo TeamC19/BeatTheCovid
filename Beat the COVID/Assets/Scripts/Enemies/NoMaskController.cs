@@ -34,7 +34,7 @@ public class NoMaskController : EnemyController
     protected override void EnemyWait()
     {
         // Pose in idle
-        //_anim.SetBool("nomaskWaiting");
+        _anim.SetBool("waiting", true);
         // Call EnemyController EnemyWait() method
         base.EnemyWait();
     }
@@ -42,6 +42,7 @@ public class NoMaskController : EnemyController
     // Enemy pursuit movement
     protected override void EnemyPursuit()
     {
+        _anim.SetBool("waiting", false);
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_punch")
             || _anim.GetCurrentAnimatorStateInfo(0).IsName("nomask_hit")) 
         { 
@@ -91,9 +92,9 @@ public class NoMaskController : EnemyController
     protected override void EnemyDeath()
     {
         // Play death animation
-        // _anim.SetBool("enemyHurt");
+        _anim.SetBool("dead", true);
 
-        // Inherit from parent Death()
+        // Inherit from parent EnemyDeath()
         base.EnemyDeath();
 
     }
