@@ -147,6 +147,7 @@ MonoBehaviour:
   _rb2d: {fileID: 0}
   checkgroundGameObject: {fileID: 0}
   _player: {fileID: 0}
+  attackDamage: 10
 --- !u!96 &4726032305879062506
 TrailRenderer:
   serializedVersion: 2
