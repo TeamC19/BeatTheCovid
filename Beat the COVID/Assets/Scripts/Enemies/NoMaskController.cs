@@ -60,23 +60,28 @@ public class NoMaskController : EnemyController
     }
 
     // Method that will be called by PlayerController - needs to be Public
-    public override void TakeDamage(int damage)
+    public override IEnumerator TakeDamage(int damage, float interval)
     {
-        // Inherit from parent TakeDamage()
-        base.TakeDamage(damage);
-
-        // Play hit animation (NOT DOING ANIMATION ANYMORE)
-        _anim.SetTrigger("nomaskHurt");
+        while(true)
+        {
+            if(hitPoints.currentHealth > 0)
+            {
+                // Inherit from parent TakeDamage()
+                base.TakeDamage(damage, interval);
+                // Play hit animation (NOT DOING ANIMATION ANYMORE)
+                _anim.SetTrigger("nomaskHurt");
+            }
+        }
     }
 
     // Method to kill enemy
-    protected override void Death()
+    protected override void EnemyDeath()
     {
         // Play death animation
         // _anim.SetBool("nomaskDead");
 
         // Inherit from parent Death()
-        base.Death();
+        base.EnemyDeath();
 
     }
 
