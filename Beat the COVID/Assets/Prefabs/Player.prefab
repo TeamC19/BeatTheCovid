@@ -113,12 +113,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5778333883683905905}
-  - component: {fileID: 5778333883683905902}
   - component: {fileID: 5778333883683905904}
   - component: {fileID: 5778333883683905907}
   - component: {fileID: 5778333883683905903}
   - component: {fileID: 5778333883683905900}
   - component: {fileID: 4876569005929883036}
+  - component: {fileID: 5778333883683905902}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -142,37 +142,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5778333883683905902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5778333883683905906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c05a243dc0a4f547a865f6c0ef2100c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  hitPoints: {fileID: 11400000, guid: c16eee587fc9159488622283fe0fbc17, type: 2}
-  healthBar: {fileID: 0}
-  attackPoint: {fileID: 5778333882369077718}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  attackRange: 1
-  punchDamage: 1
-  kickDamage: 2
-  attackRate: 2
-  jumpForce: 7.5
-  gravity: 9.8
-  startJumpPos: 0
-  grounded: 0
-  jumped: 0
-  injectionNumber: 5
-  injectionPrefab: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
-    type: 3}
 --- !u!212 &5778333883683905904
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -211,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2122325587
   m_SortingLayer: 2
-  m_SortingOrder: 121
+  m_SortingOrder: 100
   m_Sprite: {fileID: -5719833439412085699, guid: 1f7f6a9f032c42b44a56911fa2d5540a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -302,3 +271,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41b3845efcde8d41bfef441f20cdca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5778333883683905902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5778333883683905906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c05a243dc0a4f547a865f6c0ef2100c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  hitPoints: {fileID: 11400000, guid: c16eee587fc9159488622283fe0fbc17, type: 2}
+  healthBar: {fileID: 0}
+  attackPoint: {fileID: 5778333882369077718}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  attackRange: 1
+  punchDamage: 1
+  kickDamage: 2
+  attackRate: 2
+  jumpForce: 7.5
+  gravity: 9.8
+  startJumpPos: 0
+  grounded: 0
+  jumped: 0
+  injectionNumber: 5
+  injectionPrefab: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
+    type: 3}

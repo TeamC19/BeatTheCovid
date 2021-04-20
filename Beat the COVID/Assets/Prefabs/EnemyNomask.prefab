@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8950945464445806225}
   - component: {fileID: 8950945464445806222}
   - component: {fileID: 8950945464445806223}
-  - component: {fileID: 8950945464445806224}
   - component: {fileID: 8950945464445806227}
   - component: {fileID: -1529764267903500505}
+  - component: {fileID: 8950945464445806224}
   m_Layer: 10
   m_Name: EnemyNomask
   m_TagString: Enemy
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2122325587
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: -23
   m_Sprite: {fileID: -8912754901463219915, guid: 914c6335157c3164ebf6d94176a1eeac,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,26 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8950945464445806224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8950945464445806220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
-  attackPoint: {fileID: 8950945464666798629}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  attackRange: 1.7
-  attackDamage: 5
-  attackRate: 2
 --- !u!61 &8950945464445806227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,6 +144,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b41b3845efcde8d41bfef441f20cdca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8950945464445806224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950945464445806220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
+  attackPoint: {fileID: 8950945464666798629}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 1.7
+  attackDamage: 5
+  attackRate: 2
 --- !u!1 &8950945464666798626
 GameObject:
   m_ObjectHideFlags: 0
