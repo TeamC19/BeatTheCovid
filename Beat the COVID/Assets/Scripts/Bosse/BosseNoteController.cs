@@ -12,6 +12,8 @@ public class BosseNoteController : MonoBehaviour
     public GameObject _player;
     private Transform _note_pos;
     private Vector2 direction;
+    private float attack_range = 0.5f;
+    [SerializeField] int attackDamage = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,17 @@ public class BosseNoteController : MonoBehaviour
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);
+        //damage
+        if (Mathf.Abs(_player.transform.position.x - _note_pos.position.x) < attack_range
+                && Mathf.Abs(_player.transform.position.y - _note_pos.position.y) < attack_range) { Attack(); }
     }
 
     void destroy() { Destroy(this.gameObject); }
+
+    void Attack()
+    {
+        // Damage player
+        _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+        destroy();
+    }
 }
