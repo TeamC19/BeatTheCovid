@@ -11,8 +11,6 @@ public class NoMaskController : EnemyController
     [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
     [SerializeField] int attackDamage = 1;
-    [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks
-    float nextAttackTime = 0f;
 
     protected override void Start()
     {
@@ -84,7 +82,7 @@ public class NoMaskController : EnemyController
         // Inherit from parent TakeDamage()
         base.TakeDamage(damage);
 
-        // Play hit animation (NOT DOING ANIMATION ANYMORE)
+        // Play hit animation
         _anim.SetTrigger("enemyHurt");
     }
 

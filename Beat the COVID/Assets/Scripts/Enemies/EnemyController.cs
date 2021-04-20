@@ -170,6 +170,5 @@ public class EnemyController : MonoBehaviour
         // Disable dead enemy
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
     }
 }
