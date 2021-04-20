@@ -70,8 +70,10 @@ public class NoMaskController : EnemyController
                 base.TakeDamage(damage, interval);
                 // Play hit animation (NOT DOING ANIMATION ANYMORE)
                 _anim.SetTrigger("nomaskHurt");
+                yield return new WaitForSeconds(interval);
             }
         }
+        
     }
 
     // Method to kill enemy

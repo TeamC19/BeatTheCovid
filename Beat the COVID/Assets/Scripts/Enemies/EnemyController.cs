@@ -138,7 +138,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // Method that will be called by PlayerController - needs to be Public
-    public virtual IEnumerator TakeDamage(int damage, float interval) 
+    public virtual IEnumerator TakeDamage(int damage, float interval)
     {
         while(true)
         {
@@ -156,6 +156,7 @@ public class EnemyController : MonoBehaviour
 
             if(interval > 0.0f)
             {
+                // This is to calculate next item on list
                 yield return new WaitForSeconds(interval);
             }
 
@@ -164,7 +165,6 @@ public class EnemyController : MonoBehaviour
                 break;
             }
         }
-        
     }
 
     // Method to kill enemy

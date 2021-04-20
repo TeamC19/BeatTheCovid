@@ -170,7 +170,7 @@ public class PlayerController: MonoBehaviour
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyController>().TakeDamage(punchDamage);
+            enemy.GetComponent<EnemyController>().TakeDamage(punchDamage, 1f);
         }
     }
 
@@ -193,7 +193,7 @@ public class PlayerController: MonoBehaviour
         // Damage enemies
         foreach(Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyController>().TakeDamage(kickDamage);
+            enemy.GetComponent<EnemyController>().TakeDamage(kickDamage, 1f);
         }
     }
 
