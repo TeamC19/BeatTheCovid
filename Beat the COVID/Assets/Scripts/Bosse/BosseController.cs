@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BosseController : MonoBehaviour
+public class BosseController : EnemyController
 {
     public bool summoning = false;
     public float speed = 1f;
@@ -19,10 +19,13 @@ public class BosseController : MonoBehaviour
     public GameObject _heart;//remember to set it in the gameobject
     public GameObject _note;//remember to set it in the gameobject
 
+    public HitPoints hitPoints;
+
     private int _hp;
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
+        hitPoints.currentHealth = hitPoints.startHealth;
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
         _sprite = GetComponent<SpriteRenderer>();
@@ -37,11 +40,11 @@ public class BosseController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
         
 
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon")) { direction.x = 0; direction.y = 0; }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt")) { direction.x = 0; }
         //movement on the X axis
         else if ((_player.transform.position.x - _boss_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
         {
@@ -58,19 +61,20 @@ public class BosseController : MonoBehaviour
             else { direction.x = 0; }
         }
         
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt")) { direction.y = 0; }
         //movement on the Y axis
-        if ((_player.transform.position.y - _boss_pos.position.y) <= 0) //boss 
+        else if ((_player.transform.position.y - _boss_pos.position.y) <= 0) //boss 
         {
             //_sprite.flipX = true;
-            if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) > 2) { direction.y = -1; } //farther than 2 units, closes in on player
-            else if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) < 1) { direction.y = 1; }//closer than 1 units, tries to get to 1
+            if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) > 2) { direction.y = -0.5f; } //farther than 2 units, closes in on player
+            else if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) < 1) { direction.y = 0.5f; }//closer than 1 units, tries to get to 1
             else { direction.y = 0; }
         }
         else //
         {
             //_sprite.flipX = false;
-            if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) > 2) { direction.y = 1; } //farther than 2 units, closes in on player
-            else if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) < 1) { direction.y = -1; }//closer than 1 units, tries to get to 1
+            if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) > 2) { direction.y = 0.5f; } //farther than 2 units, closes in on player
+            else if (Mathf.Abs(_player.transform.position.y - _boss_pos.position.y) < 1) { direction.y = -0.5f; }//closer than 1 units, tries to get to 1
             else { direction.y = 0; }
         }
         
@@ -78,6 +82,25 @@ public class BosseController : MonoBehaviour
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        // Inherit from parent TakeDamage()
+        base.TakeDamage(damage);
+
+        // Play hit animation (NOT DOING ANIMATION ANYMORE)
+        _anim.SetTrigger("hurt");
+    }
+
+    protected override void EnemyDeath()
+    {
+        // Play death animation
+        _anim.SetBool("dead", true);
+        CancelInvoke();
+        // Inherit from parent EnemyDeath()
+        base.EnemyDeath();
+
     }
 
     void SummonEnemy()

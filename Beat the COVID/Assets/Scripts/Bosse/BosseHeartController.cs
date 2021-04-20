@@ -12,6 +12,8 @@ public class BosseHeartController : MonoBehaviour
     public GameObject _player;
     private Transform _heart_pos;
     private Vector2 direction;
+    private float attack_range = 0.5f;
+    [SerializeField] int attackDamage = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -41,12 +43,23 @@ public class BosseHeartController : MonoBehaviour
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);
         //movement end
+        //hitplayer
+        if (Mathf.Abs(_player.transform.position.x - _heart_pos.position.x) < attack_range
+                && Mathf.Abs(_player.transform.position.y - _heart_pos.position.y) < attack_range) { Attack(); }
     }
     void destroy() { Destroy(this.gameObject); }
+
+    void Attack()
+    {
+        // Damage player
+        _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+        destroy();
+    }
     /*
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Player")) { destroy(); }
     }*/
+
 }
 
