@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BosseHitPoints
   m_EditorClassIdentifier: 
   currentHealth: 0
-  maxHealth: 0
-  startHealth: 0
+  maxHealth: 25
+  startHealth: 2

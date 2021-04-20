@@ -25,6 +25,7 @@ public class BosseController : EnemyController
     // Start is called before the first frame update
     new void Start()
     {
+        hitPoints.currentHealth = hitPoints.startHealth;
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
         _sprite = GetComponent<SpriteRenderer>();
@@ -96,7 +97,7 @@ public class BosseController : EnemyController
     {
         // Play death animation
         _anim.SetBool("dead", true);
-
+        CancelInvoke();
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
 
