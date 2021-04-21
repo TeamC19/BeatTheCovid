@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: b221910e307573144acd6b71ef34ebf0
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: c685a0df78920dd459c1df7a2a890e18
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 09fc8b88628a38743af24033493b7f79
+  - enabled: 1
+    path: Assets/Scenes/GreenPartyFight.unity
+    guid: e2791525a266a754a9fecb1303bb9b60
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/BosseFight.unity
+    guid: cfd5ff37b7a0e11448addfaa5993473c
   m_configObjects: {}
