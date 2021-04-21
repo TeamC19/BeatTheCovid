@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    // Start is called before the first frame update
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -31,6 +31,15 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+    }
+
+    public void ReloadGame()
+    {
+        Debug.Log("Reloading game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;

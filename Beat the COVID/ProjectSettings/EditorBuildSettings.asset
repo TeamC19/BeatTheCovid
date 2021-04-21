@@ -10,17 +10,17 @@ EditorBuildSettings:
     guid: b221910e307573144acd6b71ef34ebf0
   - enabled: 1
     path: Assets/Scenes/Level1.unity
-    guid: c685a0df78920dd459c1df7a2a890e18
+    guid: 9dee3d815a0647640bb695c5bc5ad88f
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: 09fc8b88628a38743af24033493b7f79
+    guid: 607c2289dbd8b034d96278f211b1b19d
   - enabled: 1
-    path: Assets/Scenes/GreenPartyFight.unity
-    guid: e2791525a266a754a9fecb1303bb9b60
+    path: Assets/Scenes/Boss_Protest.unity
+    guid: aa323493cf1554a47902360bdf31808e
   - enabled: 1
     path: Assets/Scenes/Level3.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/BosseFight.unity
-    guid: cfd5ff37b7a0e11448addfaa5993473c
+    path: Assets/Scenes/Boss_Bosse.unity
+    guid: dddd06dcde93dfd47bc80bbbeaad524f
   m_configObjects: {}
