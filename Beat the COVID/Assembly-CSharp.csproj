@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
      <Compile Include="Assets\Scripts\Enemies\ExploderController.cs" />
      <Compile Include="Assets\Scripts\Enemies\NoMaskController.cs" />
+     <Compile Include="Assets\Scripts\Enemies\ProjectileController.cs" />
      <Compile Include="Assets\Scripts\Enemies\RammerController.cs" />
      <Compile Include="Assets\Scripts\Enemies\SpitterController.cs" />
      <Compile Include="Assets\Scripts\GameFunctions\CameraController.cs" />

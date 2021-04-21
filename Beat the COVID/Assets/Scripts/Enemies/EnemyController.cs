@@ -139,9 +139,6 @@ public class EnemyController : MonoBehaviour
 
     protected virtual void Attack()
     {
-        // Enemy cannot move while attacking (NOT WORKING AS INTENDED)-----------
-        direction.x = 0; 
-        direction.y = 0;
         // Play attack animation in Child
     }
 

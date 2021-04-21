@@ -10,6 +10,7 @@ public class SpitterController : EnemyController
     [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
     [SerializeField] int attackDamage = 1;
+    [SerializeField] GameObject _projectile;//remember to set it in the gameobject
 
     // Start is called before the first frame update
     protected override void Start()
@@ -66,16 +67,20 @@ public class SpitterController : EnemyController
         }
         else 
         {
-            // Call EnemyController Attack() method
-            base.Attack();
             // Play enemy attack animation
             _anim.SetTrigger("playerNear");
-            // Detect player in range of attack
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(_enemy_pos.position, attackRange, playerLayer);
-            // Damage player
-            _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+            // Call ShootProjectile
+            this.ShootProjectile();
         }
     }
+
+    // Invoke projectiles
+    void ShootProjectile()
+    {
+        _anim.SetTrigger("summon");
+        Invoke("Projectile", 0.5f);
+    }
+    void Projectile() { Instantiate(_projectile, new Vector2(_enemy_pos.position.x - 2.0f, _enemy_pos.position.y), Quaternion.identity); }
 
     // Method that will be called by PlayerController - needs to be Public
     public override void TakeDamage(int damage)
