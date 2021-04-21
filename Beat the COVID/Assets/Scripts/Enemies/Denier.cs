@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Denier : EnemyController
 {
@@ -17,14 +18,12 @@ public class Denier : EnemyController
     public GameObject _covidSpitter;//remember to set it in the gameobject
     public GameObject _covidExploder;//remember to set it in the gameobject
 
-    public bool playerNear= false;
+    public bool isSummoning= false;
 
     protected override void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("Player").transform;
         // Call EnemyController Start() method
         base.Start();
-       
         // Start everything else from this Class
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
@@ -47,6 +46,12 @@ public class Denier : EnemyController
         // Pursuit state
         else if (pursuit)
         {
+            //int n = rand.Next(101);
+            if (!isSummoning) {
+                InvokeRepeating("Summon", 1.0f, 10.0f);
+                //InvokeRepeating("SummonRammer", 4.0f, 4.0f);
+                isSummoning = true;
+            }
             EnemyPursuit();
         }
     }
@@ -76,8 +81,7 @@ public class Denier : EnemyController
                 if (Mathf.Abs(_player.transform.position.x - _denier_pos.position.x) > 5) { direction.x = -1;
                  } //farther than 6 units, closes in on player
                 else if (Mathf.Abs(_player.transform.position.x - _denier_pos.position.x) < 4) { direction.x = 1; }//closer than 4 units, tries to get to 4
-                else { direction.x = 0;
-                playerNear = true;}
+                else { direction.x = 0;}
             }
             else //player is to the left of player
             {
@@ -85,7 +89,6 @@ public class Denier : EnemyController
                 if (Mathf.Abs(_player.transform.position.x - _denier_pos.position.x) > 5) { direction.x = 1; } //farther than 6 units, closes in on player
                 else if (Mathf.Abs(_player.transform.position.x - _denier_pos.position.x) < 4) { direction.x = -1; }//closer than 5 units, tries to get to 5
                 else { direction.x = 0;
-                playerNear = true;
             }
             }
 
@@ -101,16 +104,14 @@ public class Denier : EnemyController
                 //_sprite.flipX = true;
                 if (Mathf.Abs(_player.transform.position.y - _denier_pos.position.y) > 2) { direction.y = -0.5f; } //farther than 2 units, closes in on player
                 else if (Mathf.Abs(_player.transform.position.y - _denier_pos.position.y) < 1) { direction.y = 0.5f; }//closer than 1 units, tries to get to 1
-                else { direction.y = 0;
-                playerNear = true;}
+                else { direction.y = 0;}
             }
             else //
             {
                 //_sprite.flipX = false;
                 if (Mathf.Abs(_player.transform.position.y - _denier_pos.position.y) > 2) { direction.y = 0.5f; } //farther than 2 units, closes in on player
                 else if (Mathf.Abs(_player.transform.position.y - _denier_pos.position.y) < 1) { direction.y = -0.5f; }//closer than 1 units, tries to get to 1
-                else { direction.y = 0;
-                playerNear = true;}
+                else { direction.y = 0;}
             }
 
 
@@ -120,16 +121,20 @@ public class Denier : EnemyController
     
 
     // Denier Invoke covid
-    protected override void Attack()
+    protected void Summon()
     {
+        System.Random rnd = new System.Random();
+        int n = rnd.Next(1,4);
+        if (n == 1) { SummonRammer();  }
+        if (n == 2) { SummonSpitter(); }
+        if (n == 3) { SummonExploder(); }
 
         // Play enemy attack animation
-        if (playerNear) {
-            _anim.SetTrigger("playerNear");
-            SummonRammer();
-        }
-            
-            //InvokeRepeating("SummonRammer", 4.0f, 4.0f);
+
+        //_anim.SetTrigger("playerNear");
+        //SummonRammer();
+
+        //InvokeRepeating("SummonRammer", 4.0f, 4.0f);
 
         // Detect player in range of attack
 
@@ -158,11 +163,9 @@ public class Denier : EnemyController
     }
     void SummonRammer()
     {
-        _anim.SetTrigger("summon");
-        
-            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("summon")) {
-                Invoke("SummonedRammer", 0.5f);
-            }
+        _anim.SetTrigger("summon");        
+        Invoke("SummonedRammer", 0.5f);
+ 
          
       
     }
