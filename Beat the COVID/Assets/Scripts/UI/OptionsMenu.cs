@@ -37,6 +37,8 @@ public class OptionsMenu : MonoBehaviour
             }
         }
         resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
     }
 
     // Take value from slider to adjust volume
