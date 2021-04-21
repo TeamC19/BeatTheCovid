@@ -155,3 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1d61d43abdbab4895b1a5289cc163d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  attackRange: 0.5
+  attackDamage: 1

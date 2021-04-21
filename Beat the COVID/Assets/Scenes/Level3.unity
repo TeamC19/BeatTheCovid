@@ -1589,7 +1589,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7794871, y: 1}
+    m_SensorSize: {x: 1.7606838, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3052,6 +3052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rammer
       objectReference: {fileID: 0}
+    - target: {fileID: 3366766378583007951, guid: 0f290ae4b945f1e4a923ca431f3c8452,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3366766378583007989, guid: 0f290ae4b945f1e4a923ca431f3c8452,
         type: 3}
       propertyPath: hitPoints
@@ -3336,6 +3341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585811707323055976, guid: 81e052c40b005ec43aaddede3c23f3b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1585811707323055977, guid: 81e052c40b005ec43aaddede3c23f3b4,
         type: 3}
@@ -3641,6 +3651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exploder
       objectReference: {fileID: 0}
+    - target: {fileID: 6479441986644180785, guid: 1c49d4331b2c7154ba03a36cb360444d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6479441986644180795, guid: 1c49d4331b2c7154ba03a36cb360444d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3699,12 +3714,12 @@ PrefabInstance:
     - target: {fileID: 6479441986644180798, guid: 1c49d4331b2c7154ba03a36cb360444d,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.8571428
+      value: 1.8928572
       objectReference: {fileID: 0}
     - target: {fileID: 6479441986644180798, guid: 1c49d4331b2c7154ba03a36cb360444d,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.7142857
+      value: 1.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c49d4331b2c7154ba03a36cb360444d, type: 3}
@@ -3730,6 +3745,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Spitter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156251770348960994, guid: 439c9be36a36ad74a84dbc8cd07edee1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8156251770348960996, guid: 439c9be36a36ad74a84dbc8cd07edee1,
         type: 3}
@@ -3804,6 +3824,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8950945464445806220, guid: 9d0279dd6f0e805478f497fedbee8465,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8950945464445806222, guid: 9d0279dd6f0e805478f497fedbee8465,
         type: 3}
