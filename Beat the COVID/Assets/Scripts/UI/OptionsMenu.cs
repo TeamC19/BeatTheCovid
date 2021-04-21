@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class OptionsMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
@@ -35,11 +34,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
     }
-    
-    // This function will take you to the MainMenu Scene
     public void LoadMenu()
     {
         Debug.Log("Loading menu");
-        SceneManager.LoadScene("MainMenu");
+        //SceneManager.LoadScene("Menu");
+    }
+    public void QuitGame()
+    {
+        Debug.Log("Quitting game");
+        Application.Quit();
     }
 }

@@ -14,6 +14,7 @@ public class MainMenuController : MonoBehaviour
         // But since we don't have all the levels, we will load only Level 3
     }
 
+    // Function to quit program completely
     public void QuitGame()
     {
         Debug.Log("Quitting game");
