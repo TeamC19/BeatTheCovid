@@ -25,10 +25,16 @@ public class OptionsMenu : MonoBehaviour
 
         // Add options to Dropdown menu
         List<string> options = new List<string>(); //Need to convert array of resolutions into array of strings for AddOptions()
+        int currentResolutionIndex = 0;
         for(int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
+            if(resolutions[i].width == Screen.currentResolution.width
+                && resolutions[i].height == Screen.currentResolution.height)
+            {
+                currentResolutionIndex = i;
+            }
         }
         resolutionDropdown.AddOptions(options);
     }
