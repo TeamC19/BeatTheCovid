@@ -1,47 +1,47 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
-    // Start is called before the first frame update
-    void Update()
+    // Reference to audio mixer to change the volume with slider
+    public AudioMixer audioMixer;
+
+    // Variable to save possible screen resolutions for PC
+    Resolution[] resolutions;
+
+    // Reference UI element to add resolutions to dropdown menu
+    public Dropdown resolutionDropdown;
+
+    // Figure out screen resolution when starting game
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        resolutions = Screen.resolutions;
+
+        // Make resolutions blank in resolution dropdown
+        resolutionDropdown.ClearOptions();
+
+        // Add options to Dropdown menu
+        List<string> options = new List<string>(); //Need to convert array of resolutions into array of strings for AddOptions()
+        for(int i = 0; i < resolutions.Length; i++)
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            string option = resolutions[i].width + "x" + resolutions[i].height;
+            options.Add(option);
         }
+        resolutionDropdown.AddOptions(options);
     }
 
-    void Pause()
+    // Take value from slider to adjust volume
+    public void SetVolume(float volume)
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
+        audioMixer.SetFloat("Volume", volume);
     }
-    public void Resume()
+
+    // Toggle fullscreen mode
+    public void SetFullScreen (bool isFullscreen)
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
-    }
-    public void LoadMenu()
-    {
-        Debug.Log("Loading menu");
-        //SceneManager.LoadScene("Menu");
-    }
-    public void QuitGame()
-    {
-        Debug.Log("Quitting game");
-        Application.Quit();
+        Screen.fullScreen = isFullscreen;
     }
 }
