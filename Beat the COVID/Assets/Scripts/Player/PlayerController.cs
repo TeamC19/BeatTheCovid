@@ -11,7 +11,7 @@ public class PlayerController: MonoBehaviour
     Vector2 direction;
     // _rb2d references the Character's Rigidbody(placed on feet)
     [Header("Rigidbody references")]
-    Rigidbody2D _rb2d;
+    public Rigidbody2D _rb2d;
     GameObject checkgroundGameObject;
     [SerializeField] float speed = 1f;
     // Health variables
@@ -33,7 +33,7 @@ public class PlayerController: MonoBehaviour
     [Header("Jumping variables")]
     [SerializeField] float jumpForce = 7.5f;
     [SerializeField] float gravity = -9.8f * 10;
-    [SerializeField] float startJumpPos;
+    public float startJumpPos; //guarda la posicion de cuando empieza a saltar, valor de inicio 0
     public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
     public bool jumped;
 
@@ -118,20 +118,20 @@ public class PlayerController: MonoBehaviour
             _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumped = true;
             grounded = false;
-        }
-        
-        // Player cannot move on Y axis while jumping
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_jump")) 
-        {  
-            direction.y = 0; 
+            //8 = blocking
+            Physics2D.IgnoreLayerCollision(8, 8);
+
         }
 
+
+
         // Movement
-        else if (Input.GetKey(KeyCode.W))
+
+        else if (Input.GetKey(KeyCode.W) && grounded)
         {
             direction.y = 1;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S) && grounded)
         {
             direction.y = -1;
         }

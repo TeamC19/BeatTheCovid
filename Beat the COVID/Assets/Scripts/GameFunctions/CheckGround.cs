@@ -22,6 +22,13 @@ public class CheckGround : MonoBehaviour
         if (other.gameObject.layer == 8 && !player.jumped) 
         {
             player.grounded = true;
+            Physics2D.SetLayerCollisionMask(8, 8);
+
+            player._rb2d.velocity = Vector3.zero;
+            player.transform.position = new Vector2(player.transform.position.x, player.startJumpPos);
+       
+
+
         }
     }
     private void OnTriggerExit(Collider other)

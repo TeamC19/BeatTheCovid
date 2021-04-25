@@ -9,6 +9,8 @@ public class MainMenuController : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene("Level3");
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
         // The correct code would be:
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         // But since we don't have all the levels, we will load only Level 3

@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
-    
+    GameObject pauseMenuUI;
+
+    private void Awake()
+    {
+        pauseMenuUI = transform.GetChild(0).gameObject;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -43,6 +47,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        
     }
     
     // This function will take you to the MainMenu Scene

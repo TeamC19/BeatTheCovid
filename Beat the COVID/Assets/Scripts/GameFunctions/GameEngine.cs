@@ -12,6 +12,7 @@ public class GameEngine : MonoBehaviour
     public GameObject cinemachine2;
     public Animator cameraAnimator;
     public Transform background;
+    public PauseMenu pauseMenu;
     public bool fightMode = false;
     public float val = 0;
     public float speed = 0.1f;
