@@ -8,7 +8,7 @@ public class ProjectileController : MonoBehaviour
     private SpriteRenderer _sprite;
     private Animator _anim;
     private Vector2 direction;
-     // _rb2d references the Character's Rigidbody(placed on feet)
+    // _rb2d references the Character's Rigidbody(placed on feet)
     [Header("Rigidbody references")]
     public Rigidbody2D _rb2d;
     public GameObject checkgroundGameObject;
@@ -35,8 +35,8 @@ public class ProjectileController : MonoBehaviour
 
         Invoke("DestroyProjectile", 5.0f);
 
-        if ((_player.transform.position.x - _projectile_pos.position.x) <= 0) { direction.x = -1; }// projectile is to the right of the player (or in the same pos X-wise)
-        else { direction.x = 1; }
+        if ((_player.transform.position.x - _projectile_pos.position.x) <= 0) { direction.x = -1; _sprite.flipX = true; }// projectile is to the right of the player (or in the same pos X-wise)
+        else { direction.x = 1;  }
     }
 
     // Update is called once per frame
@@ -51,6 +51,8 @@ public class ProjectileController : MonoBehaviour
         //damage
         if (Mathf.Abs(_player.transform.position.x - _projectile_pos.position.x) < attack_range
                 && Mathf.Abs(_player.transform.position.y - _projectile_pos.position.y) < attack_range) { Attack(); }
+        //Change Sprite According to movement
+        
     }
 
     void DestroyProjectile() { Destroy(this.gameObject); }

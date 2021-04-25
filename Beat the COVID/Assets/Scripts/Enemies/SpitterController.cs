@@ -77,6 +77,7 @@ public class SpitterController : EnemyController
     // Invoke projectiles
     void ShootProjectile()
     {
+
         _anim.SetTrigger("summon");
         Invoke("Projectile", 0.5f);
     }
