@@ -19,10 +19,10 @@ public class EnemyController : MonoBehaviour
     // This is to know the enemy's current position
     protected Transform _enemy_pos;
     // This is to track the player's distance and enemy's searching area
-    protected float searchRange = 3;
-    protected float stoppingDistance = 1;
+    public float searchRange = 3;
+    public float stoppingDistance = 1;
     //Enemy's speed
-    protected  float speed = 3f;
+    public float speed = 3f;
     
     // Health variables
     [Header("Health variables")]

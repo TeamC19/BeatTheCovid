@@ -144,5 +144,5 @@ MonoBehaviour:
   _rb2d: {fileID: 0}
   checkgroundGameObject: {fileID: 0}
   _player: {fileID: 5778333883683905906, guid: abe6c8a8e9cedcd4499948c86e0ed520, type: 3}
-  speed: 1
+  speed: 7
   attackDamage: 2
