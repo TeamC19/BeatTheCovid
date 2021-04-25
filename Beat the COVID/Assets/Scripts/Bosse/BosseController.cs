@@ -108,7 +108,14 @@ public class BosseController : EnemyController
         _anim.SetTrigger("summon");
         Invoke("SummonedNote", 0.5f);
     }
-    void Summoned() { Instantiate(_enemy, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }//Summons Enemy with delay, according to animation
-    void SummonedHeart() { Instantiate(_heart, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
-    void SummonedNote() { Instantiate(_note, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
+    void Summoned() {
+        if ((_player.transform.position.x - _boss_pos.position.x) <= 0) { Instantiate(_enemy, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
+        else { Instantiate(_enemy, new Vector2(_boss_pos.position.x + 2.0f, _boss_pos.position.y), Quaternion.identity); }
+         
+    
+    }//Summons Enemy with delay, according to animation
+
+
+    void SummonedHeart() { Instantiate(_heart, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
+    void SummonedNote() { Instantiate(_note, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
 }

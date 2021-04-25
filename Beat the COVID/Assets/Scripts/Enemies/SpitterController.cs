@@ -81,7 +81,7 @@ public class SpitterController : EnemyController
         _anim.SetTrigger("summon");
         Invoke("Projectile", 0.5f);
     }
-    void Projectile() { Instantiate(_projectile, new Vector2(_enemy_pos.position.x - 2.0f, _enemy_pos.position.y), Quaternion.identity); }
+    void Projectile() { Instantiate(_projectile, new Vector2(_enemy_pos.position.x, _enemy_pos.position.y), Quaternion.identity); }
 
     // Method that will be called by PlayerController - needs to be Public
     public override void TakeDamage(int damage)

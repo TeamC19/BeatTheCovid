@@ -179,8 +179,16 @@ public class Denier : EnemyController
         _anim.SetTrigger("summon");
         Invoke("SummonedExploder", 0.5f);
     }
-    void SummonedRammer() { Instantiate(_covidRammer, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }//Summons Enemy with delay, according to animation
-    void SummonedSpitter() { Instantiate(_covidSpitter, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }
-    void SummonedExploder() { Instantiate(_covidExploder, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }
+    void SummonedRammer() {
+        if ((_player.transform.position.x - _denier_pos.position.x) <= 0) { Instantiate(_covidRammer, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }
+        else { Instantiate(_covidRammer, new Vector2(_denier_pos.position.x + 2.0f, _denier_pos.position.y), Quaternion.identity); }
+    }//Summons Enemy with delay, according to animation
+    void SummonedSpitter() {
+        if ((_player.transform.position.x - _denier_pos.position.x) <= 0) { Instantiate(_covidRammer, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }
+        else { Instantiate(_covidSpitter, new Vector2(_denier_pos.position.x + 2.0f, _denier_pos.position.y), Quaternion.identity); }
+    }
+    void SummonedExploder() { 
+            if ((_player.transform.position.x - _denier_pos.position.x) <= 0) { Instantiate(_covidRammer, new Vector2(_denier_pos.position.x - 2.0f, _denier_pos.position.y), Quaternion.identity); }
+        else { Instantiate(_covidExploder, new Vector2(_denier_pos.position.x + 2.0f, _denier_pos.position.y), Quaternion.identity); }}
 }
 
