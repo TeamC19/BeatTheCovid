@@ -9,7 +9,7 @@ public class ExploderController : EnemyController
     // Attack variables
     [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
-    [SerializeField] int attackDamage = 1;
+    [SerializeField] int attackDamage = 100;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -72,7 +72,21 @@ public class ExploderController : EnemyController
             _anim.SetBool("touched", true);
             //EXPLOSION GOES HERE
             //DESTROY BALL AFTER EXPLODING
-            Destroy(gameObject, 1f);
+            
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding")) {
+                
+                // Call EnemyController Attack() method
+                base.Attack();
+                // Play enemy attack animation
+                _anim.SetTrigger("playerNear");
+                // Detect player in range of attack
+                Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
+                // Damage player
+                _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+
+                base.EnemyDeath();
+                Destroy(gameObject, 2.317f);
+            }
         }
     }
 

@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 7456478471440684762}
   - component: {fileID: 2073808073}
   - component: {fileID: 1979610327801943003}
-  - component: {fileID: 845382213112017555}
+  - component: {fileID: 1464345214}
+  - component: {fileID: 1632509464}
   m_Layer: 9
   m_Name: Vaccine
   m_TagString: CanBePickedUp
@@ -155,7 +156,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &845382213112017555
+--- !u!95 &1464345214
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7456478471440684760}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21792f451aad7784e8ba3a05beb25905, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1632509464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

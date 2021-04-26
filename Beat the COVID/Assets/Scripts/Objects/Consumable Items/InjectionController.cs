@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InjectionController : MonoBehaviour
 {
-    [SerializeField] float speed = 4;
+    [SerializeField] float speed = 2;
     // public variables because they're changed by the player
     public bool thrown;
    // public bool exploded;
@@ -17,6 +17,7 @@ public class InjectionController : MonoBehaviour
     [SerializeField] float attackRange = 2.55f;
     [SerializeField] int damagePoints = 2;
     [SerializeField] Sprite smoke;
+    private Animator animator;
 
 
     void Start()
@@ -28,7 +29,7 @@ public class InjectionController : MonoBehaviour
             transform.Translate(Vector3.Scale(LaunchOffset, transform.localScale));
             var direction = transform.localScale.x * transform.right + Vector3.up;
             rb2d.AddForce(direction * speed, ForceMode2D.Impulse);
-
+            animator = gameObject.GetComponent<Animator>();
             Destroy(gameObject, despawnTime);
         } else
         {
@@ -41,27 +42,29 @@ public class InjectionController : MonoBehaviour
     {
         if (thrown)
         {
-            transform.position += transform.localScale.x * transform.right * speed * Time.deltaTime;
             if (transform.position.y <= y)
             {
-                var direction = transform.localScale.x * transform.right + Vector3.up;
-                rb2d.velocity = Vector3.zero;
+                //var direction = transform.localScale.x * transform.right + Vector3.up;
+                rb2d.velocity = Vector2.zero;
                 rb2d.isKinematic = true;
-                thrown = false;
-                spriteRenderer.sprite = smoke;
+                
+                //spriteRenderer.sprite = smoke;
+                animator.SetTrigger("Explode");
                 DamageInArea();
-                Destroy(gameObject, 0.5f);
+                Destroy(gameObject, animator.GetCurrentAnimatorClipInfo(0).Length);
+            } else {
+                transform.position += transform.localScale.x * transform.right * speed * Time.deltaTime;
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && !thrown)
+        /*if (collision.CompareTag("Player") && !thrown)
         {
             GameEngine.instance.player.GetAnInjection();
             Destroy(gameObject);
-        }
+        }*/
     }
 
     public void DamageInArea() {
