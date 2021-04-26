@@ -330,7 +330,10 @@ public class PlayerController: MonoBehaviour
                         else { Debug.Log("Greedy. No heal for u");}
                         break;
                     case Item.ItemType.INJECTION:
-                        shouldDisappear = true;
+                        if (!other.gameObject.GetComponent<InjectionController>().thrown) {
+                            injectionIndicator.text = "" + (++injectionNumber);
+                            shouldDisappear = true;
+                        }
                         break;
                 }
                 
@@ -357,10 +360,6 @@ public class PlayerController: MonoBehaviour
         Debug.Log("Health: " + hitPoints.currentHealth);
     }
 
-    public void GetAnInjection()
-    {
-        injectionIndicator.text = "" + (++injectionNumber);
-    }
     // Use Gizmos to know where things are to make adjustments
     void onDrawGizmosSelected()
     {   
