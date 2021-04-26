@@ -27,24 +27,6 @@ public class ExploderController : EnemyController
     {
         // Call EnemyController Update() method
         base.Update();
-        Debug.DrawRay(transform.position, new Vector3(attackRange, 0, 0), Color.red);
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding"))
-        {
-            // Play enemy attack animation
-            //_anim.SetTrigger("playerNear");
-            // Detect player in range of attack
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
-            // Damage player
-            print(hitPlayers.Length);
-            foreach (Collider2D player in hitPlayers)
-            {
-                print(player.gameObject.name);
-                player.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
-            }
-
-            base.EnemyDeath();
-            Destroy(gameObject, 2.317f);
-        }
     }
 
     // Enemy Wait
@@ -90,7 +72,18 @@ public class ExploderController : EnemyController
             _anim.SetBool("touched", true);
             //EXPLOSION GOES HERE
             //DESTROY BALL AFTER EXPLODING
-            
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding"))
+            {
+                // Play enemy attack animation
+                //_anim.SetTrigger("playerNear");
+                // Detect player in range of attack
+                Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
+                // Damage player
+                _player?.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+
+                base.EnemyDeath();
+                Destroy(gameObject, 2.317f);
+            }
         }
 
 

@@ -76,7 +76,10 @@
     <Compile Include="Assets\Scripts\Enemies\SpitterController.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\CheckGround.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\FallingBugPreventer.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\FallingZone.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\GameEngine.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\KillingZone.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\LockYaxisCinemachine.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\OrderInLayer.cs" />
     <Compile Include="Assets\Scripts\Hit Points - Scriptable Objects\HitPoints.cs" />

@@ -40,6 +40,8 @@ public class InjectionController : MonoBehaviour
 
     private void Update()
     {
+        // Uncomment to check in the Scene window (editor) the 
+        //Debug.DrawRay(transform.position, new Vector3(attackRange, 0, 0), Color.green);
         if (thrown)
         {
             if (transform.position.y <= y)
@@ -47,8 +49,9 @@ public class InjectionController : MonoBehaviour
                 //var direction = transform.localScale.x * transform.right + Vector3.up;
                 rb2d.velocity = Vector2.zero;
                 rb2d.isKinematic = true;
-                
+
                 //spriteRenderer.sprite = smoke;
+                transform.localScale = Vector3.one * 2;
                 animator.SetTrigger("Explode");
                 DamageInArea();
                 Destroy(gameObject, animator.GetCurrentAnimatorClipInfo(0).Length);
@@ -69,7 +72,7 @@ public class InjectionController : MonoBehaviour
 
     public void DamageInArea() {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
-
+        
         foreach (Collider2D enemy in hitEnemies)
         {
             if (enemy.CompareTag("Exploder"))

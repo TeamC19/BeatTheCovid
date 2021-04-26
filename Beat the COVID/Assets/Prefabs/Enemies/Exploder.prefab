@@ -161,6 +161,6 @@ MonoBehaviour:
   hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4096
   attackRange: 1
   attackDamage: 30
