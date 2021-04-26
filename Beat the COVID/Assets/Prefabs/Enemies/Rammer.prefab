@@ -155,6 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eafa359b88027834db5b5da591571ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  searchRange: 6
+  stoppingDistance: 1
+  speed: 3
   hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
   playerLayer:
     serializedVersion: 2

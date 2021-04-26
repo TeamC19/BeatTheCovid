@@ -74,7 +74,7 @@ public class EnemyController : MonoBehaviour
     {
         // Play wait animation in Child
         // If player is detected, change state to Pursuit
-        if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
+        if(Mathf.Abs(_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
         {
             wait = false;
             pursuit = true;
