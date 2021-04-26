@@ -15,6 +15,7 @@ public class InjectionController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     [SerializeField] LayerMask enemyLayer;
     [SerializeField] float attackRange = 2.55f;
+    [SerializeField] int damagePoints = 2;
     [SerializeField] Sprite smoke;
 
 
@@ -61,9 +62,10 @@ public class InjectionController : MonoBehaviour
 
     public void DamageInArea() {
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
+
         foreach (Collider2D enemy in hitEnemies)
         {
-            // Hacer daño
+            enemy.gameObject.GetComponent<EnemyController>().TakeDamage(damagePoints);
         }
     }
 

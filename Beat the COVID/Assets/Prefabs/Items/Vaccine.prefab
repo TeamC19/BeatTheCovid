@@ -54,8 +54,9 @@ MonoBehaviour:
   despawnTime: 20
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 1024
   attackRange: 2.55
+  damagePoints: 2
   smoke: {fileID: 21300000, guid: 4e52d8aa58b844e45ab926cf68ca8d6c, type: 3}
 --- !u!61 &7456478471440684762
 BoxCollider2D:
