@@ -9,7 +9,6 @@ public class KillingZone : MonoBehaviour
     PlayerController player;
     private void OnTriggerStay2D(Collider2D collision)
     {
-        print("ON");
         if (collision.CompareTag("Player"))
         {
             timer += Time.deltaTime;
