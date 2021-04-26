@@ -68,7 +68,10 @@ public class PlayerController : MonoBehaviour
         UpdateSyringe(injectionNumber);
     }
 
-    
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     // Update is called once per frame
     void Update()
     {
@@ -256,23 +259,27 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    // Method for player taking damage (animations and health depletion)
-    public void PlayerTakeDamage(int damage)
+<<<<<<< Updated upstream
+    // Function for player taking damage (animations and health depletion)
+    public void PlayerTakeDamage(int damage) 
     {
-        if (blocking)
+        if(blocking)
         {
             // No take damage
         }
         else
-        {
-            // Subtract health
-            hitPoints.currentHealth -= damage;
-            Debug.Log("Player health: " + hitPoints.currentHealth);
-            healthBar.SetHealth(hitPoints.currentHealth);
+=======
+    // Method for player taking damage (animations and health depletion)
+    public void PlayerTakeDamage(int damage)
+    {
+        // Subtract health
+        hitPoints.currentHealth -= damage;
+        Debug.Log("Player health: " + hitPoints.currentHealth);
+        healthBar.SetHealth(hitPoints.currentHealth);
 
-            // Play hit animation
-            _anim.SetTrigger("IsHit");
-        }
+        // Play hit animation
+        _anim.SetTrigger("IsHit");
+
         // Player cannot move while getting damaged (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged"))
         {
@@ -282,10 +289,31 @@ public class PlayerController : MonoBehaviour
 
         // Call death function
         if (hitPoints.currentHealth <= 0)
+>>>>>>> Stashed changes
         {
-            hitPoints.currentHealth = 0;
-            PlayerDeath();
+            // Subtract health
+            hitPoints.currentHealth -= damage;
+            Debug.Log("Player health: " + hitPoints.currentHealth);
+            healthBar.SetHealth(hitPoints.currentHealth);
+
+            // Play hit animation
+            _anim.SetTrigger("IsHit");
+
+            // Player cannot move while getting damaged (NOT WORKING AS INTENDED)-----------
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
+            { 
+                direction.x = 0; 
+                direction.y = 0; 
+            }
+
+            // Call death function
+            if(hitPoints.currentHealth <= 0)
+            {
+                hitPoints.currentHealth = 0;
+                PlayerDeath();
+            }
         }
+        
     }
 
     // Function to kill player
@@ -328,7 +356,12 @@ public class PlayerController : MonoBehaviour
     // When player runs into healing item or injection, despawn item
     void OnTriggerEnter2D(Collider2D other)
     {
+<<<<<<< Updated upstream
+        // If collision is with an item
+        if(other.CompareTag("CanBePickedUp"))
+=======
         if (other.CompareTag("CanBePickedUp"))
+>>>>>>> Stashed changes
         {
             // What type of item is this
             Item item = other.gameObject.GetComponent<Consumable>().item;

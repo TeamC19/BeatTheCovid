@@ -149,7 +149,7 @@ public class EnemyController : MonoBehaviour
         hitPoints.currentHealth -= damage;
 
         // Play hit animation in Child
-
+        
         // Call death function
         if(hitPoints.currentHealth <= 0)
         {
