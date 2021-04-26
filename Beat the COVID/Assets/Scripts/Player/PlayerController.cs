@@ -64,7 +64,6 @@ public class PlayerController : MonoBehaviour
         // Player Health
         hitPoints.currentHealth = hitPoints.startHealth;
         healthBar.SetMaxHealth(hitPoints.maxHealth, hitPoints.startHealth);
-        //injectionIndicator.text = "" + injectionNumber;
         UpdateSyringe(injectionNumber);
     }
 
@@ -225,9 +224,7 @@ public class PlayerController : MonoBehaviour
 
         if (injectionNumber > 0)
         {
-            // injectionIndicator.text = ""+--injectionNumber;
             UpdateSyringe(--injectionNumber);
-            //C1C1C1 alpha 196
             GameObject vaccine = Instantiate(injectionPrefab, attackPoint.position, transform.rotation);
             InjectionController injectionController = vaccine.GetComponent<InjectionController>();
             injectionController.thrown = true;
@@ -372,7 +369,6 @@ public class PlayerController : MonoBehaviour
                     case Item.ItemType.INJECTION:
                         if (!other.gameObject.GetComponent<InjectionController>().thrown)
                         {
-                            //injectionIndicator.text = "" + (++injectionNumber);
                             if (injectionNumber < 3)
                             {
                                 UpdateSyringe(++injectionNumber);
@@ -423,17 +419,6 @@ public class PlayerController : MonoBehaviour
 
     void UpdateSyringe(int val)
     {
-
-        /*injectionNumber += signed_val;
-        GameObject syringe = syringes[injectionNumber - 1];
-        if (signed_val == 1)
-        {
-            syringe.GetComponent<SpriteRenderer>().sprite = syringe_active;
-        }
-        else
-        {
-            syringe.GetComponent<SpriteRenderer>().sprite = syringe_disabled;
-        }*/
 
         for (int i = 0; i < syringes.Length; i++)
         {
