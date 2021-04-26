@@ -72,7 +72,7 @@ public class ExploderController : EnemyController
             _anim.SetBool("touched", true);
             //EXPLOSION GOES HERE
             //DESTROY BALL AFTER EXPLODING
-            Destroy(this);
+            Destroy(gameObject, 1f);
         }
     }
 

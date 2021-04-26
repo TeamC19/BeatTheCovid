@@ -97,6 +97,6 @@ public class RammerController : EnemyController
         base.EnemyDeath();
 
         // Destroy dead enemy after playing animation---------(DOES NOT DESTROY)
-        Destroy(this, 1f);
+        Destroy(gameObject, 1f);
     }
 }

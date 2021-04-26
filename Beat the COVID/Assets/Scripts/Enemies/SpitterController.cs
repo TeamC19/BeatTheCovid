@@ -103,6 +103,7 @@ public class SpitterController : EnemyController
         base.EnemyDeath();
 
         // Destroy dead enemy after playing animation---------(DOES NOT DESTROY)
-        Destroy(this, 1f);
+        print("EXECUTED");
+        Destroy(gameObject, 1f);
     }
 }

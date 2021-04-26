@@ -348,3 +348,4 @@ MonoBehaviour:
   injectionNumber: 5
   injectionPrefab: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
     type: 3}
+  injectionIndicator: {fileID: 0}

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c2471f92c378244acca619bf6cb815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   thrown: 0
   y: 0
   LaunchOffset: {x: 0.89, y: 0.51, z: 0}

@@ -57,7 +57,11 @@ public class InjectionController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-      
+        if (collision.CompareTag("Player") && !thrown)
+        {
+            GameEngine.instance.player.GetAnInjection();
+            Destroy(gameObject);
+        }
     }
 
     public void DamageInArea() {

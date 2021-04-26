@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController: MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class PlayerController: MonoBehaviour
     [Header("Inventory variables")]
     [SerializeField] int injectionNumber;
     [SerializeField] GameObject injectionPrefab;
+    [SerializeField] Text injectionIndicator;
     
     // Start is called before the first frame update
     void Start()
@@ -53,6 +55,7 @@ public class PlayerController: MonoBehaviour
         // Player Health
         hitPoints.currentHealth = hitPoints.startHealth;
         healthBar.SetMaxHealth(hitPoints.maxHealth, hitPoints.startHealth);
+        injectionIndicator.text = "" + injectionNumber;
     }
 
     
@@ -211,6 +214,7 @@ public class PlayerController: MonoBehaviour
 
         if (injectionNumber > 0)
         {
+            injectionIndicator.text = ""+--injectionNumber;
             GameObject vaccine = Instantiate(injectionPrefab, attackPoint.position, transform.rotation);
             InjectionController injectionController = vaccine.GetComponent<InjectionController>();
             injectionController.thrown = true;
@@ -353,6 +357,10 @@ public class PlayerController: MonoBehaviour
         Debug.Log("Health: " + hitPoints.currentHealth);
     }
 
+    public void GetAnInjection()
+    {
+        injectionIndicator.text = "" + (++injectionNumber);
+    }
     // Use Gizmos to know where things are to make adjustments
     void onDrawGizmosSelected()
     {   
