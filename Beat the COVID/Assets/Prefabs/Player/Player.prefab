@@ -340,7 +340,7 @@ MonoBehaviour:
   punchDamage: 1
   kickDamage: 2
   attackRate: 2
-  jumpForce: 10
+  jumpForce: 7.5
   gravity: 9.8
   startJumpPos: 0
   grounded: 0
