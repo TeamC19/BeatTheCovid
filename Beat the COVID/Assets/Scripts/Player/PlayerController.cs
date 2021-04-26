@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController: MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class PlayerController: MonoBehaviour
     Animator _anim;
     BoxCollider2D colliderLimits;
     Vector2 direction;
+    // Reference to animator for scene transition
+    public Animator _deathTransition;
+    // Time it takes to wait for animation to end
+    public float transitionTime = 1f;
     // _rb2d references the Character's Rigidbody(placed on feet)
     [Header("Rigidbody references")]
     public Rigidbody2D _rb2d;
@@ -29,6 +34,7 @@ public class PlayerController: MonoBehaviour
     [SerializeField] int kickDamage = 2;
     [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks
     float nextAttackTime = 0f;
+    bool blocking = false;
 
     // Jumping variables
     [Header("Jumping variables")]
@@ -58,7 +64,6 @@ public class PlayerController: MonoBehaviour
         injectionIndicator.text = "" + injectionNumber;
     }
 
-    
     // Update is called once per frame
     void Update()
     {
@@ -154,7 +159,7 @@ public class PlayerController: MonoBehaviour
         transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
     }
 
-    // Method to punch enemy
+    // Function to punch enemy
     void Punch()
     {
         // Play attack animation
@@ -177,7 +182,7 @@ public class PlayerController: MonoBehaviour
         }
     }
 
-    // Method to kick enemy
+    // Function to kick enemy
     void Kick()
     {
         // Play attack animation
@@ -200,6 +205,7 @@ public class PlayerController: MonoBehaviour
         }
     }
 
+    // Function to throw injection
     void Throw()
     {
         // Play throw animation
@@ -225,6 +231,7 @@ public class PlayerController: MonoBehaviour
 
     }
 
+    // Function to block attacks
     void Block()
     {
         // Play block animation
@@ -237,49 +244,77 @@ public class PlayerController: MonoBehaviour
             direction.y = 0; 
         }
 
-        // Not take damage if blocking
+        // Set blocking state to true
+        blocking =  true;
 
     }
 
-    // Method for player taking damage (animations and health depletion)
+    // Function for player taking damage (animations and health depletion)
     public void PlayerTakeDamage(int damage) 
     {
-        // Subtract health
-        hitPoints.currentHealth -= damage;
-        Debug.Log("Player health: " + hitPoints.currentHealth);
-        healthBar.SetHealth(hitPoints.currentHealth);
-
-        // Play hit animation
-        _anim.SetTrigger("IsHit");
-
-        // Player cannot move while getting damaged (NOT WORKING AS INTENDED)-----------
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
-        }
-
-        // Call death function
-        if(hitPoints.currentHealth <= 0)
+        if(blocking)
         {
-            hitPoints.currentHealth = 0;
-            PlayerDeath();
+            // No take damage
         }
+        else
+        {
+            // Subtract health
+            hitPoints.currentHealth -= damage;
+            Debug.Log("Player health: " + hitPoints.currentHealth);
+            healthBar.SetHealth(hitPoints.currentHealth);
+
+            // Play hit animation
+            _anim.SetTrigger("IsHit");
+
+            // Player cannot move while getting damaged (NOT WORKING AS INTENDED)-----------
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_damaged")) 
+            { 
+                direction.x = 0; 
+                direction.y = 0; 
+            }
+
+            // Call death function
+            if(hitPoints.currentHealth <= 0)
+            {
+                hitPoints.currentHealth = 0;
+                PlayerDeath();
+            }
+        }
+        
     }
 
-    // Method to kill player
+    // Function to kill player
     void PlayerDeath()
     {
         Debug.Log("Player died");
         // OPTIONAL FOR NOW
         // Play death animation 
 
-        // Destroy dead player
-        Destroy(this.gameObject);
+        // Disable dead player
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
 
+        // Play death scene transition GO BACK TO MAIN MENU FOR NOW
+        StartCoroutine(DeathScreen(0));
+        // Reload scene to respawn player
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
     }
 
-    // Method to respawn character when killed (UNUSED FOR NOW)
+    // Coroutine to play transition animation to go to main menu after player death
+    IEnumerator DeathScreen(int levelIndex)
+    {
+        // Play transition animation
+        _deathTransition.SetTrigger("Start");
+
+        // Wait for transition animation to end
+        yield return new WaitForSeconds(transitionTime);
+
+        // Load next scene
+        SceneManager.LoadScene(levelIndex);
+    }
+
+    // Function to respawn character when killed (UNUSED FOR NOW)
     void RespawnCharacter()
     {
         hitPoints.currentHealth = hitPoints.startHealth;
@@ -288,6 +323,7 @@ public class PlayerController: MonoBehaviour
     // When player runs into healing item or injection, despawn item
     void OnTriggerEnter2D(Collider2D other)
     {
+        // If collision is with an item
         if(other.CompareTag("CanBePickedUp"))
         {
             // What type of item is this
@@ -342,9 +378,12 @@ public class PlayerController: MonoBehaviour
             }
             
         }
+
+        // If collision is with End-of-Level wall
+        // Transition into next scene
     }
 
-    // Healing player
+    // Function to heal player
     public void AdjustHitPoints(int amount)
     {
         // Make sure player cannot over heal in amount

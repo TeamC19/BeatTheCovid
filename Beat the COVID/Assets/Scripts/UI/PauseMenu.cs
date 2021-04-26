@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    // Reference to animator for scene transition
+    public Animator _menuTransition;
+    // Time it takes to wait for animation to end
+    public float transitionTime = 1f;
+    // Pause menu references
     public static bool GameIsPaused = false;
-    GameObject pauseMenuUI;
-
+    protected GameObject pauseMenuUI;
     private void Awake()
     {
         pauseMenuUI = transform.GetChild(0).gameObject;
@@ -40,20 +44,35 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    public void ReloadGame()
+    public void ReloadLevel()
     {
         Debug.Log("Reloading game");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        
     }
     
     // This function will take you to the MainMenu Scene
     public void LoadMenu()
     {
         Debug.Log("Loading menu");
-        SceneManager.LoadScene("MainMenu");
+        // Load the next scene, with menu unpaused
+        StartCoroutine(LoadGameMenu(0));
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
+    }
+
+    // Coroutine to play transition animation to go to main menu
+    IEnumerator LoadGameMenu(int levelIndex)
+    {
+        // Play transition animation
+        _menuTransition.SetTrigger("Start");
+
+        // Wait for transition animation to end
+        yield return new WaitForSeconds(transitionTime);
+
+        // Load next scene
+        SceneManager.LoadScene(levelIndex);
     }
 }

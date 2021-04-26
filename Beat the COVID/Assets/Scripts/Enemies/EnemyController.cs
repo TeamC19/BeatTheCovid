@@ -161,7 +161,7 @@ public class EnemyController : MonoBehaviour
     protected virtual void EnemyDeath()
     {
         Debug.Log("Enemy died");
-        // OPTIONAL FOR NOW
+        
         // Play death animation in Child
 
         // Disable dead enemy
