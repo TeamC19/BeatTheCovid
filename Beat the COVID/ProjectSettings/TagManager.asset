@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - CanBePickedUp
+  - Exploder
   layers:
   - Default
   - TransparentFX

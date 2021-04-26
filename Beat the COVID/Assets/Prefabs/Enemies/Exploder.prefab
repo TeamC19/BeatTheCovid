@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6479441986644180784}
   m_Layer: 10
   m_Name: Exploder
-  m_TagString: Untagged
+  m_TagString: Exploder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2122325587
   m_SortingLayer: 2
-  m_SortingOrder: 128
+  m_SortingOrder: 46
   m_Sprite: {fileID: 7143524545573104637, guid: a6a9b9f88a4d03b43af9a2ce46069849,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

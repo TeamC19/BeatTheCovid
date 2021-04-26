@@ -38,19 +38,19 @@ public class ExploderController : EnemyController
 
     // Enemy pursuit movement
     protected override void EnemyPursuit()
-    
+
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt"))
+        {
+            direction.x = 0;
+            direction.y = 0;
         }
         else
         {
             // Call EnemyController EnemyPursuit() method
             base.EnemyPursuit();
-            if(_sprite.flipX) _sprite.flipX = false;
+            if (_sprite.flipX) _sprite.flipX = false;
             else _sprite.flipX = true;
         }
     }
@@ -59,12 +59,12 @@ public class ExploderController : EnemyController
     protected override void Attack()
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt"))
+        {
+            direction.x = 0;
+            direction.y = 0;
         }
-        else 
+        else
         {
             // Call EnemyController Attack() method
             base.Attack();
@@ -72,9 +72,10 @@ public class ExploderController : EnemyController
             _anim.SetBool("touched", true);
             //EXPLOSION GOES HERE
             //DESTROY BALL AFTER EXPLODING
-            
-            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding")) {
-                
+
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding"))
+            {
+
                 // Call EnemyController Attack() method
                 base.Attack();
                 // Play enemy attack animation
@@ -88,7 +89,12 @@ public class ExploderController : EnemyController
                 Destroy(gameObject, 2.317f);
             }
         }
+
+
+    }
+    public void HitByAVaccine()
+    {
+        Attack();
     }
 
-    
 }

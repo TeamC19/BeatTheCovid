@@ -72,7 +72,11 @@ public class InjectionController : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.gameObject.GetComponent<EnemyController>().TakeDamage(damagePoints);
+            if (enemy.CompareTag("Exploder"))
+            {
+                enemy.GetComponent<ExploderController>().HitByAVaccine();
+            }
+            else enemy.gameObject.GetComponent<EnemyController>().TakeDamage(damagePoints);
         }
     }
 

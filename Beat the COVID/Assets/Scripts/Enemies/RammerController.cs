@@ -58,8 +58,8 @@ public class RammerController : EnemyController
     // Spitter Attack player
     protected override void Attack()
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("spitter_hurt")) 
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("rammer_attack")
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("rammer_hurt")) 
         { 
             direction.x = 0; 
             direction.y = 0; 
