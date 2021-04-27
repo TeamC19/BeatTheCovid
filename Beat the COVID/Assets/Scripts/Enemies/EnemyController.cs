@@ -40,6 +40,7 @@ public class EnemyController : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         colliderLimits = GetComponent<BoxCollider2D>();
         // Enemy health
+        hitPoints = Instantiate(hitPoints);
         hitPoints.currentHealth = hitPoints.startHealth;
         // Starting states
         wait = true;
