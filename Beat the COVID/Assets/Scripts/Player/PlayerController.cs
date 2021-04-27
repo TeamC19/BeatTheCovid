@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int kickDamage = 2;
     [SerializeField] int attackRate = 2; // Attack rate to not be able to spam attacks
     float nextAttackTime = 0f;
-    bool blocking = false;
 
     // Jumping variables
     [Header("Jumping variables")]
@@ -132,7 +131,6 @@ public class PlayerController : MonoBehaviour
             _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumped = true;
             grounded = false;
-            //8 = blocking
             Physics2D.IgnoreLayerCollision(8, 8);
 
         }
@@ -244,11 +242,6 @@ public class PlayerController : MonoBehaviour
         // Play block animation
         _anim.SetTrigger("IsBlocking");
 
-        // Player cannot move while blocking (NOT WORKING AS INTENDED)-----------
-        
-
-        // Set blocking state to true
-        //blocking =  true;
 
     }
 

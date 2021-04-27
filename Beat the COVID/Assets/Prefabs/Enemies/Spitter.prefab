@@ -156,8 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 8
-  stoppingDistance: 3
-  speed: 2
+  stoppingDistance: 5
+  speed: 1
   hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
   playerLayer:
     serializedVersion: 2
