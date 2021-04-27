@@ -83,9 +83,9 @@ public class PlayerController : MonoBehaviour
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
         _anim.SetBool("IsJumping", !grounded);
-
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
         // Make attacks limited to 2 per second aprox.
-        if (Time.time >= nextAttackTime)
+        else if (Time.time >= nextAttackTime)
         {
             // GoTo Punch() method for all Punch funtionality
             if (Input.GetKeyDown(KeyCode.J))
@@ -109,7 +109,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // GoTo Throw() method for all Throw funtionality
-        if (Input.GetKeyDown(KeyCode.I))
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        else if (Input.GetKeyDown(KeyCode.I))
         {
             Throw();
         }
@@ -123,7 +124,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Jump animation and physics
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        else if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             _anim.SetBool("IsJumping", grounded);
             startJumpPos = transform.position.y;
@@ -138,26 +140,27 @@ public class PlayerController : MonoBehaviour
 
 
         // Movement
-
-        else if (Input.GetKey(KeyCode.W) && grounded)
-        {
-            direction.y = 1;
+        else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        else {
+            if (Input.GetKey(KeyCode.W) && grounded)
+            {
+                direction.y = 1;
+            }
+            else if (Input.GetKey(KeyCode.S) && grounded)
+            {
+                direction.y = -1;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                direction.x = 1;
+                transform.localScale = Vector3.right + Vector3.up + Vector3.forward;
+            }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                direction.x = -1;
+                transform.localScale = Vector3.left + Vector3.up + Vector3.forward;
+            }
         }
-        else if (Input.GetKey(KeyCode.S) && grounded)
-        {
-            direction.y = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            direction.x = 1;
-            transform.localScale = Vector3.right + Vector3.up + Vector3.forward;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            direction.x = -1;
-            transform.localScale = Vector3.left + Vector3.up + Vector3.forward;
-        }
-
         // Player movement animation
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);
@@ -242,21 +245,17 @@ public class PlayerController : MonoBehaviour
         _anim.SetTrigger("IsBlocking");
 
         // Player cannot move while blocking (NOT WORKING AS INTENDED)-----------
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block"))
-        {
-            direction.x = 0;
-            direction.y = 0;
-        }
+        
 
         // Set blocking state to true
-        blocking =  true;
+        //blocking =  true;
 
     }
 
     // Method for player taking damage (animations and health depletion)
     public void PlayerTakeDamage(int damage)
     {
-        if (blocking)
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block"))
         {
             // No take damage
         }
