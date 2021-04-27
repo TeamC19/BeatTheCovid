@@ -121,6 +121,33 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &52960301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1585811707323055976, guid: 81e052c40b005ec43aaddede3c23f3b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1585811708208630226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &52960308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52960301}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &106931710
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,7 +887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.299988, y: 0.5830499, z: -10}
+  m_LocalPosition: {x: 53.300335, y: 0.5830499, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1333,7 +1360,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.778626, y: 1}
+    m_SensorSize: {x: 1.7475, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

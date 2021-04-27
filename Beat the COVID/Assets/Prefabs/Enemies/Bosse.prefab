@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1585811707323055983}
   - component: {fileID: -7379471337917372556}
   - component: {fileID: 1585811707323055977}
+  - component: {fileID: 52960308}
   m_Layer: 10
   m_Name: Bosse
   m_TagString: Enemy
@@ -164,3 +165,24 @@ MonoBehaviour:
   _boss_pos: {fileID: 0}
   _heart: {fileID: 4726032305879062500, guid: 4b6e3d87e3388024d932d72043c02953, type: 3}
   _note: {fileID: 3494854142190148232, guid: 90e4e32fafecdf44c83bd2a95f9186ed, type: 3}
+--- !u!50 &52960308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585811707323055976}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
