@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
             _rb2d.velocity = Vector3.zero;
         direction = Vector2.zero;
         _anim.SetBool("IsJumping", !grounded);
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         // Make attacks limited to 2 per second aprox.
         else if (Time.time >= nextAttackTime)
         {
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // GoTo Throw() method for all Throw funtionality
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         else if (Input.GetKeyDown(KeyCode.I))
         {
             Throw();
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Jump animation and physics
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         else if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             _anim.SetBool("IsJumping", grounded);
@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
 
 
         // Movement
-        else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block")) { direction.y = 0; direction.x = 0; }
+        else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         else {
             if (Input.GetKey(KeyCode.W) && grounded)
             {
