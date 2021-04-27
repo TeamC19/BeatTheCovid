@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9a4b13904262b469d596ec4dc4b6c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  searchRange: 3
+  searchRange: 8
   stoppingDistance: 1
   speed: 3
   hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
@@ -143,6 +143,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  summonRate: 5
   _denier_pos: {fileID: 0}
   _covidRammer: {fileID: 3366766378583007951, guid: 0f290ae4b945f1e4a923ca431f3c8452,
     type: 3}

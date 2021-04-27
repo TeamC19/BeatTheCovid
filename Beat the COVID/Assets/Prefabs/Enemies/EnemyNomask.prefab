@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  searchRange: 3
+  searchRange: 8
   stoppingDistance: 1
   speed: 3
   hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
