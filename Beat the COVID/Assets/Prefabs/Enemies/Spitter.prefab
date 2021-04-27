@@ -163,6 +163,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.5
-  attackDamage: 1
+  attackDamage: 5
   _projectile: {fileID: 183634358057566303, guid: 3af6c8ae90b968a429acf6b520f37c83,
     type: 3}

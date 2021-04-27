@@ -9,6 +9,7 @@ public class Denier : EnemyController
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask playerLayer;
+    [SerializeField] float summonRate = 5f;
     // Attack variables
 
 
@@ -49,7 +50,7 @@ public class Denier : EnemyController
         {
             //int n = rand.Next(101);
             if (!isSummoning) {
-                InvokeRepeating("Summon", 1.0f, 10.0f);
+                InvokeRepeating("Summon", 1.0f, summonRate);
                 //InvokeRepeating("SummonRammer", 4.0f, 4.0f);
                 isSummoning = true;
             }
