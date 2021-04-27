@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     BoxCollider2D colliderLimits;
     Vector2 direction;
     // Reference to animator for scene transition
-    public Animator _deathTransition;
+    public Animator _transition;
     // Time it takes to wait for animation to end
     public float transitionTime = 1f;
     // _rb2d references the Character's Rigidbody(placed on feet)
@@ -307,7 +307,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator DeathScreen(int levelIndex)
     {
         // Play transition animation
-        _deathTransition.SetTrigger("Start");
+        _transition.SetTrigger("Start");
 
         // Wait for transition animation to end
         yield return new WaitForSeconds(transitionTime);

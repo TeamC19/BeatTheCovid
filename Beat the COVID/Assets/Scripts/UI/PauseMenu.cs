@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     // Reference to animator for scene transition
-    public Animator _menuTransition;
+    public Animator _transition;
     // Time it takes to wait for animation to end
     public float transitionTime = 1f;
     // Pause menu references
@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour
     IEnumerator LoadGameMenu(int levelIndex)
     {
         // Play transition animation
-        _menuTransition.SetTrigger("Start");
+        _transition.SetTrigger("Start");
 
         // Wait for transition animation to end
         yield return new WaitForSeconds(transitionTime);

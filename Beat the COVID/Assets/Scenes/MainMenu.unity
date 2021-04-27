@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 483213697}
   - component: {fileID: 483213696}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MenuUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,8 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31932d1e239c75246b3034346c188813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelTransition: {fileID: 2111668479}
-  _bossTransition: {fileID: 2111668479}
+  _transition: {fileID: 2111668479}
   transitionTime: 1
 --- !u!1 &1453855835
 GameObject:
