@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\UI\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerEnterTransition.cs" />
     <None Include="Assets\Credits.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
