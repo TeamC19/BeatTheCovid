@@ -5,16 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+    // Reference to animator for scene transition
+    public Animator _transition;
+    // Time it takes to wait for animation to end
+    public float transitionTime = 1f;
+
+    
     // Function to load next level when we hit play
-    public void LoadLevel()
+    public void StartGame()
     {
-        SceneManager.LoadScene("Level3");
+        // Load the next scene, with menu unpaused
+        StartCoroutine(LoadGameLevel(SceneManager.GetActiveScene().buildIndex + 1));
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
-        // The correct code would be:
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        // But since we don't have all the levels, we will load only Level 3
     }
+
+    // Coroutine to play transition animation to go to either play level or boss level
+    IEnumerator LoadGameLevel(int levelIndex)
+    {
+        // Play transition animation
+        _transition.SetTrigger("Start");
+
+        // Wait for transition animation to end
+        yield return new WaitForSeconds(transitionTime);
+
+        // Load next scene
+        SceneManager.LoadScene(levelIndex);
+    }
+
 
     // Function to quit program completely
     public void QuitGame()

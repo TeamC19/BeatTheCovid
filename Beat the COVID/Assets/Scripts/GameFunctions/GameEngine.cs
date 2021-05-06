@@ -24,6 +24,8 @@ public class GameEngine : MonoBehaviour
     }
     void Start()
     {
+        cameraController = Camera.main.GetComponent<CameraController>();
+        cameraAnimator = Camera.main.GetComponent<Animator>();
     }
 
     // Update is called once per frame

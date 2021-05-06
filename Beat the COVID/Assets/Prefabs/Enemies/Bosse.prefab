@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1585811707323055983}
   - component: {fileID: -7379471337917372556}
   - component: {fileID: 1585811707323055977}
-  m_Layer: 8
+  - component: {fileID: 52960308}
+  m_Layer: 10
   m_Name: Bosse
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2122325587
   m_SortingLayer: 2
-  m_SortingOrder: 100
+  m_SortingOrder: 20
   m_Sprite: {fileID: 7161911691342900463, guid: dca21dbd0ae2bfd4fa09386aeed04f30,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,18 +151,38 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585811707323055976}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79d8ccb93b4e3db44910a06bbfa986f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  summoning: 0
+  searchRange: 3
+  stoppingDistance: 1
   speed: 3
-  _rb2d: {fileID: 0}
-  checkgroundGameObject: {fileID: 0}
-  _player: {fileID: 0}
+  hitPoints: {fileID: 11400000, guid: def3e33d344f1d345ba50da33fcec35d, type: 2}
+  summoning: 0
   _enemy: {fileID: 8950945464445806220, guid: 9d0279dd6f0e805478f497fedbee8465, type: 3}
   _boss_pos: {fileID: 0}
   _heart: {fileID: 4726032305879062500, guid: 4b6e3d87e3388024d932d72043c02953, type: 3}
   _note: {fileID: 3494854142190148232, guid: 90e4e32fafecdf44c83bd2a95f9186ed, type: 3}
-  hitPoints: {fileID: 11400000, guid: def3e33d344f1d345ba50da33fcec35d, type: 2}
+--- !u!50 &52960308
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585811707323055976}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

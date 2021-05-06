@@ -40,6 +40,7 @@ public class EnemyController : MonoBehaviour
         _rb2d = GetComponent<Rigidbody2D>();
         colliderLimits = GetComponent<BoxCollider2D>();
         // Enemy health
+        hitPoints = Instantiate(hitPoints);
         hitPoints.currentHealth = hitPoints.startHealth;
         // Starting states
         wait = true;
@@ -74,7 +75,7 @@ public class EnemyController : MonoBehaviour
     {
         // Play wait animation in Child
         // If player is detected, change state to Pursuit
-        if((_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
+        if(Mathf.Abs(_player.transform.position.x -_enemy_pos.position.x) <= searchRange)
         {
             wait = false;
             pursuit = true;
@@ -149,7 +150,7 @@ public class EnemyController : MonoBehaviour
         hitPoints.currentHealth -= damage;
 
         // Play hit animation in Child
-
+        
         // Call death function
         if(hitPoints.currentHealth <= 0)
         {
@@ -161,7 +162,7 @@ public class EnemyController : MonoBehaviour
     protected virtual void EnemyDeath()
     {
         Debug.Log("Enemy died");
-        // OPTIONAL FOR NOW
+        
         // Play death animation in Child
 
         // Disable dead enemy

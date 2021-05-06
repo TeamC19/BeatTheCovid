@@ -143,8 +143,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b41b3845efcde8d41bfef441f20cdca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!95 &5239694249545078643
 Animator:
   serializedVersion: 3
@@ -160,7 +160,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -297,8 +297,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36887e69098292b4b80b0c52acc09e0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!54 &5778333882419832631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -358,8 +358,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c05a243dc0a4f547a865f6c0ef2100c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
+  _deathTransition: {fileID: 0}
+  transitionTime: 1
   _rb2d: {fileID: 0}
   speed: 5
   hitPoints: {fileID: 11400000, guid: c16eee587fc9159488622283fe0fbc17, type: 2}
@@ -372,12 +374,12 @@ MonoBehaviour:
   punchDamage: 1
   kickDamage: 2
   attackRate: 2
-  jumpForce: 10
+  jumpForce: 7.5
   gravity: 9.8
   startJumpPos: 0
   grounded: 0
   jumped: 0
-  injectionNumber: 5
+  injectionNumber: 2
   injectionPrefab: {fileID: 7456478471440684760, guid: 01a2b8a3cdbe1d44cbd1ea3bcdbe8b50,
     type: 3}
 --- !u!1 &8987710442937843273

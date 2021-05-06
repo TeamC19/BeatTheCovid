@@ -9,6 +9,7 @@ public class Denier : EnemyController
     // Attack variables(I put only one attack point - could be one for kick and one for punch)
     [SerializeField] Transform attackPoint;
     [SerializeField] LayerMask playerLayer;
+    [SerializeField] float summonRate = 5f;
     // Attack variables
 
 
@@ -19,6 +20,7 @@ public class Denier : EnemyController
     public GameObject _covidExploder;//remember to set it in the gameobject
 
     public bool isSummoning= false;
+    public bool isDeath = false;
 
     protected override void Start()
     {
@@ -48,7 +50,7 @@ public class Denier : EnemyController
         {
             //int n = rand.Next(101);
             if (!isSummoning) {
-                InvokeRepeating("Summon", 1.0f, 10.0f);
+                InvokeRepeating("Summon", 1.0f, summonRate);
                 //InvokeRepeating("SummonRammer", 4.0f, 4.0f);
                 isSummoning = true;
             }
@@ -70,7 +72,8 @@ public class Denier : EnemyController
     {
         _anim.SetBool("waiting", false);
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("enemy_denier_sneeze")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("enemy_denier_take_dmg"))
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("enemy_denier_take_dmg")
+        )
         {
             direction.x = 0;
         }
@@ -123,11 +126,14 @@ public class Denier : EnemyController
     // Denier Invoke covid
     protected void Summon()
     {
-        System.Random rnd = new System.Random();
-        int n = rnd.Next(1,4);
-        if (n == 1) { SummonRammer();  }
-        if (n == 2) { SummonSpitter(); }
-        if (n == 3) { SummonExploder(); }
+        if(!isDeath) {
+            System.Random rnd = new System.Random();
+            int n = rnd.Next(1, 4);
+            if (n == 1) { SummonRammer(); }
+            if (n == 2) { SummonSpitter(); }
+            if (n == 3) { SummonExploder(); }
+        }
+        
 
         // Play enemy attack animation
 
@@ -141,7 +147,6 @@ public class Denier : EnemyController
 
     }
 
-    // Method that will be called by PlayerController - needs to be Public
     public override void TakeDamage(int damage)
     {
         // Inherit from parent TakeDamage()
@@ -156,6 +161,8 @@ public class Denier : EnemyController
     {
         // Play death animation
         _anim.SetBool("dead", true);
+
+        isDeath = true;
 
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();

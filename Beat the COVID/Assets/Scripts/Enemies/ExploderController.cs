@@ -9,7 +9,7 @@ public class ExploderController : EnemyController
     // Attack variables
     [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
-    [SerializeField] int attackDamage = 1;
+    [SerializeField] int attackDamage = 100;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -27,6 +27,24 @@ public class ExploderController : EnemyController
     {
         // Call EnemyController Update() method
         base.Update();
+        Debug.DrawRay(transform.position, new Vector3(attackRange, 0, 0), Color.red);
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_exploding"))
+        {
+            // Play enemy attack animation
+            //_anim.SetTrigger("playerNear");
+            // Detect player in range of attack
+            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
+            // Damage player
+            print(hitPlayers.Length);
+            foreach (Collider2D player in hitPlayers)
+            {
+                print(player.gameObject.name);
+                player.GetComponent<PlayerController>().PlayerTakeDamage(attackDamage);
+            }
+
+            base.EnemyDeath();
+            Destroy(gameObject, 2.317f);
+        }
     }
 
     // Enemy Wait
@@ -38,19 +56,19 @@ public class ExploderController : EnemyController
 
     // Enemy pursuit movement
     protected override void EnemyPursuit()
-    
+
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt"))
+        {
+            direction.x = 0;
+            direction.y = 0;
         }
         else
         {
             // Call EnemyController EnemyPursuit() method
             base.EnemyPursuit();
-            if(_sprite.flipX) _sprite.flipX = false;
+            if (_sprite.flipX) _sprite.flipX = false;
             else _sprite.flipX = true;
         }
     }
@@ -59,22 +77,31 @@ public class ExploderController : EnemyController
     protected override void Attack()
     {
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_attack")
-            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt")) 
-        { 
-            direction.x = 0; 
-            direction.y = 0; 
+            || _anim.GetCurrentAnimatorStateInfo(0).IsName("exploder_hurt"))
+        {
+            direction.x = 0;
+            direction.y = 0;
         }
-        else 
+        else
         {
             // Call EnemyController Attack() method
-            base.Attack();
+           // base.Attack();
             // Play enemy attack animation
             _anim.SetBool("touched", true);
             //EXPLOSION GOES HERE
             //DESTROY BALL AFTER EXPLODING
-            Destroy(this);
+            
         }
+
+
+    }
+    public void HitByAVaccine()
+    {
+        Attack();
     }
 
-    
+    public override void TakeDamage(int damage)
+    {
+        Attack();
+    }
 }

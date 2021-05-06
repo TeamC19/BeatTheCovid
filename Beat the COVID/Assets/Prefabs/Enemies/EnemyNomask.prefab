@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2122325587
   m_SortingLayer: 2
-  m_SortingOrder: -23
+  m_SortingOrder: -12
   m_Sprite: {fileID: -8912754901463219915, guid: 914c6335157c3164ebf6d94176a1eeac,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -156,14 +156,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec07197116a2e014cb661c7f20411e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  searchRange: 8
+  stoppingDistance: 1
+  speed: 3
   hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
   attackPoint: {fileID: 8950945464666798629}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 1.7
-  attackDamage: 5
-  attackRate: 2
+  attackRange: 0.5
+  attackDamage: 7
 --- !u!1 &8950945464666798626
 GameObject:
   m_ObjectHideFlags: 0

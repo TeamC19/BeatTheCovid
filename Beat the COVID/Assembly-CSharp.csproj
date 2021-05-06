@@ -76,7 +76,10 @@
     <Compile Include="Assets\Scripts\Enemies\SpitterController.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\CheckGround.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\FallingBugPreventer.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\FallingZone.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\GameEngine.cs" />
+    <Compile Include="Assets\Scripts\GameFunctions\KillingZone.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\LockYaxisCinemachine.cs" />
     <Compile Include="Assets\Scripts\GameFunctions\OrderInLayer.cs" />
     <Compile Include="Assets\Scripts\Hit Points - Scriptable Objects\HitPoints.cs" />
@@ -89,6 +92,8 @@
     <Compile Include="Assets\Scripts\UI\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\UI\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\UI\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\UI\PlayerEnterTransition.cs" />
+    <None Include="Assets\Credits.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

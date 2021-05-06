@@ -156,13 +156,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   searchRange: 8
-  stoppingDistance: 3
-  speed: 2
+  stoppingDistance: 5
+  speed: 1
   hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.5
-  attackDamage: 1
+  attackDamage: 5
   _projectile: {fileID: 183634358057566303, guid: 3af6c8ae90b968a429acf6b520f37c83,
     type: 3}
