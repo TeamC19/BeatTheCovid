@@ -13,6 +13,7 @@ public class PlayerController: MonoBehaviour
     [Header("Rigidbody references")]
     public Rigidbody2D _rb2d;
     GameObject checkgroundGameObject;
+    GameObject playerContents;
     [SerializeField] float speed = 1f;
     // Health variables
     
@@ -45,11 +46,12 @@ public class PlayerController: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _sprite = GetComponent<SpriteRenderer>();
-        _anim = GetComponent<Animator>();
-        _rb2d = GetComponent<Rigidbody2D>();
-        checkgroundGameObject = transform.Find("ground check").gameObject;
-        colliderLimits = GetComponent<BoxCollider2D>();
+        playerContents = transform.Find("PlayerContent").gameObject;
+        _sprite = playerContents.GetComponent<SpriteRenderer>();
+        _anim = playerContents.GetComponent<Animator>();
+        _rb2d = playerContents.GetComponent<Rigidbody2D>();
+        checkgroundGameObject = playerContents.transform.Find("ground check").gameObject;
+        colliderLimits = playerContents.GetComponent<BoxCollider2D>();
         // Player Health
         hitPoints.currentHealth = hitPoints.startHealth;
         healthBar.SetMaxHealth(hitPoints.maxHealth, hitPoints.startHealth);
@@ -107,14 +109,15 @@ public class PlayerController: MonoBehaviour
         {
             _rb2d.AddForce(Vector2.down * gravity);
             Vector3 position = checkgroundGameObject.transform.position;
-            checkgroundGameObject.transform.position = new Vector3(position.x, position.y,transform.position.y - startJumpPos);
+
+            checkgroundGameObject.transform.position = new Vector3(position.x, position.y, playerContents.transform.position.y - startJumpPos);
         }
 
         // Jump animation and physics
         if (Input.GetKeyDown(KeyCode.Space) && grounded) 
         {
             _anim.SetBool("IsJumping", grounded);
-            startJumpPos = transform.position.y;
+            startJumpPos = playerContents.transform.position.y;
             _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumped = true;
             grounded = false;
@@ -242,8 +245,8 @@ public class PlayerController: MonoBehaviour
     {
         // Subtract health
         hitPoints.currentHealth -= damage;
-        Debug.Log("Player health: " + hitPoints.currentHealth);
-        healthBar.SetHealth(hitPoints.currentHealth);
+       // Debug.Log("Player health: " + hitPoints.currentHealth);
+        //healthBar.SetHealth(hitPoints.currentHealth);
 
         // Play hit animation
         _anim.SetTrigger("IsHit");
