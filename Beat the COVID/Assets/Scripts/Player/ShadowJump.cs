@@ -23,7 +23,7 @@ public class ShadowJump : MonoBehaviour
         }
         else 
         { 
-            transform.position = playerpos.position + Vector3.down * 1.1f;
+            transform.position = playerpos.position + Vector3.down * 1.25f;
             originalpos = transform;
         }
        

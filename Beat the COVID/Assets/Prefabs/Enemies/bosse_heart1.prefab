@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4726032305879062507}
   - component: {fileID: 4726032305879062503}
   - component: {fileID: 4726032305879062506}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: bosse_heart1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

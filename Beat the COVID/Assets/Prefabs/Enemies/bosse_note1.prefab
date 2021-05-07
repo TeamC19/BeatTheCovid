@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3494854142190148237}
   - component: {fileID: 3494854142190148236}
   - component: {fileID: 3494854142190148239}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: bosse_note1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -119,6 +119,7 @@ MonoBehaviour:
   _rb2d: {fileID: 0}
   checkgroundGameObject: {fileID: 0}
   _player: {fileID: 0}
+  attackDamage: 2
 --- !u!61 &3494854142190148239
 BoxCollider2D:
   m_ObjectHideFlags: 0
