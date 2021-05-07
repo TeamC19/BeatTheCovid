@@ -126,6 +126,7 @@ public class PlayerController : MonoBehaviour
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         else if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
+            _rb2d.velocity = Vector2.zero;
             _anim.SetBool("IsJumping", grounded);
             startJumpPos = transform.position.y;
             _rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

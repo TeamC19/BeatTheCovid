@@ -67,7 +67,9 @@ public class EnemyController : MonoBehaviour
         }
         // Movement
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
-        transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
+        //transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
+        //transform.Translate(Vector2.one * direction * /*Time.deltaTime*/ * speed);Referencia rigidbody.speed y el vector
+        _rb2d.velocity = (Vector2.one * direction * speed);
     }
 
     // Enemy Wait 

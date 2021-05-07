@@ -71,7 +71,7 @@ public class BosseController : EnemyController
 
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
-        transform.Translate(Vector2.one * direction * Time.deltaTime * speed);
+        _rb2d.velocity = (Vector2.one * direction * speed);
     }
 
     public override void TakeDamage(int damage)
