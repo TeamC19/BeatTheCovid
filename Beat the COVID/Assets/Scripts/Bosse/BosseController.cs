@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BosseController : EnemyController
 {
@@ -8,6 +10,10 @@ public class BosseController : EnemyController
     public GameObject _enemy; //remember to set it in the gameobject
     public Transform _boss_pos;
 
+    // Reference to animator for scene transition
+    public Animator _transition;
+    // Time it takes to wait for animation to end
+    public float transitionTime = 1f;
     public GameObject _heart;//remember to set it in the gameobject
     public GameObject _note;//remember to set it in the gameobject
 
@@ -90,7 +96,23 @@ public class BosseController : EnemyController
         CancelInvoke();
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
+        // Play death scene transition ROLL END CREDITS
+        StartCoroutine(DeathScreen(SceneManager.GetActiveScene().buildIndex + 1));
+        // Reload scene to respawn player
+        Time.timeScale = 1f;
+        PauseMenu.GameIsPaused = false;
+    }
+    // Coroutine to play transition animation to go to main menu after player death
+    IEnumerator DeathScreen(int levelIndex)
+    {
+        // Play transition animation
+        _transition.SetTrigger("Start");
 
+        // Wait for transition animation to end
+        yield return new WaitForSeconds(transitionTime);
+
+        // Load next scene
+        SceneManager.LoadScene(levelIndex);
     }
 
     void SummonEnemy()
