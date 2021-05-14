@@ -290,7 +290,7 @@ public class PlayerController : MonoBehaviour
         this.enabled = false;
 
         // Play death scene transition GO BACK TO MAIN MENU FOR NOW
-        StartCoroutine(DeathScreen(0));
+        StartCoroutine(DeathScreen(4));
         // Reload scene to respawn player
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
