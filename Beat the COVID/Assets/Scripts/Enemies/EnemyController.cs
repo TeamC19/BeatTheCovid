@@ -30,11 +30,16 @@ public class EnemyController : MonoBehaviour
     // Enemy States
     [Header("Enemy states")]
     protected bool wait, pursuit;
-    
+
+    protected AudioSource _audio;
+    [Header("Sound effects")]
+    public AudioClip hitSound;
 
     // Start is called before the first frame update
     protected virtual void Start()
     {
+        _audio = GetComponent<AudioSource>();
+
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
@@ -150,11 +155,11 @@ public class EnemyController : MonoBehaviour
     {
         // Subtract health
         hitPoints.currentHealth -= damage;
-
+        PlaySound(hitSound);
         // Play hit animation in Child
-        
+
         // Call death function
-        if(hitPoints.currentHealth <= 0)
+        if (hitPoints.currentHealth <= 0)
         {
             EnemyDeath();
         }
@@ -170,5 +175,15 @@ public class EnemyController : MonoBehaviour
         // Disable dead enemy
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+    }
+
+    protected void PlaySound(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            _audio.clip = clip;
+            _audio.pitch = Random.Range(0.8f, 1.2f);
+            _audio.Play();
+        }
     }
 }

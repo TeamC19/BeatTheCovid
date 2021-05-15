@@ -10,6 +10,8 @@ public class ExploderController : EnemyController
     [Header("Attack variables")]
     [SerializeField] float attackRange = 0.5f;
     [SerializeField] int attackDamage = 100;
+    private bool soundPlaying = false;
+    public AudioClip explodeSound;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -35,7 +37,10 @@ public class ExploderController : EnemyController
             // Detect player in range of attack
             Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
             // Damage player
-            print(hitPlayers.Length);
+            if (!soundPlaying)
+            {
+                PlaySound(explodeSound);
+            }
             foreach (Collider2D player in hitPlayers)
             {
                 print(player.gameObject.name);
