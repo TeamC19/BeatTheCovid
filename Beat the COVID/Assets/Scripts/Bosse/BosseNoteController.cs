@@ -34,8 +34,8 @@ public class BosseNoteController : MonoBehaviour
     void Update()
     {
 
-        if ((_player.transform.position.y - _note_pos.position.y) <= 0) { direction.y += -0.006f; }
-        else { direction.y += 0.006f; }
+        if ((_player.transform.position.y - _note_pos.position.y) <= 0) { direction.y += -0.012f; }
+        else { direction.y += 0.012f; }
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);

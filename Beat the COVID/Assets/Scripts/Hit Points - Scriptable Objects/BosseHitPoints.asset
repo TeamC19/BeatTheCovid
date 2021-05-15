@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58cc118d96ea51a45b6bdc53339bd214, type: 3}
   m_Name: BosseHitPoints
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 25
-  startHealth: 5
+  currentHealth: 33
+  maxHealth: 50
+  startHealth: 50

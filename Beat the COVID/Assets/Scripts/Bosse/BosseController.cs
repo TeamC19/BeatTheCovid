@@ -9,7 +9,8 @@ public class BosseController : EnemyController
     public bool summoning = false;
     public GameObject _enemy; //remember to set it in the gameobject
     public Transform _boss_pos;
-
+    private static int PHASE2_THR = 33;
+    private static int PHASE3_THR = 17;
     // Reference to animator for scene transition
     public Animator _transition;
     // Time it takes to wait for animation to end
@@ -18,6 +19,7 @@ public class BosseController : EnemyController
     public GameObject _note;//remember to set it in the gameobject
 
     private int _hp;
+    private int phase;
     // Start is called before the first frame update
     new void Start()
     {
@@ -29,8 +31,8 @@ public class BosseController : EnemyController
         _rb2d = GetComponent<Rigidbody2D>();
         //collider = GetComponent<BoxCollider2D>();
         _boss_pos = GetComponent<Transform>();
-
-        InvokeRepeating("SummonEnemy", 7.0f, 7.0f);
+        phase = 1;
+        //InvokeRepeating("SummonEnemy", 7.0f, 7.0f);
         InvokeRepeating("SummonHeart", 10.0f, 10.0f);
         InvokeRepeating("SummonNote", 4.0f, 4.0f);
     }
@@ -38,7 +40,18 @@ public class BosseController : EnemyController
     // Update is called once per frame
     new void Update()
     {
-        
+        if(hitPoints.currentHealth <= PHASE2_THR && phase == 1)
+        {
+            phase = 2;
+            SummonEnemy();
+            hitPoints.currentHealth = PHASE2_THR;
+        }
+        if (hitPoints.currentHealth <= PHASE3_THR && phase == 2)
+        {
+            phase = 3;
+            SummonEnemy();
+            hitPoints.currentHealth = PHASE3_THR;
+        }
 
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt")) { direction.x = 0; }
         //movement on the X axis
@@ -118,7 +131,16 @@ public class BosseController : EnemyController
     void SummonEnemy()
     {
         _anim.SetTrigger("summon");
-        Invoke("Summoned", 0.5f);
+        if (phase == 2)
+        {
+            Instantiate(_enemy, new Vector2(43.0f, 0.0f), Quaternion.identity);
+
+            Instantiate(_enemy, new Vector2(60.0f, 0.0f), Quaternion.identity);
+        }
+        else if (phase == 3)
+        {
+            Instantiate(_enemy, new Vector2(60.0f, 0.0f), Quaternion.identity);
+        }
     }
     void SummonHeart()
     {
@@ -130,13 +152,6 @@ public class BosseController : EnemyController
         _anim.SetTrigger("summon");
         Invoke("SummonedNote", 0.5f);
     }
-    void Summoned() {
-        if ((_player.transform.position.x - _boss_pos.position.x) <= 0) { Instantiate(_enemy, new Vector2(_boss_pos.position.x - 2.0f, _boss_pos.position.y), Quaternion.identity); }
-        else { Instantiate(_enemy, new Vector2(_boss_pos.position.x + 2.0f, _boss_pos.position.y), Quaternion.identity); }
-         
-    
-    }//Summons Enemy with delay, according to animation
-
 
     void SummonedHeart() { Instantiate(_heart, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
     void SummonedNote() { Instantiate(_note, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
