@@ -3,7 +3,17 @@ guid: 79d8ccb93b4e3db44910a06bbfa986f7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - hitPoints: {instanceID: 0}
+  - hitSound: {fileID: 8300000, guid: 5f8e375dc7fb48247a69755a4b29d6c8, type: 3}
+  - _enemy: {instanceID: 0}
+  - _enemy_spitter: {instanceID: 0}
+  - _enemy_rammer: {instanceID: 0}
+  - _enemy_summoner: {instanceID: 0}
+  - _boss_pos: {instanceID: 0}
+  - _transition: {instanceID: 0}
+  - _heart: {instanceID: 0}
+  - _note: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

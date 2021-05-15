@@ -28,6 +28,7 @@ public class BosseController : EnemyController
     // Start is called before the first frame update
     new void Start()
     {
+        _audio = GetComponent<AudioSource>();
         hitPoints.currentHealth = hitPoints.startHealth;
         direction = Vector2.zero;
         _player = GameObject.Find("Player");
@@ -150,7 +151,9 @@ public class BosseController : EnemyController
         }
         else if (phase == 3)
         {
-            Instantiate(_enemy, new Vector2(60.0f, 0.0f), Quaternion.identity);
+            Instantiate(_enemy_summoner, new Vector2(45.0f, 0.0f), Quaternion.identity);
+            Instantiate(_enemy, new Vector2(53.0f, -3.0f), Quaternion.identity);
+            Instantiate(_enemy_summoner, new Vector2(60.0f, 0.0f), Quaternion.identity);
         }
     }
     void SummonHeart()
