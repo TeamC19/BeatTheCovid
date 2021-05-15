@@ -282,12 +282,12 @@ MonoBehaviour:
   speed: 3
   hitPoints: {fileID: 11400000, guid: f5b81e6e4735f6b4baf8c65399642b23, type: 2}
   hitSound: {fileID: 0}
-  explodeSound: {fileID: 8300000, guid: 5112c3fb467451f4e8726013ad69c1a4, type: 3}
   playerLayer:
     serializedVersion: 2
     m_Bits: 4096
   attackRange: 1
-  attackDamage: 30
+  attackDamage: 25
+  explodeSound: {fileID: 8300000, guid: 5112c3fb467451f4e8726013ad69c1a4, type: 3}
 --- !u!50 &1857391389350512202
 Rigidbody2D:
   serializedVersion: 4
@@ -320,7 +320,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
