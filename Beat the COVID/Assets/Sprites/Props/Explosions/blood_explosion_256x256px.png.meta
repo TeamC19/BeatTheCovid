@@ -1,7 +1,301 @@
 fileFormatVersion: 2
 guid: 0ba8b46d3e5d0934e853b2ae744a3e81
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8769901647820244634
+    second: blood_explosion_256x256px_0
+  - first:
+      213: 6762838814410532891
+    second: blood_explosion_256x256px_1
+  - first:
+      213: -6268256065478409239
+    second: blood_explosion_1
+  - first:
+      213: -7138405807307651482
+    second: blood_explosion_256x256px_3
+  - first:
+      213: 3204880745625212365
+    second: blood_explosion_22
+  - first:
+      213: -3100700381621643319
+    second: blood_explosion
+  - first:
+      213: 699420563410988552
+    second: blood_explosion_256x256px_6
+  - first:
+      213: -854142561303406587
+    second: blood_explosion_3
+  - first:
+      213: -6105664419288568143
+    second: blood_explosion_256x256px_8
+  - first:
+      213: 8205769778263037832
+    second: blood_explosion_
+  - first:
+      213: -4729215306021860953
+    second: blood_explosion_256x256px_10
+  - first:
+      213: 9082074105533985370
+    second: blood_explosion_4
+  - first:
+      213: 7358646584635307340
+    second: blood_explosion_256x256px_12
+  - first:
+      213: 4200098349138849021
+    second: blood_explosion_256x256px_13
+  - first:
+      213: -9121970885507300946
+    second: blood_explosion_5
+  - first:
+      213: -3219283108989115029
+    second: blood_explosion_256x256px_15
+  - first:
+      213: 3442312238038281837
+    second: blood_explosion_256x256px_16
+  - first:
+      213: -6117493412297670516
+    second: blood_explosion_6
+  - first:
+      213: -3681196379181158550
+    second: blood_explosion_256x256px_18
+  - first:
+      213: 4677574728932856007
+    second: blood_explosion_256x256px_19
+  - first:
+      213: 3464581214366219299
+    second: blood_explosion_256x256px_20
+  - first:
+      213: -2681188000128360585
+    second: blood_explosion_256x256px_21
+  - first:
+      213: -4886138035657696420
+    second: blood_explosion_256x256px_22
+  - first:
+      213: 5302774319423137508
+    second: blood_explosion_256x256px_23
+  - first:
+      213: 2265194554854300226
+    second: blood_explosion_256x256px_24
+  - first:
+      213: -2505864073775694481
+    second: blood_explosion_7
+  - first:
+      213: -6769198649897726288
+    second: blood_explosion_256x256px_26
+  - first:
+      213: -1358216073663661494
+    second: blood_explosion_256x256px_27
+  - first:
+      213: 110085925754166618
+    second: blood_explosion_8
+  - first:
+      213: 5535051041906935468
+    second: blood_explosion_256x256px_29
+  - first:
+      213: -8477715128813960318
+    second: blood_explosion_256x256px_30
+  - first:
+      213: 5042877958180915302
+    second: blood_explosion_256x256px_31
+  - first:
+      213: -7181760740919319148
+    second: blood_explosion_256x256px_32
+  - first:
+      213: -6600676064642481731
+    second: blood_explosion_256x256px_33
+  - first:
+      213: 8674821812088403783
+    second: blood_explosion_256x256px_34
+  - first:
+      213: -6601648087631597076
+    second: blood_explosion_256x256px_35
+  - first:
+      213: 7052169169156113197
+    second: blood_explosion_256x256px_36
+  - first:
+      213: 8297786768569787985
+    second: blood_explosion_256x256px_37
+  - first:
+      213: 1264718385701159482
+    second: blood_explosion_256x256px_38
+  - first:
+      213: 4732509548865648217
+    second: blood_explosion_256x256px_39
+  - first:
+      213: -8101445593837815966
+    second: blood_explosion_256x256px_40
+  - first:
+      213: -6502981396522104153
+    second: blood_explosion_256x256px_41
+  - first:
+      213: 5631599417796774088
+    second: blood_explosion_256x256px_42
+  - first:
+      213: -4901102767734061149
+    second: blood_explosion_256x256px_43
+  - first:
+      213: 5103235082772884876
+    second: blood_explosion_10
+  - first:
+      213: -876206774545752723
+    second: blood_explosion_9
+  - first:
+      213: -4048236088457050589
+    second: blood_explosion_256x256px_46
+  - first:
+      213: -2861995610333776568
+    second: blood_explosion_256x256px_47
+  - first:
+      213: -4351580639108230405
+    second: blood_explosion_256x256px_48
+  - first:
+      213: -8088097409724958279
+    second: blood_explosion_256x256px_49
+  - first:
+      213: -981119512489130495
+    second: blood_explosion_256x256px_50
+  - first:
+      213: -8894836086119473571
+    second: blood_explosion_256x256px_51
+  - first:
+      213: 736010928500884254
+    second: blood_explosion_256x256px_52
+  - first:
+      213: -1189166896518514041
+    second: blood_explosion_256x256px_53
+  - first:
+      213: 3815901796336629450
+    second: blood_explosion_256x256px_54
+  - first:
+      213: -4045142730923546333
+    second: blood_explosion_256x256px_55
+  - first:
+      213: 6309925261081941402
+    second: blood_explosion_256x256px_56
+  - first:
+      213: -1944765498394325877
+    second: blood_explosion_256x256px_57
+  - first:
+      213: 4743168144111334505
+    second: blood_explosion_256x256px_58
+  - first:
+      213: -1302049380287341167
+    second: blood_explosion_256x256px_59
+  - first:
+      213: 2868084203515249540
+    second: blood_explosion_256x256px_60
+  - first:
+      213: -569021320931337905
+    second: blood_explosion_256x256px_61
+  - first:
+      213: -3221829158844030165
+    second: blood_explosion_256x256px_62
+  - first:
+      213: -974508930810130808
+    second: blood_explosion_256x256px_63
+  - first:
+      213: 5551106559352524196
+    second: blood_explosion_256x256px_64
+  - first:
+      213: -3870031797332720722
+    second: blood_explosion_256x256px_65
+  - first:
+      213: 2479102559472767983
+    second: blood_explosion_256x256px_66
+  - first:
+      213: 5558240445259026504
+    second: blood_explosion_256x256px_67
+  - first:
+      213: 1775707994305109927
+    second: blood_explosion_256x256px_68
+  - first:
+      213: 4501683132271274649
+    second: blood_explosion_256x256px_69
+  - first:
+      213: 4905830444245633979
+    second: blood_explosion_256x256px_70
+  - first:
+      213: -5870568781747417740
+    second: blood_explosion_11
+  - first:
+      213: 3418821573269861097
+    second: blood_explosion_256x256px_72
+  - first:
+      213: 5006132328145549157
+    second: blood_explosion_256x256px_73
+  - first:
+      213: 1464290725535756944
+    second: blood_explosion_256x256px_74
+  - first:
+      213: 7037316610793700519
+    second: blood_explosion_256x256px_75
+  - first:
+      213: 4624892895844869552
+    second: blood_explosion_256x256px_76
+  - first:
+      213: -6278868827826065283
+    second: blood_explosion_12
+  - first:
+      213: -1057067137039879171
+    second: blood_explosion_256x256px_78
+  - first:
+      213: -2184485106153788881
+    second: blood_explosion_256x256px_79
+  - first:
+      213: 6511629427472385692
+    second: blood_explosion_13
+  - first:
+      213: -1166786793066952531
+    second: blood_explosion_last
+  - first:
+      213: -2913950954523177873
+    second: blood_explosion_256x256px_82
+  - first:
+      213: -6466365448906491084
+    second: blood_explosion_256x256px_83
+  - first:
+      213: 8709343568404480744
+    second: blood_explosion_256x256px_84
+  - first:
+      213: -2107017340656523377
+    second: blood_explosion_256x256px_85
+  - first:
+      213: 4110489570199045915
+    second: blood_explosion_256x256px_86
+  - first:
+      213: -1645471348526498110
+    second: blood_explosion_256x256px_87
+  - first:
+      213: 707459738828514714
+    second: blood_explosion_256x256px_88
+  - first:
+      213: -8615038208937103189
+    second: blood_explosion_256x256px_89
+  - first:
+      213: 4251039612438505882
+    second: blood_explosion_256x256px_90
+  - first:
+      213: -7418924166774132090
+    second: blood_explosion_256x256px_91
+  - first:
+      213: -1890219467843968369
+    second: blood_explosion_256x256px_92
+  - first:
+      213: -96900989340251731
+    second: blood_explosion_256x256px_93
+  - first:
+      213: -4949302843823800800
+    second: blood_explosion_256x256px_94
+  - first:
+      213: 7212666197962697000
+    second: blood_explosion_256x256px_95
+  - first:
+      213: 6693066658902823832
+    second: blood_explosion_256x256px_96
+  - first:
+      213: 375622069408380602
+    second: blood_explosion_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +334,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +365,2079 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669bf8e8aec0b4680800000000000000
+      internalID: -8769901647820244634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_1
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1636
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18e926121e6add50800000000000000
+      internalID: 6762838814410532891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_1
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1623
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3c8ffa15ea209a0800000000000000
+      internalID: -6268256065478409239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_3
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1611
+        width: 107
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66687d83db94fec90800000000000000
+      internalID: -7138405807307651482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_22
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1598
+        width: 133
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5da76de060a7c20800000000000000
+      internalID: 3204880745625212365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 1584
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7168e5e6918f4d0800000000000000
+      internalID: -3100700381621643319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1316
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e27b6fb47d4b900800000000000000
+      internalID: 699420563410988552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1303
+        width: 210
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508d7fdadd97524f0800000000000000
+      internalID: -854142561303406587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_8
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1291
+        width: 234
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be20925f82544ba0800000000000000
+      internalID: -6105664419288568143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1030
+        width: 512
+        height: 506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88711062320c0e170800000000000000
+      internalID: 8205769778263037832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_10
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 1329
+        width: 181
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a90a325cb37e5eb0800000000000000
+      internalID: -4729215306021860953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_4
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 1321
+        width: 199
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a527024b7420a0e70800000000000000
+      internalID: 9082074105533985370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1057
+        width: 216
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4534d8b41a2f1660800000000000000
+      internalID: 7358646584635307340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_13
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 1050
+        width: 233
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc202a023fb94a30800000000000000
+      internalID: 4200098349138849021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_5
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1043
+        width: 235
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1c1e55fcf386180800000000000000
+      internalID: -9121970885507300946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_15
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 1049
+        width: 220
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65e941a11fc253d0800000000000000
+      internalID: -3219283108989115029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_16
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1248
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e604a0ebc85cf20800000000000000
+      internalID: 3442312238038281837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_6
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1047
+        width: 229
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c808434472c4a1ba0800000000000000
+      internalID: -6117493412297670516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_18
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1253
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fe37e9563c9ecc0800000000000000
+      internalID: -3681196379181158550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_19
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1179
+        width: 47
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c01360ee651ae040800000000000000
+      internalID: 4677574728932856007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_20
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 1151
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c3ac1224aa41030800000000000000
+      internalID: 3464581214366219299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_21
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 784
+        width: 238
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f1f4c28b18acad0800000000000000
+      internalID: -2681188000128360585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_22
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1009
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b191d2853f03cb0800000000000000
+      internalID: -4886138035657696420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_23
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 781
+        width: 241
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6a741f52d379940800000000000000
+      internalID: 5302774319423137508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_24
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1014
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a5d3532769f6f10800000000000000
+      internalID: 2265194554854300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_7
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 780
+        width: 249
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6dbf2bc6e1693dd0800000000000000
+      internalID: -2505864073775694481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_26
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 784
+        width: 250
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0becac251b9fe02a0800000000000000
+      internalID: -6769198649897726288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_27
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 804
+        width: 222
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3d095da5a62de0800000000000000
+      internalID: -1358216073663661494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_8
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 802
+        width: 213
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dd853f09a178100800000000000000
+      internalID: 110085925754166618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_29
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 787
+        width: 238
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6c48eb89370dc40800000000000000
+      internalID: 5535051041906935468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_30
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1002
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c618d10b195a80800000000000000
+      internalID: -8477715128813960318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_31
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 977
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668450fd8c6ebf540800000000000000
+      internalID: 5042877958180915302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_32
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 895
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49568af18a2455c90800000000000000
+      internalID: -7181760740919319148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_33
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 895
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1cf815710b564a0800000000000000
+      internalID: -6600676064642481731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_34
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 895
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747f6571a78236870800000000000000
+      internalID: 8674821812088403783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_35
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 836
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1f4949a0c3264a0800000000000000
+      internalID: -6601648087631597076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_36
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 787
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23038fce765ed160800000000000000
+      internalID: 7052169169156113197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_37
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 785
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156e98a3a19a72370800000000000000
+      internalID: 8297786768569787985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_38
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 547
+        width: 205
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a328f98cbae2d8110800000000000000
+      internalID: 1264718385701159482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_39
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 745
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 956f74c5c504da140800000000000000
+      internalID: 4732509548865648217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_40
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 746
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267b42cd722e19f80800000000000000
+      internalID: -8101445593837815966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_41
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 747
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa8357cfd4c0c5a0800000000000000
+      internalID: -6502981396522104153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_42
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 537
+        width: 218
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8c21f35d5772e40800000000000000
+      internalID: 5631599417796774088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_43
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 539
+        width: 221
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a70789fff8cbfbb0800000000000000
+      internalID: -4901102767734061149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_10
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 534
+        width: 223
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d2df9054552d640800000000000000
+      internalID: 5103235082772884876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 543
+        width: 208
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dd865b49617d3f0800000000000000
+      internalID: -876206774545752723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_46
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 541
+        width: 212
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326c99cd9b6c1d7c0800000000000000
+      internalID: -4048236088457050589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_47
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 539
+        width: 216
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845f359e7262848d0800000000000000
+      internalID: -2861995610333776568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_48
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 699
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf29c72e6741c93c0800000000000000
+      internalID: -4351580639108230405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_49
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 697
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b93698224e41cf80800000000000000
+      internalID: -8088097409724958279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_50
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 646
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10681e7600d5262f0800000000000000
+      internalID: -981119512489130495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_51
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 622
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ed58fd4b13f8480800000000000000
+      internalID: -8894836086119473571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_52
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 625
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13c9183a06d63a00800000000000000
+      internalID: 736010928500884254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_53
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 544
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a3c52120b3f7fe0800000000000000
+      internalID: -1189166896518514041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_54
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 546
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac67b6c577ec4f430800000000000000
+      internalID: 3815901796336629450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_55
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 545
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3296c894e14ccd7c0800000000000000
+      internalID: -4045142730923546333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_56
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 536
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a959d02f79b519750800000000000000
+      internalID: 6309925261081941402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_57
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 526
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c45c0451ec205e0800000000000000
+      internalID: -1944765498394325877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_58
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 524
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96474b3fb4e13d140800000000000000
+      internalID: 4743168144111334505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_59
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 523
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d94f7bcf03eede0800000000000000
+      internalID: -1302049380287341167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_60
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 521
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4838f68236b7dc720800000000000000
+      internalID: 2868084203515249540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_61
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 520
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4993489f1e6a18f0800000000000000
+      internalID: -569021320931337905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_62
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 519
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b232b143373c943d0800000000000000
+      internalID: -3221829158844030165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_63
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 519
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ecd946a49d972f0800000000000000
+      internalID: -974508930810130808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_64
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 279
+        width: 226
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad4c84310e790d40800000000000000
+      internalID: 5551106559352524196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_65
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 275
+        width: 215
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3448aa592ea4ac0800000000000000
+      internalID: -3870031797332720722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_66
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 276
+        width: 218
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3d22b94aa876220800000000000000
+      internalID: 2479102559472767983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_67
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 274
+        width: 221
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8409fd37c36d22d40800000000000000
+      internalID: 5558240445259026504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_68
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 273
+        width: 225
+        height: 227
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af9061430594a810800000000000000
+      internalID: 1775707994305109927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_69
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 495
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aa56635f0397e30800000000000000
+      internalID: 4501683132271274649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_70
+      rect:
+        serializedVersion: 2
+        x: 1294
+        y: 270
+        width: 231
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbce8dfbc2051440800000000000000
+      internalID: 4905830444245633979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_11
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 273
+        width: 238
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d827eebcc878ea0800000000000000
+      internalID: -5870568781747417740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_72
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 438
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e231317b18127f20800000000000000
+      internalID: 3418821573269861097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_73
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 276
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567f6bd24da597540800000000000000
+      internalID: 5006132328145549157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_74
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 262
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092357f18a4325410800000000000000
+      internalID: 1464290725535756944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_75
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 8
+        width: 241
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac70561c2299a160800000000000000
+      internalID: 7037316610793700519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_76
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 6
+        width: 248
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5af05c59bee2040800000000000000
+      internalID: 4624892895844869552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_12
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 5
+        width: 247
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d707726611afcd8a0800000000000000
+      internalID: -6278868827826065283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_78
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 242
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3bff81a0b8451f0800000000000000
+      internalID: -1057067137039879171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_79
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 5
+        width: 246
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a629eae562fa1e0800000000000000
+      internalID: -2184485106153788881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_13
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 17
+        width: 250
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96c875d674fd5a50800000000000000
+      internalID: 6511629427472385692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_last
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 9
+        width: 231
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da880a6f79dbecfe0800000000000000
+      internalID: -1166786793066952531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_82
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 167
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c4cbeab019f87d0800000000000000
+      internalID: -2913950954523177873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_83
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 151
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bb11e62ead246a0800000000000000
+      internalID: -6466365448906491084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_84
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 155
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e20595d4ddcdd870800000000000000
+      internalID: 8709343568404480744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_85
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 158
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87649264ee52c2e0800000000000000
+      internalID: -2107017340656523377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_86
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1789ac5c746b0930800000000000000
+      internalID: 4110489570199045915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_87
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 138
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cebefec68c1a29e0800000000000000
+      internalID: -1645471348526498110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_88
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 134
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95a3c952e661d900800000000000000
+      internalID: 707459738828514714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_89
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 126
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0f2e5b46c317880800000000000000
+      internalID: -8615038208937103189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_90
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 126
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99e289210abefa30800000000000000
+      internalID: 4251039612438505882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_91
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 116
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682fdd707cfaa0990800000000000000
+      internalID: -7418924166774132090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_92
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 5
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82e1a7a86794c5e0800000000000000
+      internalID: -1890219467843968369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_93
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 8
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da98df7401db7aef0800000000000000
+      internalID: -96900989340251731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_94
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 12
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e3d0c394b805bb0800000000000000
+      internalID: -4949302843823800800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_95
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 9
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829a80551b9881460800000000000000
+      internalID: 7212666197962697000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_256x256px_96
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 4
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893d9e53aac82ec50800000000000000
+      internalID: 6693066658902823832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blood_explosion_2
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 228
+        width: 422
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab632e0384a763500800000000000000
+      internalID: 375622069408380602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

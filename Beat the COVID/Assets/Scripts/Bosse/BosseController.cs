@@ -12,6 +12,7 @@ public class BosseController : EnemyController
     public GameObject _enemy_spitter;
     public GameObject _enemy_rammer;
     public GameObject _enemy_summoner;
+    public GameObject _note_hazard;
 
     public Transform _boss_pos;
     private static int PHASE2_THR = 33;
@@ -121,7 +122,7 @@ public class BosseController : EnemyController
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
         // Play death scene transition ROLL END CREDITS
-        StartCoroutine(DeathScreen(SceneManager.GetActiveScene().buildIndex + 1));
+        Invoke("ChangeScene", 1.5f);
         // Reload scene to respawn player
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
@@ -154,6 +155,7 @@ public class BosseController : EnemyController
             Instantiate(_enemy_summoner, new Vector2(45.0f, 0.0f), Quaternion.identity);
             Instantiate(_enemy, new Vector2(53.0f, -3.0f), Quaternion.identity);
             Instantiate(_enemy_summoner, new Vector2(60.0f, 0.0f), Quaternion.identity);
+            InvokeRepeating("NoteFan", 4.0f, 4.0f);
         }
     }
     void SummonHeart()
@@ -175,5 +177,20 @@ public class BosseController : EnemyController
         gonnatp = false;
         if (_boss_pos.position.x > 59.0f) { _boss_pos.position = new Vector2(49.0f, -0.6f); }
         if (_boss_pos.position.x < 46.0f) { _boss_pos.position = new Vector2(56.0f, -0.6f); }
+    }
+
+    void NoteFan()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            Instantiate(_note_hazard, new Vector2(67.0f , 1 - i), Quaternion.identity);
+            i++;
+            Instantiate(_note_hazard, new Vector2(38.0f, 1 - i), Quaternion.identity);
+        }
+    }
+
+    void ChangeScene()
+    {
+        StartCoroutine(DeathScreen(SceneManager.GetActiveScene().buildIndex + 1));
     }
 }

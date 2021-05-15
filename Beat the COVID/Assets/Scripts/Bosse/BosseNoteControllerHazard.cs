@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BosseNoteController : MonoBehaviour
+public class BosseNoteControllerHazard : MonoBehaviour
 {
     public float speed = 1f;
     private SpriteRenderer _sprite;
@@ -15,6 +15,7 @@ public class BosseNoteController : MonoBehaviour
     private float attack_range = 0.5f;
     [SerializeField] int attackDamage = 2;
     // Start is called before the first frame update
+    //These notes are used as a stage hazard
     void Start()
     {
         direction = Vector2.zero;
@@ -34,8 +35,6 @@ public class BosseNoteController : MonoBehaviour
     void Update()
     {
 
-        if ((_player.transform.position.y - _note_pos.position.y) <= 0) { direction.y += -0.009f; }
-        else { direction.y += 0.009f; }
 
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
         transform.Translate(Vector2.one * direction * Time.deltaTime * speed);

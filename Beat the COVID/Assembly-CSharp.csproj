@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Bosse\BosseController.cs" />
     <Compile Include="Assets\Scripts\Bosse\BosseHeartController.cs" />
     <Compile Include="Assets\Scripts\Bosse\BosseNoteController.cs" />
+    <Compile Include="Assets\Scripts\Bosse\BosseNoteControllerHazard.cs" />
     <Compile Include="Assets\Scripts\Enemies\Denier.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemies\ExploderController.cs" />

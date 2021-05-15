@@ -10,6 +10,7 @@ MonoImporter:
   - _enemy_spitter: {instanceID: 0}
   - _enemy_rammer: {instanceID: 0}
   - _enemy_summoner: {instanceID: 0}
+  - _note_hazard: {instanceID: 0}
   - _boss_pos: {instanceID: 0}
   - _transition: {instanceID: 0}
   - _heart: {instanceID: 0}
