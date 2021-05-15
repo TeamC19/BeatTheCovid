@@ -47,33 +47,21 @@ public class BosseController : EnemyController
     // Update is called once per frame
     new void Update()
     {
-        if(hitPoints.currentHealth <= PHASE2_THR && phase == 1)
-        {
-            phase = 2;
-            SummonEnemy();
-            hitPoints.currentHealth = PHASE2_THR;
-        }
-        if (hitPoints.currentHealth <= PHASE3_THR && phase == 2)
-        {
-            phase = 3;
-            SummonEnemy();
-            hitPoints.currentHealth = PHASE3_THR;
-        }
 
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_dead")) { direction.x = 0; }
+        if (!_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_walk")) { direction.x = 0; }
         //movement on the X axis
         else if ((_player.transform.position.x - _boss_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
         {
             _sprite.flipX = true;
-            if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) > 6) { direction.x = -1; } //farther than 6 units, closes in on player
-            else if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) < 5) { direction.x = 1; }//closer than 4 units, tries to get to 4
+            if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) > 7) { direction.x = -1; } //farther than 6 units, closes in on player
+            else if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) < 6) { direction.x = 1; }//closer than 4 units, tries to get to 4
             else { direction.x = 0; }
         }
         else //player is to the left of player
         {
             _sprite.flipX = false;
-            if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) > 6) { direction.x = 1; } //farther than 6 units, closes in on player
-            else if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) < 5) { direction.x = -1; }//closer than 5 units, tries to get to 5
+            if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) > 7) { direction.x = 1; } //farther than 6 units, closes in on player
+            else if (Mathf.Abs(_player.transform.position.x - _boss_pos.position.x) < 6) { direction.x = -1; }//closer than 5 units, tries to get to 5
             else { direction.x = 0; }
         }
         
@@ -104,14 +92,40 @@ public class BosseController : EnemyController
     {
         // Inherit from parent TakeDamage()
         base.TakeDamage(damage);
-
+        _audio.pitch = Random.Range(0.8f, 1.2f);
+        _audio.Play();
         // Play hit animation (NOT DOING ANIMATION ANYMORE)
-        _anim.SetTrigger("hurt");
-        if(_boss_pos.position.x > 59.0f || _boss_pos.position.x < 46.0f)
+        if (_boss_pos.position.x > 59.0f || _boss_pos.position.x < 46.0f)
         {
             if (!gonnatp) { Invoke("SafetyTeleport", 1.5f); gonnatp = true; }
         }
-        
+
+        if (hitPoints.currentHealth <= PHASE2_THR && phase == 1)
+        {
+            phase = 2;
+            CancelInvoke();
+            SafetyTeleport();
+            SummonEnemy();
+            InvokeRepeating("SummonHeart", 5.0f, 5.0f);
+            InvokeRepeating("SummonNote", 3.0f, 3.0f);
+            hitPoints.currentHealth = PHASE2_THR;
+        }
+
+        else if (hitPoints.currentHealth <= PHASE3_THR && phase == 2)
+        {
+            phase = 3;
+            CancelInvoke();
+            SafetyTeleport();
+            SummonEnemy();
+            InvokeRepeating("SummonHeart", 5.0f, 5.0f);
+            InvokeRepeating("SummonNote", 3.0f, 3.0f);
+            hitPoints.currentHealth = PHASE3_THR;
+        }
+        else
+        {
+            _anim.SetTrigger("hurt");
+        }
+
     }
 
     protected override void EnemyDeath()
@@ -142,7 +156,7 @@ public class BosseController : EnemyController
 
     void SummonEnemy()
     {
-        _anim.SetTrigger("summon");
+        _anim.SetTrigger("call");
         if (phase == 2)
         {
             Instantiate(_enemy_spitter, new Vector2(45.0f, 0.0f), Quaternion.identity);
@@ -175,8 +189,8 @@ public class BosseController : EnemyController
     void SafetyTeleport()
     {
         gonnatp = false;
-        if (_boss_pos.position.x > 59.0f) { _boss_pos.position = new Vector2(49.0f, -0.6f); }
-        if (_boss_pos.position.x < 46.0f) { _boss_pos.position = new Vector2(56.0f, -0.6f); }
+        if (_boss_pos.position.x > 52.0f) { _boss_pos.position = new Vector2(49.0f, -0.6f); }
+        else { _boss_pos.position = new Vector2(56.0f, -0.6f); }
     }
 
     void NoteFan()
