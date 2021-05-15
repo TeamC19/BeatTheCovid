@@ -60,7 +60,7 @@ public class BosseController : EnemyController
             hitPoints.currentHealth = PHASE3_THR;
         }
 
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt")) { direction.x = 0; }
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_summon") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_hurt") || _anim.GetCurrentAnimatorStateInfo(0).IsName("bosse_dead")) { direction.x = 0; }
         //movement on the X axis
         else if ((_player.transform.position.x - _boss_pos.position.x) <= 0) //boss is to the right of the player (or in the same pos X-wise)
         {
@@ -122,7 +122,7 @@ public class BosseController : EnemyController
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
         // Play death scene transition ROLL END CREDITS
-        Invoke("ChangeScene", 1.5f);
+        Invoke("ChangeScene", 2.0f);
         // Reload scene to respawn player
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
