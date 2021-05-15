@@ -7,7 +7,12 @@ using UnityEngine.SceneManagement;
 public class BosseController : EnemyController
 {
     public bool summoning = false;
+    public bool gonnatp = false;
     public GameObject _enemy; //remember to set it in the gameobject
+    public GameObject _enemy_spitter;
+    public GameObject _enemy_rammer;
+    public GameObject _enemy_summoner;
+
     public Transform _boss_pos;
     private static int PHASE2_THR = 33;
     private static int PHASE3_THR = 17;
@@ -33,8 +38,8 @@ public class BosseController : EnemyController
         _boss_pos = GetComponent<Transform>();
         phase = 1;
         //InvokeRepeating("SummonEnemy", 7.0f, 7.0f);
-        InvokeRepeating("SummonHeart", 10.0f, 10.0f);
-        InvokeRepeating("SummonNote", 4.0f, 4.0f);
+        InvokeRepeating("SummonHeart", 5.0f, 5.0f);
+        InvokeRepeating("SummonNote", 3.0f, 3.0f);
     }
 
     // Update is called once per frame
@@ -100,6 +105,11 @@ public class BosseController : EnemyController
 
         // Play hit animation (NOT DOING ANIMATION ANYMORE)
         _anim.SetTrigger("hurt");
+        if(_boss_pos.position.x > 59.0f || _boss_pos.position.x < 46.0f)
+        {
+            if (!gonnatp) { Invoke("SafetyTeleport", 1.5f); gonnatp = true; }
+        }
+        
     }
 
     protected override void EnemyDeath()
@@ -133,9 +143,10 @@ public class BosseController : EnemyController
         _anim.SetTrigger("summon");
         if (phase == 2)
         {
-            Instantiate(_enemy, new Vector2(43.0f, 0.0f), Quaternion.identity);
-
-            Instantiate(_enemy, new Vector2(60.0f, 0.0f), Quaternion.identity);
+            Instantiate(_enemy_spitter, new Vector2(45.0f, 0.0f), Quaternion.identity);
+            Instantiate(_enemy_rammer, new Vector2(50.0f, -3.0f), Quaternion.identity);
+            Instantiate(_enemy_rammer, new Vector2(55.0f, -3.0f), Quaternion.identity);
+            Instantiate(_enemy_spitter, new Vector2(60.0f, 0.0f), Quaternion.identity);
         }
         else if (phase == 3)
         {
@@ -155,4 +166,11 @@ public class BosseController : EnemyController
 
     void SummonedHeart() { Instantiate(_heart, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
     void SummonedNote() { Instantiate(_note, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity); }
+
+    void SafetyTeleport()
+    {
+        gonnatp = false;
+        if (_boss_pos.position.x > 59.0f) { _boss_pos.position = new Vector2(49.0f, -0.6f); }
+        if (_boss_pos.position.x < 46.0f) { _boss_pos.position = new Vector2(56.0f, -0.6f); }
+    }
 }
