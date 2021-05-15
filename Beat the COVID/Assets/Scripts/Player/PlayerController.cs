@@ -205,7 +205,7 @@ public class PlayerController : MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsKicking");
-        PlaySound(hitSound);
+       // PlaySound(hitSound);
         // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick"))
         {
