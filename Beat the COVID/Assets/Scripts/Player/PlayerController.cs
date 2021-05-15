@@ -52,9 +52,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Sprite syringe_disabled;
     [SerializeField] GameObject[] syringes;
 
+    private AudioSource _audio;
+    // Sounds effects
+    [Header("Sounds effects")]
+    [SerializeField] AudioClip groundHitSound;
+    [SerializeField] AudioClip hitSound;
+    [SerializeField] AudioClip hurtSound;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip collectSound;
+
     // Start is called before the first frame update
     void Start()
     {
+        _audio = GetComponent<AudioSource>();
         _sprite = GetComponent<SpriteRenderer>();
         _anim = GetComponent<Animator>();
         _rb2d = GetComponent<Rigidbody2D>();
@@ -66,7 +76,7 @@ public class PlayerController : MonoBehaviour
         UpdateSyringe(injectionNumber);
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -126,6 +136,7 @@ public class PlayerController : MonoBehaviour
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
         else if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
+            PlaySound(jumpSound);
             _rb2d.velocity = Vector2.zero;
             _anim.SetBool("IsJumping", grounded);
             startJumpPos = transform.position.y;
@@ -140,7 +151,8 @@ public class PlayerController : MonoBehaviour
 
         // Movement
         else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
-        else {
+        else
+        {
             if (Input.GetKey(KeyCode.W) && grounded)
             {
                 direction.y = 1;
@@ -170,7 +182,7 @@ public class PlayerController : MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsPunching");
-
+        //PlaySound(hitSound);
         // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_punch"))
         {
@@ -193,7 +205,7 @@ public class PlayerController : MonoBehaviour
     {
         // Play attack animation
         _anim.SetTrigger("IsKicking");
-
+        PlaySound(hitSound);
         // Player cannot move while attacking (NOT WORKING AS INTENDED)-----------
         if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick"))
         {
@@ -255,6 +267,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            PlaySound(hitSound);
             // Subtract health
             hitPoints.currentHealth -= damage;
             Debug.Log("Player health: " + hitPoints.currentHealth);
@@ -368,13 +381,13 @@ public class PlayerController : MonoBehaviour
                                 shouldDisappear = true;
                             }
                             else print("Greedy! Only 3 vaccines");
-                            
+
                         }
                         break;
                 }
 
                 // If item should be consumed: Deactivate item from scene (item consumed)
-                if (shouldDisappear) { other.gameObject.SetActive(false); }
+                if (shouldDisappear) { other.gameObject.SetActive(false); PlaySound(collectSound); }
             }
 
         }
@@ -428,5 +441,17 @@ public class PlayerController : MonoBehaviour
                 syringeImage.color = new Color(0.753f, 0.753f, 0.753f, 0.753f);
             }
         }
+    }
+
+    public void PlayGroundedSound()
+    {
+        PlaySound(groundHitSound);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        _audio.clip = clip;
+        _audio.pitch = Random.Range(0.8f, 1.2f);
+        _audio.Play();
     }
 }

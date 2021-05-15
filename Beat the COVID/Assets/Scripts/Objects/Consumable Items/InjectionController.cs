@@ -18,10 +18,15 @@ public class InjectionController : MonoBehaviour
     [SerializeField] int damagePoints = 2;
     [SerializeField] Sprite smoke;
     private Animator animator;
+    [SerializeField] AudioClip breakingSound;
+    [SerializeField] AudioClip explosionSound;
+    private AudioSource _audio;
+    private bool _soundPlaying = false;
 
 
     void Start()
     {
+        _audio = GetComponent<AudioSource>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
         if (thrown)
@@ -52,6 +57,11 @@ public class InjectionController : MonoBehaviour
 
                 //spriteRenderer.sprite = smoke;
                 transform.localScale = Vector3.one * 2;
+                if (!_soundPlaying)
+                {
+                    _soundPlaying = true;
+                    StartCoroutine(PlayExplosionSound());
+                }
                 animator.SetTrigger("Explode");
                 DamageInArea();
                 Destroy(gameObject, animator.GetCurrentAnimatorClipInfo(0).Length);
@@ -82,6 +92,20 @@ public class InjectionController : MonoBehaviour
             else enemy.gameObject.GetComponent<EnemyController>().TakeDamage(damagePoints);
         }
     }
-
-
+    
+    IEnumerator PlayExplosionSound()
+    {
+        // We set start of engines sound
+        print(breakingSound);
+        _audio.clip = breakingSound;
+        _audio.Play();
+        // We wait until it's over
+        yield return new WaitForSeconds(_audio.clip.length);
+        print(explosionSound);
+        // then, we change the clip to the one that must be looped
+        // it corresponds to the sound of the engines continously working
+        _audio.clip = explosionSound;
+        // The AudioSource plays in loop the sound of engines running
+        _audio.Play();
+    }
 }

@@ -22,6 +22,7 @@ public class CheckGround : MonoBehaviour
         if (other.gameObject.layer == 8 && !player.jumped) 
         {
             player.grounded = true;
+            player.PlayGroundedSound();
             Physics2D.SetLayerCollisionMask(8, 8);
 
             player._rb2d.velocity = Vector3.zero;
