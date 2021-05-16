@@ -13,6 +13,7 @@ public class BosseController : EnemyController
     public GameObject _enemy_rammer;
     public GameObject _enemy_summoner;
     public GameObject _note_hazard;
+    public GameObject _smokepoof;
 
     public Transform _boss_pos;
     private static int PHASE2_THR = 33;
@@ -160,15 +161,22 @@ public class BosseController : EnemyController
         if (phase == 2)
         {
             Instantiate(_enemy_spitter, new Vector2(45.0f, 0.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(45.0f, 0.0f), Quaternion.identity);
             Instantiate(_enemy_rammer, new Vector2(50.0f, -3.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(50.0f, -3.0f), Quaternion.identity);
             Instantiate(_enemy_rammer, new Vector2(55.0f, -3.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(55.0f, -3.0f), Quaternion.identity);
             Instantiate(_enemy_spitter, new Vector2(60.0f, 0.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(60.0f, 0.0f), Quaternion.identity);
         }
         else if (phase == 3)
         {
             Instantiate(_enemy_summoner, new Vector2(45.0f, 0.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(45.0f, 0.0f), Quaternion.identity);
             Instantiate(_enemy, new Vector2(53.0f, -3.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(53.0f, -3.0f), Quaternion.identity);
             Instantiate(_enemy_summoner, new Vector2(60.0f, 0.0f), Quaternion.identity);
+            Instantiate(_smokepoof, new Vector2(60.0f, 0.0f), Quaternion.identity);
             InvokeRepeating("NoteFan", 4.0f, 4.0f);
         }
     }
@@ -188,9 +196,11 @@ public class BosseController : EnemyController
 
     void SafetyTeleport()
     {
+        Instantiate(_smokepoof, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity);
         gonnatp = false;
         if (_boss_pos.position.x > 52.0f) { _boss_pos.position = new Vector2(49.0f, -0.6f); }
         else { _boss_pos.position = new Vector2(56.0f, -0.6f); }
+        Instantiate(_smokepoof, new Vector2(_boss_pos.position.x, _boss_pos.position.y), Quaternion.identity);
     }
 
     void NoteFan()

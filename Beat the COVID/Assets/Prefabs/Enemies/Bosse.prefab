@@ -294,6 +294,8 @@ MonoBehaviour:
     type: 3}
   _note_hazard: {fileID: 3494854142190148232, guid: f6bb8f8e198e9bd4da1057753ea239c4,
     type: 3}
+  _smokepoof: {fileID: 6348922424835073792, guid: 3478a2b7328880a41bb2f62dcef47ad2,
+    type: 3}
   _boss_pos: {fileID: 0}
   _transition: {fileID: 0}
   transitionTime: 1
