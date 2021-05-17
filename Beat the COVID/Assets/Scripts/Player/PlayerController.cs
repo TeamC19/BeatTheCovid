@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
 
 
         // Movement
-        else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick")) { direction.y = 0; direction.x = 0; }
+        else if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_kick") || _anim.GetCurrentAnimatorStateInfo(0).IsName("player_death")) { direction.y = 0; direction.x = 0; }
         else
         {
             if (Input.GetKey(KeyCode.W) && grounded)
