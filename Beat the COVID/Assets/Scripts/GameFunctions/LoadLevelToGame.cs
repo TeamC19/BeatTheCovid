@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LoadLevelAfterTime : MonoBehaviour
+public class LoadLevelToGame : MonoBehaviour
 {
     [SerializeField]
     private float delayBeforeLoading = 10f;
@@ -15,7 +15,7 @@ public class LoadLevelAfterTime : MonoBehaviour
         timeElapsed += Time.deltaTime;
         if(timeElapsed >  delayBeforeLoading)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
