@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
     public float startJumpPos; //guarda la posicion de cuando empieza a saltar, valor de inicio 0
     public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
     public bool jumped;
+    private bool isDead = false;
 
     // Inventory variables
     [Header("Inventory variables")]
@@ -261,7 +262,7 @@ public class PlayerController : MonoBehaviour
     // Method for player taking damage (animations and health depletion)
     public void PlayerTakeDamage(int damage)
     {
-        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block"))
+        if (_anim.GetCurrentAnimatorStateInfo(0).IsName("player_block") || isDead)
         {
             // No take damage
         }
@@ -296,23 +297,28 @@ public class PlayerController : MonoBehaviour
     void PlayerDeath()
     {
         Debug.Log("Player died");
+        isDead = true;
+        _anim.SetBool("IsDead", true);
         // Disable dead player
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
-        _anim.GetBool("IsDead");
         // Play death scene transition 
-        StartCoroutine(DeathScreen(5));
+        //StartCoroutine(DeathScreen(5));
+        Invoke("DeathScreen", 5.0f);
         // Reload scene to respawn player
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
     }
 
+    void DeathScreen()
+    {
+        _transition.SetTrigger("Start");
+        SceneManager.LoadScene(5);
+    }
     // Coroutine to play transition animation to go to main menu after player death
-    IEnumerator DeathScreen(int levelIndex)
+    /*IEnumerator DeathScreen(int levelIndex)
     {
         // Play death animation 
         _anim.SetBool("IsDead", true);
-        yield return new WaitForSeconds(10f);
+        //yield return new WaitForSeconds(10f);
         // Play transition animation
         _transition.SetTrigger("Start");
 
@@ -321,7 +327,7 @@ public class PlayerController : MonoBehaviour
 
         // Load next scene
         SceneManager.LoadScene(levelIndex);
-    }
+    }*/
 
     // Function to respawn character when killed (UNUSED FOR NOW)
     void RespawnCharacter()
