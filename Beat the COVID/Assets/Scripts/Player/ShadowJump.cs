@@ -26,7 +26,7 @@ public class ShadowJump : MonoBehaviour
             transform.position = playerpos.position + Vector3.down * 1.25f;
             originalpos = transform;
         }
-       
+        if (GameEngine.instance.player.isDead) { Destroy(this.gameObject); }
         
         
     }

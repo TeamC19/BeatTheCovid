@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     public float startJumpPos; //guarda la posicion de cuando empieza a saltar, valor de inicio 0
     public bool grounded; // Grounded and Jumped are public because they are used by CheckGround Script
     public bool jumped;
-    private bool isDead = false;
+    public bool isDead = false;
 
     // Inventory variables
     [Header("Inventory variables")]
