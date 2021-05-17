@@ -72,9 +72,10 @@ public class EnemyController : MonoBehaviour
         }
         // Movement
         _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        _rb2d.velocity = (Vector2.one * direction * speed);
         //transform.Translate(Vector2.one *direction  * Time.deltaTime * speed);
         //transform.Translate(Vector2.one * direction * /*Time.deltaTime*/ * speed);Referencia rigidbody.speed y el vector
-        _rb2d.velocity = (Vector2.one * direction * speed);
+
     }
 
     // Enemy Wait 
@@ -169,10 +170,14 @@ public class EnemyController : MonoBehaviour
     protected virtual void EnemyDeath()
     {
         Debug.Log("Enemy died");
-        
+
         // Play death animation in Child
 
         // Disable dead enemy
+        direction.x = 0;
+        direction.y = 0;
+        _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        _rb2d.velocity = (Vector2.one * direction * speed);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }

@@ -136,6 +136,10 @@ public class BosseController : EnemyController
         CancelInvoke();
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
+        //Stops moving when ded
+        direction.x = 0;
+        _anim.SetFloat("speed", Mathf.Abs(direction.magnitude));
+        _rb2d.velocity = (Vector2.one * direction * speed);
         // Play death scene transition ROLL END CREDITS
         Invoke("ChangeScene", 2.0f);
         // Reload scene to respawn player
