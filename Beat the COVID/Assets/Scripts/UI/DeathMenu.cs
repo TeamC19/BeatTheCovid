@@ -15,7 +15,7 @@ public class DeathMenu : MonoBehaviour
     public void RestartGame()
     {
         // Load the next scene, with menu unpaused
-        StartCoroutine(LoadGameLevel(1));
+        StartCoroutine(LoadGameLevel(2));
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
     }
