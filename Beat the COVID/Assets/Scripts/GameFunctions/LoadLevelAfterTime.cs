@@ -15,7 +15,7 @@ public class LoadLevelAfterTime : MonoBehaviour
         timeElapsed += Time.deltaTime;
         if(timeElapsed >  delayBeforeLoading)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
