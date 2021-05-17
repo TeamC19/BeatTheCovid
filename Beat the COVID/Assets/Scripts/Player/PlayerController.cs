@@ -286,6 +286,7 @@ public class PlayerController : MonoBehaviour
         // Call death function
         if (hitPoints.currentHealth <= 0)
         {
+            _anim.GetBool("IsDead");
             hitPoints.currentHealth = 0;
             PlayerDeath();
         }
@@ -295,15 +296,12 @@ public class PlayerController : MonoBehaviour
     void PlayerDeath()
     {
         Debug.Log("Player died");
-        // OPTIONAL FOR NOW
-        // Play death animation 
-
         // Disable dead player
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
-        // Play death scene transition GO BACK TO MAIN MENU FOR NOW
-        StartCoroutine(DeathScreen(4));
+        _anim.GetBool("IsDead");
+        // Play death scene transition 
+        StartCoroutine(DeathScreen(5));
         // Reload scene to respawn player
         Time.timeScale = 1f;
         PauseMenu.GameIsPaused = false;
@@ -312,6 +310,9 @@ public class PlayerController : MonoBehaviour
     // Coroutine to play transition animation to go to main menu after player death
     IEnumerator DeathScreen(int levelIndex)
     {
+        // Play death animation 
+        _anim.SetBool("IsDead", true);
+        yield return new WaitForSeconds(10f);
         // Play transition animation
         _transition.SetTrigger("Start");
 
