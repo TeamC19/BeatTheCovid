@@ -94,7 +94,6 @@ public class NoMaskController : EnemyController
 
         // Inherit from parent EnemyDeath()
         base.EnemyDeath();
-
     }
 
 }

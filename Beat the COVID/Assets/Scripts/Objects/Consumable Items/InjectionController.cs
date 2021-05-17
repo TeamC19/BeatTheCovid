@@ -22,6 +22,7 @@ public class InjectionController : MonoBehaviour
     [SerializeField] AudioClip explosionSound;
     private AudioSource _audio;
     private bool _soundPlaying = false;
+    
 
 
     void Start()
@@ -61,9 +62,10 @@ public class InjectionController : MonoBehaviour
                 {
                     _soundPlaying = true;
                     StartCoroutine(PlayExplosionSound());
+                    DamageInArea();
                 }
                 animator.SetTrigger("Explode");
-                DamageInArea();
+                
                 Destroy(gameObject, animator.GetCurrentAnimatorClipInfo(0).Length);
             } else {
                 transform.position += transform.localScale.x * transform.right * speed * Time.deltaTime;
