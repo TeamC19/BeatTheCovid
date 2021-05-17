@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   searchRange: 8
   stoppingDistance: 1
-  speed: 3
+  speed: 2
   hitPoints: {fileID: 11400000, guid: 25a1586292ad7d24db7b9de6b77b3990, type: 2}
   hitSound: {fileID: 8300000, guid: 284eb0cda34d2554bba022b40a35b162, type: 3}
   attackPoint: {fileID: 0}
