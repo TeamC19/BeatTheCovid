@@ -311,7 +311,7 @@ public class PlayerController : MonoBehaviour
     void DeathScreen()
     {
         _transition.SetTrigger("Start");
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
     // Coroutine to play transition animation to go to main menu after player death
     /*IEnumerator DeathScreen(int levelIndex)
